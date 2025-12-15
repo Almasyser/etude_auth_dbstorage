@@ -1,0 +1,20 @@
+@use "../../styles/typography" as *;
+@use "../../styles/shadows" as *;
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .question {
+      @include text("lg", $weight: 500);
+    }
+    .answer {
+      @include text("md");
+      color: var(--grey-600);
+    }
+  }
+}

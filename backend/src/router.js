@@ -14,6 +14,7 @@ const user = require("./controllers/userControllers");
 const faq = require("./controllers/faqControllers");
 
 router.post("/user/login", user.authenticationCheck, verifyPassword);
+router.post("/makePassword", hashPassword);
 router.put(
   "/adminUser/:id",
   verifyToken,

@@ -11,9 +11,9 @@ class UserManager extends AbstractManager {
     ]);
   }
 
-  insert(user) {
+  insert(newUser) {
     // eslint-disable-next-line camelcase
-    const { mail, hashedPassword, lastname, firstname, phone, isAdmin } = user;
+    const { mail, hashedPassword, lastname, firstname, phone, isAdmin } = newUser;
     return this.database.query(
       `insert into ${this.table} (mail, hashed_password, lastname, firstname, phone, is_admin) values (?, ?, ?, ?, ?, ?)`,
       // eslint-disable-next-line camelcase

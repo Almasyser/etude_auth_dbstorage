@@ -2,7 +2,6 @@ const models = require("../models");
 
 const authenticationCheck = (req, res, next) => {
   const { mail } = req.body;
-
   models.user
     .getUserByMail(mail)
     .then(([users]) => {
@@ -45,6 +44,24 @@ const browse = (req, res) => {
     });
 };
 
+const addUser = (req, res) => {
+  const newUser = req.body;
+  models.user
+    .insert(newUser)
+    .then(([result]) => {
+      if (result.affectedRows !== 0) {
+        res.sendStatus(204);
+        console.log("user creé");
+        
+      } else {
+        res.status(404).send("User not created");
+      }
+    })
+    .catch(() => {
+      res.status(500).send("Error while creating user");
+    });
+};
+
 const modifyUser = (req, res) => {
   const { id } = req.params;
   const keys = Object.keys(req.body);
@@ -82,6 +99,7 @@ const destroyUser = (req, res) => {
 
 module.exports = {
   authenticationCheck,
+  addUser,
   modifyUser,
   destroyUser,
   browse,
