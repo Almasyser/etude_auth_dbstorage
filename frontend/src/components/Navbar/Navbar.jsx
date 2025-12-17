@@ -4,16 +4,14 @@ import { useNavigate } from "react-router-dom";
 import { useState, useContext } from "react";
 import AuthContext from "../../contexts/AuthContext";
 // import NewPhoneModal from "../NewPhoneModal/NewPhoneModal";
-
 export default function Navbar() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   // const [isNewPhoneModalOpen, setIsNewPhoneModalOpen] = useState(false);
-
   const { userInfo } = useContext(AuthContext);
-
   const isAdmin = userInfo.is_admin;
-
+  console.log("IS ADMIN",userInfo);
+  
   return (
     <>
       <nav id="navbar">
@@ -27,18 +25,18 @@ export default function Navbar() {
         <ul className="items">
           {isAdmin && (
             <li>
-              {/* <button
-                className="button-md-blue-solid"
+              <button
+                className=""
                 type="button"
                 onClick={()=>{}}
               >
                 <i className="fi fi-rr-plus" /> Ajouter un smartphone
-              </button> */}
+              </button>
             </li>
           )}
           <li>
             <button
-              className="button-md-grey-link"
+              className=""
               onClick={() => navigate("/faq")}
               type="button"
             >
@@ -49,7 +47,7 @@ export default function Navbar() {
           {isAdmin === 1 && (
             <li>
               <button
-                className="button-md-grey-link"
+                className=""
                 type="button"
                 onClick={() => navigate("/users")}
               >
@@ -59,7 +57,7 @@ export default function Navbar() {
           )}
           <li>
             <button
-              className="button-md-grey-link"
+              className=""
               type="button"
               onClick={() => navigate("/user")}
             >
@@ -82,7 +80,7 @@ export default function Navbar() {
             onClick={() => navigate("/home")}
             aria-hidden="true"
           >
-            <img src="../src/assets/Logo.svg" alt="Logo Emmaus Connect" />
+            <img src="../src/assets/Logo.png" alt="Logo" />
           </div>
 
           <button
@@ -112,7 +110,7 @@ export default function Navbar() {
             )}
             <li>
               <button
-                className="button-md-grey-link"
+                className=""
                 onClick={() => navigate("/faq")}
                 type="button"
               >
@@ -123,7 +121,7 @@ export default function Navbar() {
             {isAdmin === 1 && (
               <li>
                 <button
-                  className="button-md-grey-link"
+                  className=""
                   type="button"
                   onClick={() => navigate("/users")}
                 >

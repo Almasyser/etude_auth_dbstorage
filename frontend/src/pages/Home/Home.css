@@ -323,31 +323,10 @@ p:last-child {
   margin-bottom: 0;
 }
 
-.cards-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 2rem;
-}
-.cards-list > * {
-  flex-basis: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .cards-list {
-    margin-left: 15rem;
-  }
-  .cards-list > * {
-    flex-basis: calc(50% - 0.5rem);
-  }
-}
-@media screen and (min-width: 992px) {
-  .cards-list > * {
-    flex-basis: calc(33.3333333333% - 0.6666666667rem);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .cards-list > * {
-    flex-basis: calc(25% - 0.75rem);
-  }
+.home {
+  margin-top: 5rem;
+  width: 100%;
+  height: 100vh;
+  color: beige;
+  padding-top: 1rem;
 }/*# sourceMappingURL=Home.css.map */

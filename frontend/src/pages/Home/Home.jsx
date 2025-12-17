@@ -10,7 +10,7 @@ export default function Home() {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [usersDatas, setUsersDatas]= useState();
   useEffect(() => {
-    const InitialQuery = `${import.meta.env.VITE_BACKEND_URL}/users?`; //remplser users par la db concernee
+    const InitialQuery = `${import.meta.env.VITE_BACKEND_URL}/users?`; //remplacer users par la db principale
     let fullQuery = InitialQuery;
     axios
       .get(fullQuery, {
@@ -30,11 +30,12 @@ export default function Home() {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userToken]);
-  console.log("usersDatas",usersDatas);
+  console.log(usersDatas);
   
   return (
     isDataLoaded && userToken && (
       <div className="home">
+        <h2>Home</h2>
         <Navbar />
       </div>
     )

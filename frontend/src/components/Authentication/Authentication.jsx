@@ -20,7 +20,8 @@ export default function Authentication() {
   // submit handler for the form
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    console.log(`${import.meta.env.VITE_BACKEND_URL}/user/login`);
+    
     const form = event.target;
     const formData = new FormData(form);
     const dataFromForm = Object.fromEntries(formData.entries());

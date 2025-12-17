@@ -1,11 +1,31 @@
+
 .user-account {
+  width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  margin: 0 auto;
+  gap: 1rem;
   .input-line {
     margin-top: 1rem;
   }
-  button {
+  .input-field{
+    background-color: transparent;
+    label{
+      color: var(--cyan-200);
+    }
+  }
+  .btn{
+    width: 100%;
     margin-top: 1rem;
+    height: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--cyan-600);
+    background: transparent;
+    color: var(--cyan-500);
+    &:hover{
+      border: 1px solid var(--cyan-400);
+      color: var(--cyan-300);
+      cursor: pointer;
+    }
   }
 }

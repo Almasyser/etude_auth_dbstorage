@@ -28,10 +28,10 @@ export default function MyAccount() {
     if (!userToken) {
       navigate("/");
     }
-  }, [userToken]);
+  }, [userToken, id, navigate]);
 
   return (
-    // userToken && (
+    userToken && (
       <>
         <Navbar />
         {isDataLoaded ? (
@@ -42,6 +42,6 @@ export default function MyAccount() {
           <p>Chargement...</p>
         )}
       </>
-    // )
+    )
   );
 }

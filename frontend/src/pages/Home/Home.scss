@@ -1,36 +1,12 @@
 @use "../../styles/typography" as *;
 @use "../../styles/shadows" as *;
 
-.cards-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 2rem;
+.home{
+  margin-top: 5rem;
+  width: 100%;
+  height: 100vh;
+  color:beige;
+  padding-top: 1rem;
 
-  & > * {
-    flex-basis: 100%;
-  }
 }
 
-@media screen and (min-width: 768px) {
-  .cards-list {
-    margin-left: 15rem;
-    & > * {
-      flex-basis: calc(100% / 2 - (1rem / 2));
-    }
-  }
-}
-@media screen and (min-width: 992px) {
-  .cards-list {
-    & > * {
-      flex-basis: calc(100% / 3 - (1rem / 3) * 2);
-    }
-  }
-}
-@media screen and (min-width: 1200px) {
-  .cards-list {
-    & > * {
-      flex-basis: calc(100% / 4 - (1rem / 4) * 3);
-    }
-  }
-}

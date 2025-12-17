@@ -21,27 +21,28 @@
   gap: 6px;
   flex: 10;
   .input {
+    background: var(--blue-900);
     padding-inline: 16px;
     display: flex;
     flex-direction: row;
     justify-content: stretch;
     align-items: center;
-    height: 40px;
+    height: 32px;
     gap: 8px;
-    background: var(--white);
-    border: 1px solid var(--grey-200);
+    border: 1px solid var(--blue-950);
     @include shadow("xs");
     border-radius: 8px;
     input {
+      background: var(--blue-900);
       padding-block: 8px;
       border: none;
       height: 100%;
       width: 100%;
       outline: none;
       @include text("md");
-      color: var(--grey-500);
+      color: var(--cyan-100);
       &:focus {
-        color: var(--grey-800);
+        color: var(--cyan-50);
       }
     }
   }

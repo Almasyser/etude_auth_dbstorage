@@ -1,6 +1,8 @@
 @use "../../styles/typography" as *;
 @use "../../styles/shadows" as *;
-
+.faq{
+  height: 100vh;
+}
 .faq-list {
   display: flex;
   flex-direction: column;
@@ -14,7 +16,7 @@
     }
     .answer {
       @include text("md");
-      color: var(--grey-600);
+      color: var(--cyan-50);
     }
   }
 }

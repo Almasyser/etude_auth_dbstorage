@@ -323,6 +323,10 @@ p:last-child {
   margin-bottom: 0;
 }
 
+.faq {
+  height: 100vh;
+}
+
 .faq-list {
   display: flex;
   flex-direction: column;
@@ -340,5 +344,5 @@ p:last-child {
 .faq-list li .answer {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: var(--grey-600);
+  color: var(--cyan-50);
 }/*# sourceMappingURL=Faq.css.map */

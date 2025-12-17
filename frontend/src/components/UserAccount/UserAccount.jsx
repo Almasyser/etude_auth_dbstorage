@@ -61,8 +61,7 @@ export default function UserAccount({ userInfo }) {
     <>
       <header>
         <h1>Mes informations</h1>
-        <h2>userAccount</h2>
-      </header>
+        </header>
       <div className="content user-account">
         <form onSubmit={handleSubmit}>
           <div className="input-line">
@@ -117,7 +116,7 @@ export default function UserAccount({ userInfo }) {
               </div>
             </div>
           </div>
-          <button type="submit" className="button-md-blue-solid">
+          <button type="submit" className="btn">
             Valider modification
           </button>
         </form>
@@ -137,7 +136,7 @@ export default function UserAccount({ userInfo }) {
               </div>
             </div>
           </div>
-          <button type="submit" className="button-md-blue-solid">
+          <button type="submit" className="btn">
             Valider changement de mot de passe
           </button>
         </form>

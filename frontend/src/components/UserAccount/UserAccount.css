@@ -1,11 +1,30 @@
 .user-account {
+  width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  margin: 0 auto;
+  gap: 1rem;
 }
 .user-account .input-line {
   margin-top: 1rem;
 }
-.user-account button {
+.user-account .input-field {
+  background-color: transparent;
+}
+.user-account .input-field label {
+  color: var(--cyan-200);
+}
+.user-account .btn {
+  width: 100%;
   margin-top: 1rem;
+  height: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--cyan-600);
+  background: transparent;
+  color: var(--cyan-500);
+}
+.user-account .btn:hover {
+  border: 1px solid var(--cyan-400);
+  color: var(--cyan-300);
+  cursor: pointer;
 }/*# sourceMappingURL=UserAccount.css.map */
