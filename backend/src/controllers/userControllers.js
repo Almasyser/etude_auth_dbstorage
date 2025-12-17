@@ -51,7 +51,7 @@ const addUser = (req, res) => {
     .then(([result]) => {
       if (result.affectedRows !== 0) {
         res.sendStatus(204);
-        console.log("user creé");
+        console.log("user créé");
         
       } else {
         res.status(404).send("User not created");

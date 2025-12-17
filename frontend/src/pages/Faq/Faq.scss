@@ -1,7 +1,11 @@
 @use "../../styles/typography" as *;
 @use "../../styles/shadows" as *;
 .faq{
-  height: 100vh;
+  
+  overflow-y: scroll;
+  main{
+    overflow: visible;
+  }
 }
 .faq-list {
   display: flex;
@@ -13,10 +17,12 @@
     gap: 0.5rem;
     .question {
       @include text("lg", $weight: 500);
+      color: var(--cyan-100);
     }
     .answer {
       @include text("md");
-      color: var(--cyan-50);
+      color: var(--cyan-200);
+      font-size: 0.8rem;
     }
   }
 }

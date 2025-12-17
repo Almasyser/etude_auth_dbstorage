@@ -1,5 +1,4 @@
 @use "../../styles/typography" as *;
-
 .authentication-container {
   margin-top: -87px;
   display: flex;
@@ -7,7 +6,6 @@
   min-height: 50vh;
   justify-content: stretch;
   width: 100%;
-
   .page-content {
     padding: 1rem;
     min-height: 70vh;
@@ -36,7 +34,6 @@
     background-size: cover;
     min-height: 30vh;
     background-repeat: no-repeat;
-
     background-position: center;
     background-image: linear-gradient(
       135deg,
@@ -53,13 +50,11 @@
     }
   }
 }
-
 @media only screen and (min-width: 768px) {
   .authentication-container {
     flex-direction: row;
     height: 100vh;
     height: 100dvh;
-
     .page-content {
       padding: 3rem;
     }

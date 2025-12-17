@@ -1,16 +1,18 @@
+
 import PropTypes from "prop-types";
 import "./UserAccount.css";
 import { useState, useContext } from "react";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
 // import Badge from "../Badge/Badge";
-export default function UserAccount({ userInfo }) {
-  const { mail, lastname, firstname, phone, id } = userInfo;
+export default function NewUserAccount({ userInfo }) {
+  const { mail, lastname, firstname, phone, is_admin } = userInfo;
   const [firstnameInput, setFirstnameInput] = useState(firstname);
   const [lastnameInput, setLastnameInput] = useState(lastname);
   const [mailInput, setMailInput] = useState(mail);
   const [phoneInput, setPhoneInput] = useState(phone);
   const [passwordInput, setPasswordInput] = useState("Mot de passe");
+  const [checkAdmin, setCheckAdmin] = useState(is_admin);
   const { userToken } = useContext(AuthContext);
   const [message, setMessage] = useState(false);
 
@@ -29,7 +31,9 @@ export default function UserAccount({ userInfo }) {
   const handlePasswordChange = (event) => {
     setPasswordInput(event.target.value);
   };
-
+  const handleCheck = (event)=>{
+    setCheckAdmin(event.target.checked);
+  }
   const handleFocus = () => {
     setPasswordInput("");
   };
@@ -40,7 +44,7 @@ export default function UserAccount({ userInfo }) {
     const formData = new FormData(form);
     const dataFromForm = Object.fromEntries(formData.entries());
     axios
-      .put(`${import.meta.env.VITE_BACKEND_URL}/user/${id}`, dataFromForm, {
+      .put(`${import.meta.env.VITE_BACKEND_URL}/addUser`, dataFromForm, {
         headers: {
           Authorization: `Bearer ${userToken}`,
         },
@@ -116,11 +120,6 @@ export default function UserAccount({ userInfo }) {
               </div>
             </div>
           </div>
-          <button type="submit" className="btn">
-            Valider modification
-          </button>
-        </form>
-        <form onSubmit={handleSubmit}>
           <div className="input-line">
             <div className="input-field">
               <label htmlFor="password">Mot de passe</label>
@@ -136,13 +135,22 @@ export default function UserAccount({ userInfo }) {
               </div>
             </div>
           </div>
+          <div className="input-check">
+            <input
+              type="checkbox"
+              checked={checkAdmin}
+              id="checkadmin"
+              onChange={handleCheck}>
+            </input>
+            <label htmlFor="checkadmin">Administrateur</label>
+          </div>
           <button type="submit" className="btn">
             Valider changement de mot de passe
           </button>
         </form>
         {message && (
           <div>
-            <p>Modifications validées.</p>
+            <p>Nouvel utilisateur créé avec succès..</p>
           </div>
         )}
       </div>
@@ -150,7 +158,7 @@ export default function UserAccount({ userInfo }) {
   );
 }
 
-UserAccount.propTypes = {
+NewUserAccount.propTypes = {
   userInfo: PropTypes.shape({
     mail: PropTypes.string.isRequired,
     lastname: PropTypes.string.isRequired,

@@ -20,7 +20,7 @@ export default function Navbar() {
           onClick={() => navigate("/home")}
           aria-hidden="true"
         >
-          <img src="../src/assets/Logo.svg" alt="Logo Emmaus Connect" />
+          <img src="../src/assets/Logo.png" alt="Logo" />
         </div>
         <ul className="items">
           {isAdmin && (
@@ -99,13 +99,13 @@ export default function Navbar() {
           <ul className="items">
             {isAdmin && (
               <li>
-                {/* <button
-                  className="button-md-blue-solid"
+                <button
+                  className=""
                   type="button"
-                  onClick={() => setIsNewPhoneModalOpen(true)}
+                  onClick={() => {}}
                 >
                   <i className="fi fi-rr-plus" /> Ajouter un smartphone
-                </button> */}
+                </button>
               </li>
             )}
             <li>
@@ -131,7 +131,7 @@ export default function Navbar() {
             )}
             <li>
               <button
-                className="button-md-grey-link"
+                className=""
                 type="button"
                 onClick={() => navigate("/user")}
               >

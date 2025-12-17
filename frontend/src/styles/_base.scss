@@ -11,8 +11,6 @@ body {
 
 main {
   margin: 2rem;
-  @include shadow("xs");
-  border: 1px solid var(--blue-800);
   border-radius: 0.5rem;
   overflow: hidden;
 

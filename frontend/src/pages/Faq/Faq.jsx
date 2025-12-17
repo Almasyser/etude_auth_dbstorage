@@ -4,13 +4,11 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import AuthContext from "../../contexts/AuthContext";
 import "./Faq.css";
-
 export default function Faq() {
   const navigate = useNavigate();
   const { userToken } = useContext(AuthContext);
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [question, setQuestion] = useState();
-
   useEffect(() => {
     axios
       .get(`${import.meta.env.VITE_BACKEND_URL}/faq`, {

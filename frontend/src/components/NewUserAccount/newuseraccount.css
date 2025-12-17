@@ -9248,50 +9248,296 @@ p:last-child {
   color: var(--yellow-400);
 }
 
-.manage {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-  min-height: 100dvh;
-  margin-inline: 1%;
+html,
+body {
+  font-feature-settings: "tnum" on, "lnum" on;
+  font-family: "Inter", sans-serif;
+  color: var(--grey-900);
 }
-.manage table {
-  width: 100%;
-  border-collapse: collapse;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--red-600);
+
+main {
+  margin: 2rem;
   border-radius: 0.5rem;
   overflow: hidden;
 }
-.manage table tbody {
-  display: flex;
-  flex-direction: column;
-}
-.manage table tbody tr {
-  display: grid;
-  padding: 1rem 0.5rem;
-  grid-template-columns: repeat(6, 1fr);
-  text-align: left;
-  align-items: center;
-  border-bottom: 1px solid var(--violet-500);
+main header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--blue-800);
+  background-color: var(--blue-800);
   color: var(--cyan-100);
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
 }
-.manage table tbody tr:last-child {
+main header h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+main .content {
+  padding: 2rem;
+}
+
+.input-line {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-line hr {
+  width: 100%;
+  border: 1px solid var(--grey-200);
   border-bottom: none;
 }
-.manage table tbody tr:nth-child(odd) {
-  background-color: var(--blue-900);
-}
-.manage table tbody tr td {
-  color: var(--cyan-100);
-  font-size: 0.8rem;
-}
-.manage table tbody tr td.actions {
+
+.input-field {
   display: flex;
-  gap: 0.5rem;
-}/*# sourceMappingURL=Users.css.map */
+  flex-direction: column;
+  gap: 6px;
+  flex: 10;
+}
+.input-field .input {
+  background: var(--blue-900);
+  padding-inline: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  height: 32px;
+  gap: 8px;
+  border: 1px solid var(--blue-950);
+  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  border-radius: 8px;
+}
+.input-field .input input {
+  background: var(--blue-900);
+  padding-block: 8px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--cyan-100);
+}
+.input-field .input input:focus {
+  color: var(--cyan-50);
+}
+.input-field label {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: var(--cyan-100);
+}
+.input-field.field--10 {
+  flex: 1;
+}
+.input-field.field--20 {
+  flex: 2;
+}
+.input-field.field--30 {
+  flex: 3;
+}
+.input-field.field--40 {
+  flex: 4;
+}
+.input-field.field--50 {
+  flex: 5;
+}
+.input-field.field--60 {
+  flex: 6;
+}
+.input-field.field--70 {
+  flex: 7;
+}
+.input-field.field--80 {
+  flex: 8;
+}
+.input-field.field--90 {
+  flex: 9;
+}
+
+@media screen and (min-width: 768px) {
+  .input-line {
+    flex-direction: row;
+  }
+}
+.input-switch label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--grey-700);
+  font-weight: 500;
+}
+.input-switch input[type=checkbox] {
+  display: none;
+}
+.input-switch input[type=checkbox]:checked + .toggle-switch {
+  background-color: var(--blue-600);
+  border-radius: 12px;
+  position: relative;
+}
+.input-switch input[type=checkbox]:checked + .toggle-switch::before {
+  background-color: var(--white);
+}
+.input-switch input[type=checkbox]:checked + .toggle-switch:hover {
+  background-color: var(--blue-700);
+}
+.input-switch .toggle-switch {
+  background-color: var(--grey-100);
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.25s ease-out;
+}
+.input-switch .toggle-switch::before {
+  transition: transform 0.25s ease-out;
+  content: "";
+  transform: translateX(0);
+  top: 2px;
+  left: 2px;
+  background-color: var(--white);
+  box-shadow: 0px 4px 8px -2px rgba(3, 7, 18, 0.1), 0px 2px 4px -2px rgba(3, 7, 18, 0.06);
+  position: absolute;
+}
+.input-switch .toggle-switch:hover {
+  background-color: var(--grey-200);
+}
+.input-switch--sm input[type=checkbox]:checked + .toggle-switch::before {
+  transform: translateX(16px);
+}
+.input-switch--sm .toggle-switch {
+  width: 36px;
+  height: 20px;
+}
+.input-switch--sm .toggle-switch::before {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+}
+.input-switch--md input[type=checkbox]:checked + .toggle-switch::before {
+  transform: translateX(20px);
+}
+.input-switch--md .toggle-switch {
+  width: 44px;
+  height: 24px;
+}
+.input-switch--md .toggle-switch::before {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.input-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+.input-dropdown select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 40px 8px 12px;
+  gap: 8px;
+  background: var(--white);
+  border: 1px solid var(--grey-200);
+  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  border-radius: 8px;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--grey-500);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  position: relative;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='16' height='16' x='0' y='0' viewBox='0 0 24 24' style='enable-background:new 0 0 512 512' xml:space='preserve' class=''%3E%3Cg%3E%3Cpath d='M18.71 8.21a1 1 0 0 0-1.42 0l-4.58 4.58a1 1 0 0 1-1.42 0L6.71 8.21a1 1 0 0 0-1.42 0 1 1 0 0 0 0 1.41l4.59 4.59a3 3 0 0 0 4.24 0l4.59-4.59a1 1 0 0 0 0-1.41Z' fill='%2364748B' data-original='%2364748B'%3E%3C/path%3E%3C/g%3E%3C/svg%3E") no-repeat;
+  background-position: right 8px center;
+}
+.input-dropdown select:focus {
+  color: var(--grey-900);
+  border: 1px solid var(--blue-300);
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px var(--blue-100);
+  border-radius: 8px;
+}
+.input-dropdown select:disabled {
+  background-color: var(--grey-50);
+}
+.input-dropdown select::-ms-expand {
+  display: none;
+}
+.input-dropdown label {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--grey-700);
+  font-weight: 500;
+}
+
+.input-checkbox label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--grey-700);
+  font-weight: 500;
+}
+.input-checkbox input[type=checkbox] {
+  display: none;
+}
+.input-checkbox input[type=checkbox]:checked + .checkbox {
+  background-color: var(--blue-100);
+  border: 1px solid var(--blue-600);
+  position: relative;
+}
+.input-checkbox .checkbox {
+  background-color: var(--white);
+  border: 1px solid var(--grey-200);
+  position: relative;
+  cursor: pointer;
+  transition: background 0.25s ease-out;
+}
+.input-checkbox .checkbox::before {
+  content: "";
+  position: absolute;
+  transition: opacity 0.25s ease-out;
+  opacity: 0;
+}
+.input-checkbox .checkbox:hover {
+  background-color: var(--blue-100);
+  border: 1px solid var(--blue-200);
+}
+.input-checkbox--sm input[type=checkbox]:checked + .checkbox::before {
+  opacity: 1;
+}
+.input-checkbox--sm .checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+.input-checkbox--sm .checkbox::before {
+  width: 12px;
+  height: 12px;
+  top: 1px;
+  left: 1px;
+  background: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.6668 3.5L5.25016 9.91667L2.3335 7' stroke='%23099250' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat;
+}
+.input-checkbox--md input[type=checkbox]:checked + .checkbox::before {
+  opacity: 1;
+}
+.input-checkbox--md .checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+}
+.input-checkbox--md .checkbox::before {
+  width: 14px;
+  height: 14px;
+  top: 2px;
+  left: 2px;
+  background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.6668 3.5L5.25016 9.91667L2.3335 7' stroke='%23099250' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat;
+}/*# sourceMappingURL=newuseraccount.css.map */

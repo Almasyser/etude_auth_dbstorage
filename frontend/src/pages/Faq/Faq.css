@@ -324,7 +324,10 @@ p:last-child {
 }
 
 .faq {
-  height: 100vh;
+  overflow-y: scroll;
+}
+.faq main {
+  overflow: visible;
 }
 
 .faq-list {
@@ -340,9 +343,11 @@ p:last-child {
 .faq-list li .question {
   font-family: "Inter", sans-serif;
   font-weight: 500;
+  color: var(--cyan-100);
 }
 .faq-list li .answer {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: var(--cyan-50);
+  color: var(--cyan-200);
+  font-size: 0.8rem;
 }/*# sourceMappingURL=Faq.css.map */

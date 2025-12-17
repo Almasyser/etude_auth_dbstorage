@@ -11,7 +11,7 @@ body {
 #navbar-mobile {
   display: flex;
   flex-direction: column;
-  background-color: var(--grey-900);
+  background-color: var(--cyan-400);
   position: sticky;
   top: 0;
   width: 100vw;
@@ -21,10 +21,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
-    height: 100dvh;
+    height: max-content;
+    
     width: 100vw;
-    background-color: var(--grey-900);
+    background-color: var(--cyan-500);
     opacity: 0.8;
   }
   nav {
@@ -34,20 +34,22 @@ body {
     align-items: center;
     padding: 12px;
     border-bottom: 1px solid var(--grey-800);
-
     .logo {
       cursor: pointer;
       img {
-        height: 60px;
+        height: 40px;
       }
     }
     .burger {
-      color: var(--white);
+      color: var(--cyan-800);
       background-color: transparent;
       border: none;
       padding: 0;
-      margin: 0;
-      font-size: 1.5rem;
+      margin: 0 1rem 0 0;
+      font-size: 1.8rem;
+      &:hover{
+        color: var(--cyan-600);
+      }
       cursor: pointer;
     }
   }
@@ -59,7 +61,7 @@ body {
     padding: 1rem;
     button {
       background-color: transparent;
-      color: var(--white);
+      color: var(--cyan-800);
       border: none;
       @include text("md");
       padding: 8px 14px;
@@ -77,9 +79,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--grey-900);
+    background-color: var(--cyan-400);
     padding: 12px 32px;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100vw;
     gap: clamp(1rem, 2rem, 2rem);
@@ -95,17 +97,16 @@ body {
     .items {
       display: flex;
       gap: clamp(1rem, 1.5rem, 1.5rem);
-      //   gap: 1.5rem;
-      //   flex-wrap: wrap;
-      //   column-gap: 1.5rem;
-      //   row-gap: 0.5rem;
-      //   justify-content: flex-end;
       button {
         height: 2rem;
-        color: var(--grey-900);
-        border-radius: 8px;
+        color: var(--cyan-800);
+        border: none;
+        background: transparent;
+        font-size: 0.92rem;
+        font-weight: 600;
         &:hover{
-          scale: 0.95;
+          color: var(--cyan-600);
+
         }
       }
     }

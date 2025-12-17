@@ -7,7 +7,6 @@ function AuthenticationPage() {
       <div className="page-content">
         <div className="form">
           <h1>Connectez vous à votre compte</h1>
-
           <Authentication />
         </div>
       </div>

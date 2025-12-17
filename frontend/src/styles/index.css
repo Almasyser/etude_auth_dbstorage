@@ -9257,8 +9257,6 @@ body {
 
 main {
   margin: 2rem;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
-  border: 1px solid var(--blue-800);
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -9325,7 +9323,7 @@ main .content {
 .input-field label {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  color: var(--grey-700);
+  color: var(--cyan-100);
 }
 .input-field.field--10 {
   flex: 1;
