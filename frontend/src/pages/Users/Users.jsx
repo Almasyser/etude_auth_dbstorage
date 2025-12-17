@@ -23,17 +23,16 @@ function Users() {
           <div className="manage">
             <header>
               <h1>Gestion des Utilisateurs</h1>
+              <button className="newuser"><i className="fi fi-rr-user-add" /></button>
             </header>
-              <table>
-                <tbody>
                   {users.map((user) => (
-                    <tr key={user.id}>
-                      <td>{user.mail}</td>
-                      <td>{user.lastname}</td>
-                      <td>{user.firstname}</td>
-                      <td>{user.phone}</td>
-                      <td>{user.is_admin}</td>
-                      <td className="actions">
+                    <ul key={user.id}>
+                      <li>{`Nom: ${user.lastname}`}</li>
+                      <li>{`Prénom: ${user.firstname}`}</li>
+                      <li>{`Mobile: ${user.phone}`}</li>
+                      <li>{`email: ${user.mail}`}</li>
+                      <li>{`Admin ${user.is_admin? "oui" : "non" }`}</li>
+                      <li className="actions">
                         <button
                           className="" //</td>"button-sm-blue-outline"
                           type="button">
@@ -44,12 +43,9 @@ function Users() {
                           type="button">
                           <i className="fi fi-rr-trash" />
                         </button>
-                      </td>
-                    </tr>
+                      </li>
+                    </ul>
                   ))}
-                </tbody>
-              </table>
- 
           </div>
         )}
 
