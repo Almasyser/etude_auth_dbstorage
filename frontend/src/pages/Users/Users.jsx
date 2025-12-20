@@ -2,6 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
 import Navbar from "../../components/Navbar/Navbar";
+import imgDefault from "../../assets/default.png";
 import "./Users.css";
 function Users() {
   const AuthValue = useContext(AuthContext);
@@ -19,36 +20,33 @@ function Users() {
   return (
     <>
       <Navbar />
-        {users && (
-          <div className="manage">
-            <header>
-              <h1>Gestion des Utilisateurs</h1>
-              <button className="newuser"><i className="fi fi-rr-user-add" /></button>
-            </header>
-                  {users.map((user) => (
-                    <ul key={user.id}>
-                      <li>{`Nom: ${user.lastname}`}</li>
-                      <li>{`Prénom: ${user.firstname}`}</li>
-                      <li>{`Mobile: ${user.phone}`}</li>
-                      <li>{`email: ${user.mail}`}</li>
-                      <li>{`Admin ${user.is_admin? "oui" : "non" }`}</li>
-                      <li className="actions">
-                        <button
-                          className="" //</td>"button-sm-blue-outline"
-                          type="button">
-                          <i className="fi fi-rr-user-pen" />
-                        </button>
-                        <button
-                          className="" //button-sm-error-outline"
-                          type="button">
-                          <i className="fi fi-rr-trash" />
-                        </button>
-                      </li>
-                    </ul>
-                  ))}
-          </div>
-        )}
-
+      {users && (
+        <div className="manage">
+          <button className="newuser"><i className="fi fi-rr-user-add" /></button>
+          <header>
+            <h1>Gestion des Utilisateurs</h1>
+          </header>
+          {users.map((el) => (
+            <section className="carte" key={el.id}>
+              <img className="photo" src={imgDefault} alt="###" />
+              <span className="central">
+                <p>{el.role}</p>
+                <p>{`${el.firstname} ${el.lastname}`}</p>
+                <p>{el.email}</p>
+                <p>{el.mobile}</p>
+              </span>
+              <span className="droite">
+                <div className="boutons">
+                  <i className="fi fi-rr-user"></i>
+                  <i className="fi fi-rr-trash"></i>
+                </div>
+                {/* <img className="avatar" src={ el.is_admin? tagAdmin: tagVisitor } alt="---"/> */}
+                {/* <p>{el.is_admin? "administrateur":"visiteur"}</p> */}
+              </span>
+            </section>
+          ))}
+        </div>
+      )}
     </>
   );
 }
@@ -64,3 +62,23 @@ export default Users;
                 //     <th>Actions</th>
                 //   </tr>
                 // </thead>
+
+// <ul key={user.id}>
+// <li>{`Nom: ${user.lastname}`}</li>
+// <li>{`Prénom: ${user.firstname}`}</li>
+// <li>{`Mobile: ${user.phone}`}</li>
+// <li>{`email: ${user.mail}`}</li>
+// <li>{`Admin ${user.is_admin? "oui" : "non" }`}</li>
+// <li className="actions">
+//   <button
+//     className="" //</td>"button-sm-blue-outline"
+//     type="button">
+//     <i className="fi fi-rr-user-pen" />
+//   </button>
+//   <button
+//     className="" //button-sm-error-outline"
+//     type="button">
+//     <i className="fi fi-rr-trash" />
+//   </button>
+// </li>
+// </ul>
