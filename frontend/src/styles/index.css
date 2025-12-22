@@ -332,7 +332,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--grey-600);
@@ -365,7 +365,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--grey-700);
   border: 1px solid var(--grey-200);
@@ -417,7 +417,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--error-600);
@@ -450,7 +450,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--error-700);
   border: 1px solid var(--error-200);
@@ -502,7 +502,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--warning-600);
@@ -535,7 +535,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--warning-700);
   border: 1px solid var(--warning-200);
@@ -587,7 +587,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--success-600);
@@ -620,7 +620,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--success-700);
   border: 1px solid var(--success-200);
@@ -672,7 +672,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--amber-600);
@@ -705,7 +705,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--amber-700);
   border: 1px solid var(--amber-200);
@@ -757,7 +757,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--blue-600);
@@ -790,7 +790,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--blue-700);
   border: 1px solid var(--blue-200);
@@ -842,7 +842,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--cyan-600);
@@ -875,7 +875,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--cyan-700);
   border: 1px solid var(--cyan-200);
@@ -927,7 +927,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--emerald-600);
@@ -960,7 +960,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--emerald-700);
   border: 1px solid var(--emerald-200);
@@ -1012,7 +1012,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--fuchsia-600);
@@ -1045,7 +1045,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--fuchsia-700);
   border: 1px solid var(--fuchsia-200);
@@ -1097,7 +1097,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--green-600);
@@ -1130,7 +1130,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--green-700);
   border: 1px solid var(--green-200);
@@ -1182,7 +1182,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--indigo-600);
@@ -1215,7 +1215,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--indigo-700);
   border: 1px solid var(--indigo-200);
@@ -1267,7 +1267,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--lime-600);
@@ -1300,7 +1300,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--lime-700);
   border: 1px solid var(--lime-200);
@@ -1352,7 +1352,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--orange-600);
@@ -1385,7 +1385,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--orange-700);
   border: 1px solid var(--orange-200);
@@ -1437,7 +1437,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--pink-600);
@@ -1470,7 +1470,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--pink-700);
   border: 1px solid var(--pink-200);
@@ -1522,7 +1522,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--purple-600);
@@ -1555,7 +1555,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--purple-700);
   border: 1px solid var(--purple-200);
@@ -1607,7 +1607,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--red-600);
@@ -1640,7 +1640,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--red-700);
   border: 1px solid var(--red-200);
@@ -1692,7 +1692,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--rose-600);
@@ -1725,7 +1725,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--rose-700);
   border: 1px solid var(--rose-200);
@@ -1777,7 +1777,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--sky-600);
@@ -1810,7 +1810,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--sky-700);
   border: 1px solid var(--sky-200);
@@ -1862,7 +1862,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--teal-600);
@@ -1895,7 +1895,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--teal-700);
   border: 1px solid var(--teal-200);
@@ -1947,7 +1947,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--violet-600);
@@ -1980,7 +1980,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--violet-700);
   border: 1px solid var(--violet-200);
@@ -2032,7 +2032,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--yellow-600);
@@ -2065,7 +2065,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--yellow-700);
   border: 1px solid var(--yellow-200);
@@ -2117,7 +2117,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--grey-600);
@@ -2150,7 +2150,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--grey-700);
   border: 1px solid var(--grey-200);
@@ -2202,7 +2202,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--error-600);
@@ -2235,7 +2235,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--error-700);
   border: 1px solid var(--error-200);
@@ -2287,7 +2287,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--warning-600);
@@ -2320,7 +2320,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--warning-700);
   border: 1px solid var(--warning-200);
@@ -2372,7 +2372,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--success-600);
@@ -2405,7 +2405,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--success-700);
   border: 1px solid var(--success-200);
@@ -2457,7 +2457,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--amber-600);
@@ -2490,7 +2490,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--amber-700);
   border: 1px solid var(--amber-200);
@@ -2542,7 +2542,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--blue-600);
@@ -2575,7 +2575,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--blue-700);
   border: 1px solid var(--blue-200);
@@ -2627,7 +2627,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--cyan-600);
@@ -2660,7 +2660,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--cyan-700);
   border: 1px solid var(--cyan-200);
@@ -2712,7 +2712,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--emerald-600);
@@ -2745,7 +2745,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--emerald-700);
   border: 1px solid var(--emerald-200);
@@ -2797,7 +2797,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--fuchsia-600);
@@ -2830,7 +2830,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--fuchsia-700);
   border: 1px solid var(--fuchsia-200);
@@ -2882,7 +2882,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--green-600);
@@ -2915,7 +2915,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--green-700);
   border: 1px solid var(--green-200);
@@ -2967,7 +2967,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--indigo-600);
@@ -3000,7 +3000,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--indigo-700);
   border: 1px solid var(--indigo-200);
@@ -3052,7 +3052,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--lime-600);
@@ -3085,7 +3085,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--lime-700);
   border: 1px solid var(--lime-200);
@@ -3137,7 +3137,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--orange-600);
@@ -3170,7 +3170,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--orange-700);
   border: 1px solid var(--orange-200);
@@ -3222,7 +3222,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--pink-600);
@@ -3255,7 +3255,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--pink-700);
   border: 1px solid var(--pink-200);
@@ -3307,7 +3307,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--purple-600);
@@ -3340,7 +3340,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--purple-700);
   border: 1px solid var(--purple-200);
@@ -3392,7 +3392,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--red-600);
@@ -3425,7 +3425,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--red-700);
   border: 1px solid var(--red-200);
@@ -3477,7 +3477,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--rose-600);
@@ -3510,7 +3510,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--rose-700);
   border: 1px solid var(--rose-200);
@@ -3562,7 +3562,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--sky-600);
@@ -3595,7 +3595,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--sky-700);
   border: 1px solid var(--sky-200);
@@ -3647,7 +3647,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--teal-600);
@@ -3680,7 +3680,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--teal-700);
   border: 1px solid var(--teal-200);
@@ -3732,7 +3732,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--violet-600);
@@ -3765,7 +3765,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--violet-700);
   border: 1px solid var(--violet-200);
@@ -3817,7 +3817,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--yellow-600);
@@ -3850,7 +3850,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--yellow-700);
   border: 1px solid var(--yellow-200);
@@ -3902,7 +3902,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--grey-600);
@@ -3935,7 +3935,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--grey-700);
   border: 1px solid var(--grey-200);
@@ -3987,7 +3987,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--error-600);
@@ -4020,7 +4020,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--error-700);
   border: 1px solid var(--error-200);
@@ -4072,7 +4072,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--warning-600);
@@ -4105,7 +4105,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--warning-700);
   border: 1px solid var(--warning-200);
@@ -4157,7 +4157,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--success-600);
@@ -4190,7 +4190,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--success-700);
   border: 1px solid var(--success-200);
@@ -4242,7 +4242,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--amber-600);
@@ -4275,7 +4275,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--amber-700);
   border: 1px solid var(--amber-200);
@@ -4327,7 +4327,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--blue-600);
@@ -4360,7 +4360,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--blue-700);
   border: 1px solid var(--blue-200);
@@ -4412,7 +4412,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--cyan-600);
@@ -4445,7 +4445,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--cyan-700);
   border: 1px solid var(--cyan-200);
@@ -4497,7 +4497,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--emerald-600);
@@ -4530,7 +4530,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--emerald-700);
   border: 1px solid var(--emerald-200);
@@ -4582,7 +4582,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--fuchsia-600);
@@ -4615,7 +4615,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--fuchsia-700);
   border: 1px solid var(--fuchsia-200);
@@ -4667,7 +4667,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--green-600);
@@ -4700,7 +4700,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--green-700);
   border: 1px solid var(--green-200);
@@ -4752,7 +4752,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--indigo-600);
@@ -4785,7 +4785,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--indigo-700);
   border: 1px solid var(--indigo-200);
@@ -4837,7 +4837,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--lime-600);
@@ -4870,7 +4870,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--lime-700);
   border: 1px solid var(--lime-200);
@@ -4922,7 +4922,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--orange-600);
@@ -4955,7 +4955,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--orange-700);
   border: 1px solid var(--orange-200);
@@ -5007,7 +5007,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--pink-600);
@@ -5040,7 +5040,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--pink-700);
   border: 1px solid var(--pink-200);
@@ -5092,7 +5092,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--purple-600);
@@ -5125,7 +5125,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--purple-700);
   border: 1px solid var(--purple-200);
@@ -5177,7 +5177,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--red-600);
@@ -5210,7 +5210,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--red-700);
   border: 1px solid var(--red-200);
@@ -5262,7 +5262,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--rose-600);
@@ -5295,7 +5295,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--rose-700);
   border: 1px solid var(--rose-200);
@@ -5347,7 +5347,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--sky-600);
@@ -5380,7 +5380,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--sky-700);
   border: 1px solid var(--sky-200);
@@ -5432,7 +5432,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--teal-600);
@@ -5465,7 +5465,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--teal-700);
   border: 1px solid var(--teal-200);
@@ -5517,7 +5517,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--violet-600);
@@ -5550,7 +5550,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--violet-700);
   border: 1px solid var(--violet-200);
@@ -5602,7 +5602,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--yellow-600);
@@ -5635,7 +5635,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--yellow-700);
   border: 1px solid var(--yellow-200);
@@ -5687,7 +5687,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--grey-600);
@@ -5720,7 +5720,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--grey-700);
   border: 1px solid var(--grey-200);
@@ -5772,7 +5772,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--error-600);
@@ -5805,7 +5805,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--error-700);
   border: 1px solid var(--error-200);
@@ -5857,7 +5857,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--warning-600);
@@ -5890,7 +5890,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--warning-700);
   border: 1px solid var(--warning-200);
@@ -5942,7 +5942,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--success-600);
@@ -5975,7 +5975,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--success-700);
   border: 1px solid var(--success-200);
@@ -6027,7 +6027,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--amber-600);
@@ -6060,7 +6060,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--amber-700);
   border: 1px solid var(--amber-200);
@@ -6112,7 +6112,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--blue-600);
@@ -6145,7 +6145,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--blue-700);
   border: 1px solid var(--blue-200);
@@ -6197,7 +6197,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--cyan-600);
@@ -6230,7 +6230,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--cyan-700);
   border: 1px solid var(--cyan-200);
@@ -6282,7 +6282,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--emerald-600);
@@ -6315,7 +6315,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--emerald-700);
   border: 1px solid var(--emerald-200);
@@ -6367,7 +6367,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--fuchsia-600);
@@ -6400,7 +6400,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--fuchsia-700);
   border: 1px solid var(--fuchsia-200);
@@ -6452,7 +6452,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--green-600);
@@ -6485,7 +6485,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--green-700);
   border: 1px solid var(--green-200);
@@ -6537,7 +6537,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--indigo-600);
@@ -6570,7 +6570,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--indigo-700);
   border: 1px solid var(--indigo-200);
@@ -6622,7 +6622,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--lime-600);
@@ -6655,7 +6655,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--lime-700);
   border: 1px solid var(--lime-200);
@@ -6707,7 +6707,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--orange-600);
@@ -6740,7 +6740,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--orange-700);
   border: 1px solid var(--orange-200);
@@ -6792,7 +6792,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--pink-600);
@@ -6825,7 +6825,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--pink-700);
   border: 1px solid var(--pink-200);
@@ -6877,7 +6877,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--purple-600);
@@ -6910,7 +6910,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--purple-700);
   border: 1px solid var(--purple-200);
@@ -6962,7 +6962,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--red-600);
@@ -6995,7 +6995,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--red-700);
   border: 1px solid var(--red-200);
@@ -7047,7 +7047,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--rose-600);
@@ -7080,7 +7080,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--rose-700);
   border: 1px solid var(--rose-200);
@@ -7132,7 +7132,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--sky-600);
@@ -7165,7 +7165,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--sky-700);
   border: 1px solid var(--sky-200);
@@ -7217,7 +7217,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--teal-600);
@@ -7250,7 +7250,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--teal-700);
   border: 1px solid var(--teal-200);
@@ -7302,7 +7302,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--violet-600);
@@ -7335,7 +7335,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--violet-700);
   border: 1px solid var(--violet-200);
@@ -7387,7 +7387,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--yellow-600);
@@ -7420,7 +7420,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--yellow-700);
   border: 1px solid var(--yellow-200);
@@ -7472,7 +7472,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--grey-600);
@@ -7505,7 +7505,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--grey-700);
   border: 1px solid var(--grey-200);
@@ -7557,7 +7557,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--error-600);
@@ -7590,7 +7590,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--error-700);
   border: 1px solid var(--error-200);
@@ -7642,7 +7642,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--warning-600);
@@ -7675,7 +7675,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--warning-700);
   border: 1px solid var(--warning-200);
@@ -7727,7 +7727,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--success-600);
@@ -7760,7 +7760,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--success-700);
   border: 1px solid var(--success-200);
@@ -7812,7 +7812,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--amber-600);
@@ -7845,7 +7845,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--amber-700);
   border: 1px solid var(--amber-200);
@@ -7897,7 +7897,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--blue-600);
@@ -7930,7 +7930,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--blue-700);
   border: 1px solid var(--blue-200);
@@ -7982,7 +7982,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--cyan-600);
@@ -8015,7 +8015,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--cyan-700);
   border: 1px solid var(--cyan-200);
@@ -8067,7 +8067,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--emerald-600);
@@ -8100,7 +8100,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--emerald-700);
   border: 1px solid var(--emerald-200);
@@ -8152,7 +8152,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--fuchsia-600);
@@ -8185,7 +8185,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--fuchsia-700);
   border: 1px solid var(--fuchsia-200);
@@ -8237,7 +8237,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--green-600);
@@ -8270,7 +8270,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--green-700);
   border: 1px solid var(--green-200);
@@ -8322,7 +8322,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--indigo-600);
@@ -8355,7 +8355,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--indigo-700);
   border: 1px solid var(--indigo-200);
@@ -8407,7 +8407,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--lime-600);
@@ -8440,7 +8440,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--lime-700);
   border: 1px solid var(--lime-200);
@@ -8492,7 +8492,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--orange-600);
@@ -8525,7 +8525,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--orange-700);
   border: 1px solid var(--orange-200);
@@ -8577,7 +8577,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--pink-600);
@@ -8610,7 +8610,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--pink-700);
   border: 1px solid var(--pink-200);
@@ -8662,7 +8662,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--purple-600);
@@ -8695,7 +8695,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--purple-700);
   border: 1px solid var(--purple-200);
@@ -8747,7 +8747,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--red-600);
@@ -8780,7 +8780,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--red-700);
   border: 1px solid var(--red-200);
@@ -8832,7 +8832,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--rose-600);
@@ -8865,7 +8865,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--rose-700);
   border: 1px solid var(--rose-200);
@@ -8917,7 +8917,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--sky-600);
@@ -8950,7 +8950,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--sky-700);
   border: 1px solid var(--sky-200);
@@ -9002,7 +9002,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--teal-600);
@@ -9035,7 +9035,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--teal-700);
   border: 1px solid var(--teal-200);
@@ -9087,7 +9087,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--violet-600);
@@ -9120,7 +9120,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--violet-700);
   border: 1px solid var(--violet-200);
@@ -9172,7 +9172,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--white);
   background-color: var(--yellow-600);
@@ -9205,7 +9205,7 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   color: var(--yellow-700);
   border: 1px solid var(--yellow-200);
@@ -9303,7 +9303,7 @@ main .content {
   height: 32px;
   gap: 8px;
   border: 1px solid var(--blue-950);
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
 }
 .input-field .input input {
@@ -9397,7 +9397,7 @@ main .content {
   top: 2px;
   left: 2px;
   background-color: var(--white);
-  box-shadow: 0px 4px 8px -2px rgba(3, 7, 18, 0.1), 0px 2px 4px -2px rgba(3, 7, 18, 0.06);
+  box-shadow: 0px 4px 8px -2px rgba(196, 206, 235, 0.1), 0px 2px 4px -2px rgba(196, 206, 235, 0.06);
   position: absolute;
 }
 .input-switch .toggle-switch:hover {
@@ -9442,7 +9442,7 @@ main .content {
   gap: 8px;
   background: var(--white);
   border: 1px solid var(--grey-200);
-  box-shadow: 0px 1px 2px rgba(3, 7, 18, 0.05);
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
   border-radius: 8px;
   outline: none;
   font-family: "Inter", sans-serif;

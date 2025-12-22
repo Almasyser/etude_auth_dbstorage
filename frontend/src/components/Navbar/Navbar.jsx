@@ -1,17 +1,12 @@
 import "./Navbar.css";
-
 import { useNavigate } from "react-router-dom";
 import { useState, useContext } from "react";
 import AuthContext from "../../contexts/AuthContext";
-// import NewPhoneModal from "../NewPhoneModal/NewPhoneModal";
 export default function Navbar() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const [isNewPhoneModalOpen, setIsNewPhoneModalOpen] = useState(false);
   const { userInfo } = useContext(AuthContext);
   const isAdmin = userInfo.is_admin;
-  console.log("IS ADMIN",userInfo);
-  
   return (
     <>
       <nav id="navbar">
@@ -43,7 +38,6 @@ export default function Navbar() {
               <i className="fi fi-rr-interrogation" /> FAQ
             </button>
           </li>
-
           {isAdmin === 1 && (
             <li>
               <button
@@ -82,7 +76,6 @@ export default function Navbar() {
           >
             <img src="../src/assets/Logo.png" alt="Logo" />
           </div>
-
           <button
             type="button"
             className="burger"
@@ -117,8 +110,7 @@ export default function Navbar() {
                 <i className="fi fi-rr-interrogation" /> FAQ
               </button>
             </li>
-   
-            {isAdmin === 1 && (
+               {isAdmin === 1 && (
               <li>
                 <button
                   className=""

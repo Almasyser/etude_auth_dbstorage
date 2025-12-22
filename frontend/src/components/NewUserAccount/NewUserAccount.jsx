@@ -1,50 +1,33 @@
 
 import PropTypes from "prop-types";
-import "./UserAccount.css";
-import { useState, useContext } from "react";
+import "./newuseraccount.css";
+import { useState, useContext} from "react";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
-// import Badge from "../Badge/Badge";
-export default function NewUserAccount({ userInfo }) {
-  const { mail, lastname, firstname, phone, is_admin } = userInfo;
-  const [firstnameInput, setFirstnameInput] = useState(firstname);
-  const [lastnameInput, setLastnameInput] = useState(lastname);
-  const [mailInput, setMailInput] = useState(mail);
-  const [phoneInput, setPhoneInput] = useState(phone);
-  const [passwordInput, setPasswordInput] = useState("Mot de passe");
-  const [checkAdmin, setCheckAdmin] = useState(is_admin);
+
+function NewUserAccount() {
+  // const { mail, lastname, firstname, phone, is_admin } = userInfo;
+  const [firstnameInput, setFirstnameInput] = useState("Prenom")
+  const [mailInput,setMailInput] = useState("Adresse mail")
+  const [lastnameInput, setLastnameInput] = useState("Nom")
+  const [checkAdmin, setCheckAdmin] = useState(0)
+  const [phoneInput, setPhoneInput] = useState("Telephone")
+  const [passwordInput, setPasswordInput] = useState("Mot de passe")
+  const [roleInput,setRoleInput] = useState("role")
+  const [photoInput,setPhotoInput] = useState("photo")
+  const [avatarInput,setAvatarInput] = useState("avatar")
+  console.log(checkAdmin);
+
   const { userToken } = useContext(AuthContext);
-  const [message, setMessage] = useState(false);
-
-  const handleMailChange = (event) => {
-    setMailInput(event.target.value);
-  };
-  const handleLastnameChange = (event) => {
-    setLastnameInput(event.target.value);
-  };
-  const handleFirstnameChange = (event) => {
-    setFirstnameInput(event.target.value);
-  };
-  const handlePhoneChange = (event) => {
-    setPhoneInput(event.target.value);
-  };
-  const handlePasswordChange = (event) => {
-    setPasswordInput(event.target.value);
-  };
-  const handleCheck = (event)=>{
-    setCheckAdmin(event.target.checked);
-  }
-  const handleFocus = () => {
-    setPasswordInput("");
-  };
-
+  const [message, setMessage] = useState(false); //  setMessage
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
     const dataFromForm = Object.fromEntries(formData.entries());
+    console.log("dataFromForm:",dataFromForm);
     axios
-      .put(`${import.meta.env.VITE_BACKEND_URL}/addUser`, dataFromForm, {
+      .post(`${import.meta.env.VITE_BACKEND_URL}/addUser`, dataFromForm, {
         headers: {
           Authorization: `Bearer ${userToken}`,
         },
@@ -60,12 +43,11 @@ export default function NewUserAccount({ userInfo }) {
         console.error(error.message);
       });
   };
-
   return (
     <>
       <header>
-        <h1>Mes informations</h1>
-        </header>
+        <h1>Inscription</h1>
+      </header>
       <div className="content user-account">
         <form onSubmit={handleSubmit}>
           <div className="input-line">
@@ -77,7 +59,8 @@ export default function NewUserAccount({ userInfo }) {
                   type="text"
                   value={firstnameInput}
                   id="firstname"
-                  onChange={handleFirstnameChange}
+                  onChange={(e)=>setFirstnameInput(e.target.value)}
+                  onFocus={()=>setFirstnameInput("")}
                 />
               </div>
             </div>
@@ -89,7 +72,8 @@ export default function NewUserAccount({ userInfo }) {
                   type="text"
                   value={lastnameInput}
                   id="lastname"
-                  onChange={handleLastnameChange}
+                  onChange={(e)=>setLastnameInput(e.target.value)}
+                  onFocus={()=>setLastnameInput("")}
                 />
               </div>
             </div>
@@ -103,7 +87,8 @@ export default function NewUserAccount({ userInfo }) {
                   type="text"
                   value={mailInput}
                   id="mail"
-                  onChange={handleMailChange}
+                  onChange={(e)=>setMailInput(e.target.value)}
+                  onFocus={()=>setMailInput("")}
                 />
               </div>
             </div>
@@ -115,55 +100,98 @@ export default function NewUserAccount({ userInfo }) {
                   type="text"
                   value={phoneInput}
                   id="phone"
-                  onChange={handlePhoneChange}
+                  onChange={(e)=>setPhoneInput(e.target.value)}
+                  onFocus={()=>setPhoneInput("")}
                 />
               </div>
             </div>
           </div>
           <div className="input-line">
             <div className="input-field">
-              <label htmlFor="password">Mot de passe</label>
+              <label htmlFor="pass">Mot de passe</label>
               <div className="input">
                 <input
                   name="password"
                   type="text"
                   value={passwordInput}
-                  id="password"
-                  onChange={handlePasswordChange}
-                  onFocus={handleFocus}
+                  id="pass"
+                  onChange={(e)=>setPasswordInput(e.target.value)}
+                  onFocus={()=>setPasswordInput("")}
                 />
               </div>
             </div>
           </div>
-          <div className="input-check">
-            <input
-              type="checkbox"
-              checked={checkAdmin}
-              id="checkadmin"
-              onChange={handleCheck}>
-            </input>
-            <label htmlFor="checkadmin">Administrateur</label>
+          <div className="input-line">
+            <label htmlFor="checkAdmin" className="label-check">Administrateur</label>
+            <div className="label-check" id="checkAdmin" onChange={(e)=> setCheckAdmin(e.target.value? 1 : 0 )}>
+              <input type="radio" name="is_admin" value={true}/>Oui
+              <input type="radio" name="is_admin" value={false}/>Non
+            </div>
+          </div>
+          <div className="input-line">
+            <div className="input-field">
+              <label htmlFor="role">Role</label>
+              <div className="input">
+                <input
+                  name="role"
+                  type="text"
+                  value={roleInput}
+                  id="role"
+                  onChange={(e)=>setRoleInput(e.target.value)}
+                  onFocus={()=>setRoleInput("")}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="input-line">
+            <div className="input-field">
+              <label htmlFor="photo">Photo</label>
+              <div className="input">
+                <input
+                  name="photo"
+                  type="text"
+                  value={photoInput}
+                  id="photo"
+                  onChange={(e)=>setPhotoInput(e.target.value)}
+                  onFocus={()=>setPhotoInput("")}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="input-line">
+            <div className="input-field">
+              <label htmlFor="avatar">Avatar</label>
+              <div className="input">
+                <input
+                  name="avatar"
+                  type="text"
+                  value={avatarInput}
+                  id="avatar"
+                  onChange={(e)=>setAvatarInput(e.target.value)}
+                  onFocus={()=>setAvatarInput("")}
+                />
+              </div>
+            </div>
           </div>
           <button type="submit" className="btn">
-            Valider changement de mot de passe
+            Valider le nouvel utilisateur
           </button>
         </form>
-        {message && (
-          <div>
-            <p>Nouvel utilisateur créé avec succès..</p>
-          </div>
-        )}
+        <div>
+          { message? <p>Nouvel utilisateur créé avec succès..</p>:<p>erreur creation usager</p>}
+        </div>
       </div>
     </>
   );
 }
 
-NewUserAccount.propTypes = {
-  userInfo: PropTypes.shape({
-    mail: PropTypes.string.isRequired,
-    lastname: PropTypes.string.isRequired,
-    firstname: PropTypes.string.isRequired,
-    phone: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
-  }).isRequired,
-};
+// NewUserAccount.propTypes = {
+//   userInfo: PropTypes.shape({
+//     mail: PropTypes.string.isRequired,
+//     lastname: PropTypes.string.isRequired,
+//     firstname: PropTypes.string.isRequired,
+//     phone: PropTypes.string.isRequired,
+//     id: PropTypes.number.isRequired,
+//   }).isRequired,
+// };
+export default NewUserAccount;

@@ -3,11 +3,13 @@ import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
 import Navbar from "../../components/Navbar/Navbar";
 import imgDefault from "../../assets/default.png";
+import NewUserAccount from "../../components/NewUserAccount/NewUserAccount";
 import "./Users.css";
 function Users() {
   const AuthValue = useContext(AuthContext);
   const { userToken } = AuthValue;
   const [users, setUsers] = useState();
+  const [showNew, setShowNew] = useState(false);
   useEffect(() => {
     axios
       .get(`${import.meta.env.VITE_BACKEND_URL}/users`, {
@@ -22,7 +24,7 @@ function Users() {
       <Navbar />
       {users && (
         <div className="manage">
-          <button className="newuser"><i className="fi fi-rr-user-add" /></button>
+          <button className="newuser"><i className="fi fi-rr-user-add" onClick={()=> setShowNew(!showNew)}/></button>
           <header>
             <h1>Gestion des Utilisateurs</h1>
           </header>
@@ -47,6 +49,7 @@ function Users() {
           ))}
         </div>
       )}
+      {showNew && <NewUserAccount />}
     </>
   );
 }

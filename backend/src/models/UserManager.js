@@ -12,12 +12,12 @@ class UserManager extends AbstractManager {
   }
 
   insert(newUser) {
-    // eslint-disable-next-line camelcase
-    const { mail, hashedPassword, lastname, firstname, phone, isAdmin, role, photo, avatar } = newUser;
+    const { mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar } = newUser;
+    console.log("INSERT",mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar );
+    
     return this.database.query(
-      `insert into ${this.table} (mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar) values (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-      // eslint-disable-next-line camelcase
-      [mail, hashedPassword, lastname, firstname, phone, isAdmin, role, photo, avatar]
+      `INSERT INTO ${this.table} (mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      [mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar]
     );
   }
 

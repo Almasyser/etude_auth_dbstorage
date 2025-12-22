@@ -10,7 +10,7 @@ const {
 const user = require("./controllers/userControllers");
 const faq = require("./controllers/faqControllers");
 router.post("/user/login", user.authenticationCheck, verifyPassword);
-router.post("/addUser", verifyToken, user.addUser);
+router.post("/addUser", hashPassword, user.addUser);
 router.put(
   "/adminUser/:id",
   verifyToken,

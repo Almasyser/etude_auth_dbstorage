@@ -3,12 +3,15 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import AuthContext from "../../contexts/AuthContext";
+import NewFaq from "../../components/NewFaq/NewFaq";
 import "./Faq.css";
 export default function Faq() {
   const navigate = useNavigate();
-  const { userToken } = useContext(AuthContext);
+  const { userToken, userInfo } = useContext(AuthContext);
+  const isAdmin = userInfo.is_admin;
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [question, setQuestion] = useState();
+  const [showNewFaq, setShowNewFaq] = useState(false);
   useEffect(() => {
     axios
       .get(`${import.meta.env.VITE_BACKEND_URL}/faq`, {
@@ -26,14 +29,16 @@ export default function Faq() {
     if (!userToken) {
       navigate("/");
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userToken]);
 
   return (
-    // userToken && (
+    userToken && (
     <div className="faq">
       <Navbar />
       {isDataLoaded ? (
         <main>
+          <button className="btn-newfaq"><i className="fi fi-rr-user-add" onClick={()=> setShowNewFaq(!showNewFaq)}/></button>
           <header>
             <h1>FAQ : Réponses aux questions fréquentes</h1>
           </header>
@@ -41,6 +46,7 @@ export default function Faq() {
             <ul className="faq-list">
               {question.map((el) => (
                 <li key={el.id}>
+                  {isAdmin && <i className="fi fi-rr-trash" /> }
                   <p className="question">{el.question}</p>
                   <p className="answer">{el.answer}</p>
                 </li>
@@ -51,7 +57,8 @@ export default function Faq() {
       ) : (
         <p>Chargement...</p>
       )}
+      {showNewFaq && <NewFaq setShowNewFaq={setShowNewFaq}/>}
     </div>
+    )
   );
-  // );
 }

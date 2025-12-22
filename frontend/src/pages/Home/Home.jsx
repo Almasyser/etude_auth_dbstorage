@@ -30,8 +30,7 @@ export default function Home() {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userToken]);
-  console.log(usersDatas);
-  
+   
   return (
     isDataLoaded && userToken && (
       <div className="home">
