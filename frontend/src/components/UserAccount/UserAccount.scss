@@ -1,4 +1,18 @@
-
+@use "../../styles/colors" as *;
+header{
+  h1{
+    color: var(--cyan-100);
+  }
+  i{
+    color: var(--green-400);
+    position: absolute;
+    right: 16px;
+    &:hover{
+      color: var(--green-200);
+      cursor: pointer;
+    }
+  }
+}
 .user-account {
   width: 100%;
   display: flex;

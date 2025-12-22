@@ -5,11 +5,16 @@ import Navbar from "../../components/Navbar/Navbar";
 import imgDefault from "../../assets/default.png";
 import NewUserAccount from "../../components/NewUserAccount/NewUserAccount";
 import "./Users.css";
+import MyAccount from "../MyAccount/MyAccount";
+import UserAccount from "../../components/UserAccount/UserAccount";
 function Users() {
   const AuthValue = useContext(AuthContext);
-  const { userToken } = AuthValue;
+  const { userToken, userInfo } = AuthValue;
+  const isAdmin =userInfo.is_admin;
   const [users, setUsers] = useState();
   const [showNew, setShowNew] = useState(false);
+  const [showDetail, setShowDetail] = useState(false);
+  const [id, setId ] = useState(0);
   useEffect(() => {
     axios
       .get(`${import.meta.env.VITE_BACKEND_URL}/users`, {
@@ -19,6 +24,10 @@ function Users() {
         setUsers(res.data);
        });
   }, [userToken]);
+  const handleDetailUser=(index)=>{
+    setShowDetail(true);
+    setId(index);
+  }
   return (
     <>
       <Navbar />
@@ -28,7 +37,7 @@ function Users() {
           <header>
             <h1>Gestion des Utilisateurs</h1>
           </header>
-          {users.map((el) => (
+          {users.map((el, index) => (
             <section className="carte" key={el.id}>
               <img className="photo" src={imgDefault} alt="###" />
               <span className="central">
@@ -39,49 +48,19 @@ function Users() {
               </span>
               <span className="droite">
                 <div className="boutons">
-                  <i className="fi fi-rr-user"></i>
-                  <i className="fi fi-rr-trash"></i>
+                  <i className="fi fi-rr-user" onClick={()=> handleDetailUser(index)}></i>
+                  {isAdmin && <i className="fi fi-rr-trash"></i>}
                 </div>
-                {/* <img className="avatar" src={ el.is_admin? tagAdmin: tagVisitor } alt="---"/> */}
-                {/* <p>{el.is_admin? "administrateur":"visiteur"}</p> */}
               </span>
             </section>
           ))}
         </div>
       )}
       {showNew && <NewUserAccount />}
+      {showDetail && <UserAccount userInfo={users[id]} fromUsers={true} setShowDetail={setShowDetail}/>}
     </>
   );
 }
 export default Users;
-                // <thead>
-                //   <tr>
-                //     {keys.map((key) => {
-                //       return (
-                //         key !== "id" &&
-                //         key !== "hashed_password" && <th key={key}>{key}</th>
-                //       );
-                //     })}
-                //     <th>Actions</th>
-                //   </tr>
-                // </thead>
 
-// <ul key={user.id}>
-// <li>{`Nom: ${user.lastname}`}</li>
-// <li>{`Prénom: ${user.firstname}`}</li>
-// <li>{`Mobile: ${user.phone}`}</li>
-// <li>{`email: ${user.mail}`}</li>
-// <li>{`Admin ${user.is_admin? "oui" : "non" }`}</li>
-// <li className="actions">
-//   <button
-//     className="" //</td>"button-sm-blue-outline"
-//     type="button">
-//     <i className="fi fi-rr-user-pen" />
-//   </button>
-//   <button
-//     className="" //button-sm-error-outline"
-//     type="button">
-//     <i className="fi fi-rr-trash" />
-//   </button>
-// </li>
-// </ul>
+

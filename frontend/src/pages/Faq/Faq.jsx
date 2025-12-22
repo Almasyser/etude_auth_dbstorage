@@ -38,8 +38,8 @@ export default function Faq() {
       <Navbar />
       {isDataLoaded ? (
         <main>
-          <button className="btn-newfaq"><i className="fi fi-rr-user-add" onClick={()=> setShowNewFaq(!showNewFaq)}/></button>
           <header>
+            <button className="btn-newfaq"><i className="fi fi-rr-add" onClick={()=> setShowNewFaq(!showNewFaq)}/></button>
             <h1>FAQ : Réponses aux questions fréquentes</h1>
           </header>
           <div className="content">

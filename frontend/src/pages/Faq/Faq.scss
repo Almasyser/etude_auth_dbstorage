@@ -18,6 +18,7 @@
       opacity: 0.6;
       font-size: 1.6rem;
       font-weight: 500;
+      padding-bottom: 1.75rem;
       &:hover{
         opacity: 1;
         cursor: pointer;
@@ -36,13 +37,14 @@
     gap: 0.5rem;
     @include shadow("lg");
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 4rem 0;
     i{
       position: absolute;
-      right: 92px;
+      right: 60px;
+      font-size: 1.2rem;
       color: var(--red-400);
       &:hover{
-        color: var(--red-500);
+        color: var(--red-200);
         cursor: pointer;
       }
     }

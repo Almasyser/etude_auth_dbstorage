@@ -17,7 +17,17 @@ export default function Navbar() {
         >
           <img src="../src/assets/Logo.png" alt="Logo" />
         </div>
+
         <ul className="items">
+          <li>
+              <button
+                className=""
+                type="button"
+                onClick={()=>navigate("/home")}
+              >
+                <i className="fi fi-rr-home" /> Accueil
+              </button>
+            </li>
           {isAdmin && (
             <li>
               <button
@@ -90,6 +100,15 @@ export default function Navbar() {
         </nav>
         {isMenuOpen && (
           <ul className="items">
+            <li>
+              <button
+                  className=""
+                  type="button"
+                  onClick={() => {}}
+                >
+                <i className="fi fi-rr-home" /> Accueil
+              </button>
+            </li>
             {isAdmin && (
               <li>
                 <button

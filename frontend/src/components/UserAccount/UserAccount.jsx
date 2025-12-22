@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import "./UserAccount.css";
 import { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
-// import Badge from "../Badge/Badge";
-export default function UserAccount({ userInfo }) {
+export default function UserAccount({ userInfo, fromUsers, setShowDetail }) {
   const { mail, lastname, firstname, phone, id } = userInfo;
   const [firstnameInput, setFirstnameInput] = useState(firstname);
   const [lastnameInput, setLastnameInput] = useState(lastname);
@@ -13,27 +13,10 @@ export default function UserAccount({ userInfo }) {
   const [passwordInput, setPasswordInput] = useState("Mot de passe");
   const { userToken } = useContext(AuthContext);
   const [message, setMessage] = useState(false);
-
-  const handleMailChange = (event) => {
-    setMailInput(event.target.value);
-  };
-  const handleLastnameChange = (event) => {
-    setLastnameInput(event.target.value);
-  };
-  const handleFirstnameChange = (event) => {
-    setFirstnameInput(event.target.value);
-  };
-  const handlePhoneChange = (event) => {
-    setPhoneInput(event.target.value);
-  };
-  const handlePasswordChange = (event) => {
-    setPasswordInput(event.target.value);
-  };
-
+  const navigate = useNavigate();
   const handleFocus = () => {
     setPasswordInput("");
   };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -56,12 +39,17 @@ export default function UserAccount({ userInfo }) {
         console.error(error.message);
       });
   };
-
+  const handleRetour=()=>{
+    navigate("/users");
+    fromUsers=false;
+    setShowDetail(false);
+  }
   return (
     <>
       <header>
         <h1>Mes informations</h1>
-        </header>
+        {fromUsers && <i className="fi fi-rr-users" onClick={handleRetour}>&nbsp;Retour</i>}
+      </header>
       <div className="content user-account">
         <form onSubmit={handleSubmit}>
           <div className="input-line">
@@ -73,7 +61,7 @@ export default function UserAccount({ userInfo }) {
                   type="text"
                   value={firstnameInput}
                   id="firstname"
-                  onChange={handleFirstnameChange}
+                  onChange={(e)=>setFirstnameInput(e.target.value)}
                 />
               </div>
             </div>
@@ -85,7 +73,7 @@ export default function UserAccount({ userInfo }) {
                   type="text"
                   value={lastnameInput}
                   id="lastname"
-                  onChange={handleLastnameChange}
+                  onChange={(e)=>setLastnameInput(e.target.value)}
                 />
               </div>
             </div>
@@ -99,7 +87,7 @@ export default function UserAccount({ userInfo }) {
                   type="text"
                   value={mailInput}
                   id="mail"
-                  onChange={handleMailChange}
+                  onChange={(e)=>setMailInput(e.target.value)}
                 />
               </div>
             </div>
@@ -111,7 +99,7 @@ export default function UserAccount({ userInfo }) {
                   type="text"
                   value={phoneInput}
                   id="phone"
-                  onChange={handlePhoneChange}
+                  onChange={(e)=>setPhoneInput(e.target.value)}
                 />
               </div>
             </div>
@@ -130,7 +118,7 @@ export default function UserAccount({ userInfo }) {
                   type="text"
                   value={passwordInput}
                   id="password"
-                  onChange={handlePasswordChange}
+                  onChange={(e)=>setPasswordInput(e.target.value)}
                   onFocus={handleFocus}
                 />
               </div>
