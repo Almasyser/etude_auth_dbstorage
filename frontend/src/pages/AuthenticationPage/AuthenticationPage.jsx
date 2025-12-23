@@ -1,4 +1,5 @@
 import Authentication from "../../components/Authentication/Authentication";
+import logo from "../../assets/logo.png";
 import "./AuthenticationPage.css";
 
 function AuthenticationPage() {
@@ -11,6 +12,7 @@ function AuthenticationPage() {
         </div>
       </div>
       <div className="image">
+        <img src={logo} alt="LOGO"/>
       </div>
     </div>
   );

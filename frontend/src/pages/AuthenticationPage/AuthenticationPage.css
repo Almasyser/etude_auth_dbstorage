@@ -350,7 +350,7 @@ p:last-child {
 .authentication-container .page-content .form h1 {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  color: var(--grey-700);
+  color: var(--cyan-100);
   max-width: 80%;
 }
 .authentication-container .image {
@@ -368,7 +368,7 @@ p:last-child {
   color: #fff;
 }
 .authentication-container .image img {
-  max-width: 80%;
+  max-width: 60%;
 }
 
 @media only screen and (min-width: 768px) {

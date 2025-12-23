@@ -8,7 +8,7 @@ body {
 #navbar-mobile {
   display: flex;
   flex-direction: column;
-  background-color: var(--cyan-400);
+  background-color: var(--blue-900);
   position: sticky;
   top: 0;
   width: 100vw;
@@ -37,14 +37,14 @@ body {
       }
     }
     .burger {
-      color: var(--cyan-800);
+      color: var(--cyan-400);
       background-color: transparent;
       border: none;
       padding: 0;
       margin: 0 1rem 0 0;
       font-size: 1.8rem;
       &:hover{
-        color: var(--cyan-600);
+        color: var(--cyan-200);
       }
       cursor: pointer;
     }
@@ -86,7 +86,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--cyan-400);
+    background-color: var(--blue-900);
     padding: 12px 32px;
     top: 0;
     width: 100vw;
@@ -105,13 +105,13 @@ body {
       gap: clamp(1rem, 1.5rem, 1.5rem);
       button {
         height: 2rem;
-        color: var(--cyan-800);
+        color: var(--cyan-400);
         border: none;
         background: transparent;
         font-size: 0.92rem;
         font-weight: 600;
         &:hover{
-          color: var(--cyan-600);
+          color: var(--cyan-200);
 
         }
       }
