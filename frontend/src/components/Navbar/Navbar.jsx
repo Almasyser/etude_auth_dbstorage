@@ -132,7 +132,7 @@ export default function Navbar() {
                 <i className="fi fi-rr-interrogation" /> FAQ
               </button>
             </li>
-               {isAdmin === 1 && (
+               {isAdmin && (
               <li>
                 <button
                   className=""

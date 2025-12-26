@@ -13,7 +13,7 @@ class UserManager extends AbstractManager {
 
   insert(newUser) {
     const { mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar } = newUser;
-    console.log("INSERT",typeof(mail), typeof(hashed_password), typeof(lastname), typeof(firstname), typeof(phone), typeof(is_admin), typeof(role), typeof(photo), typeof(avatar) );
+    console.log("INSERT",mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar );
     
     return this.database.query(
       `INSERT INTO ${this.table} (mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
