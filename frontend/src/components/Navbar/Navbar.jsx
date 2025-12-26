@@ -2,11 +2,14 @@ import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
 import { useState, useContext } from "react";
 import AuthContext from "../../contexts/AuthContext";
+import CheckAdmin from "../utils/CheckAdmin";
 export default function Navbar() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { userInfo } = useContext(AuthContext);
-  const isAdmin = userInfo.is_admin;
+  const isAdmin = CheckAdmin(userInfo?.is_admin);
+  console.log("------------>",isAdmin, typeof(isAdmin));
+  
   return (
     <>
       <nav id="navbar">
@@ -48,7 +51,7 @@ export default function Navbar() {
               <i className="fi fi-rr-interrogation" /> FAQ
             </button>
           </li>
-          {isAdmin === 1 && (
+          {isAdmin && (
             <li>
               <button
                 className=""

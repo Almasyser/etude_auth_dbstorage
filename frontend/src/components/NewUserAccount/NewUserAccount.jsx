@@ -10,7 +10,7 @@ function NewUserAccount() {
   const [firstnameInput, setFirstnameInput] = useState("Prenom")
   const [mailInput,setMailInput] = useState("Adresse mail")
   const [lastnameInput, setLastnameInput] = useState("Nom")
-  const [checkAdmin, setCheckAdmin] = useState(0)
+  const [checkAdmin, setCheckAdmin] = useState(null)
   const [phoneInput, setPhoneInput] = useState("Telephone")
   const [passwordInput, setPasswordInput] = useState("Mot de passe")
   const [roleInput,setRoleInput] = useState("role")
@@ -123,7 +123,7 @@ function NewUserAccount() {
           </div>
           <div className="input-line">
             <label htmlFor="checkAdmin" className="label-check">Administrateur</label>
-            <div className="label-check" id="checkAdmin" onChange={(e)=> setCheckAdmin(e.target.value? 1 : 0 )}>
+            <div className="label-check" id="checkAdmin" onChange={(e)=> setCheckAdmin(e.target.value )}>
               <input type="radio" name="is_admin" value={true}/>Oui
               <input type="radio" name="is_admin" value={false}/>Non
             </div>
