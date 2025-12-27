@@ -2,6 +2,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
+import NavbarFirst from "../../components/Navbar/NavbarFirst";
 import AuthContext from "../../contexts/AuthContext";
 import "./Home.css";
 export default function Home() {
@@ -34,7 +35,7 @@ export default function Home() {
   return (
     isDataLoaded && userToken && (
       <div className="home">
-        <Navbar />
+        {usersDatas? <Navbar/> : <NavbarFirst />}
         <h1>Page accueil</h1>
       </div>
     )

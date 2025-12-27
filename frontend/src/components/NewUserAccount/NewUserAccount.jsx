@@ -31,6 +31,7 @@ function NewUserAccount() {
       .then((response) => {
         if (response.status === 204) {
           setMessage(true);
+          window.location.reload();
         } else {
           setMessage(false);
         }

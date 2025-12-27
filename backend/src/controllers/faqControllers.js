@@ -62,8 +62,10 @@ const add = (req, res) => {
 };
 
 const destroy = (req, res) => {
+  const id = parseInt(req.params.id,10);
+  console.log(id, typeof(id));
   models.faq
-    .delete(req.params.id)
+    .delete(id)
     .then(([result]) => {
       if (result.affectedRows === 0) {
         res.sendStatus(404);

@@ -13,7 +13,7 @@ export default function Navbar() {
       <nav id="navbar">
         <div
           className="logo"
-          onClick={() => navigate("/home")}
+          onClick={() => navigate("/")}
           aria-hidden="true"
         >
           <img src="../src/assets/Logo.png" alt="Logo" />
@@ -24,7 +24,7 @@ export default function Navbar() {
               <button
                 className=""
                 type="button"
-                onClick={()=>navigate("/home")}
+                onClick={()=>navigate("/")}
               >
                 <i className="fi fi-rr-home" /> Accueil
               </button>
@@ -69,6 +69,15 @@ export default function Navbar() {
               <i className="fi fi-rr-user" /> Mon compte
             </button>
           </li>
+          <li>
+            <button
+              className="btn-disconnect"
+              type="button"
+              onClick={() => navigate("/")}
+            >
+              <i className="fi fi-rr-user" />
+            </button>
+          </li>
         </ul>
       </nav>
       <div id="navbar-mobile">
@@ -82,7 +91,7 @@ export default function Navbar() {
         <nav>
           <div
             className="logo"
-            onClick={() => navigate("/home")}
+            onClick={() => navigate("/")}
             aria-hidden="true"
           >
             <img src="../src/assets/Logo.png" alt="Logo" />
@@ -148,6 +157,15 @@ export default function Navbar() {
                 onClick={() => navigate("/user")}
               >
                 <i className="fi fi-rr-user" /> Mon compte
+              </button>
+            </li>
+            <li>
+              <button
+                className="btn-disconnect"
+                type="button"
+                onClick={() => navigate("/")}
+              >
+                <i className="fi fi-rr-user" /> Déconnection
               </button>
             </li>
           </ul>

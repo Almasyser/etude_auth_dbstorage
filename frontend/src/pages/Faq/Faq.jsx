@@ -12,6 +12,7 @@ export default function Faq() {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [question, setQuestion] = useState();
   const [showNewFaq, setShowNewFaq] = useState(false);
+  
   useEffect(() => {
     axios
       .get(`${import.meta.env.VITE_BACKEND_URL}/faq`, {
@@ -29,8 +30,31 @@ export default function Faq() {
     if (!userToken) {
       navigate("/");
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [userToken]);
+  }, [userToken, navigate]);
+  const handleDelete = (item)=>{
+    console.log("DELETE",item, typeof(item));
+    axios
+      .delete(`${import.meta.env.VITE_BACKEND_URL}/faq/${item}`, {
+        headers: {
+          Authorization: `Bearer ${userToken}`,
+        },
+      })
+      .then((response) => {
+        if (response.status === 204) {
+          console.log("faq effacée");
+          window.location.reload();
+        } else {
+          console.error(response.status);
+        }
+      })
+      .catch((error) => {
+        console.error(error.message);
+      });
+    if (!userToken) {
+      navigate("/");
+    }
+  }
+console.log("admin",isAdmin);
 
   return (
     userToken && (
@@ -46,7 +70,7 @@ export default function Faq() {
             <ul className="faq-list">
               {question.map((el) => (
                 <li key={el.id}>
-                  {isAdmin && <i className="fi fi-rr-trash" /> }
+                  {isAdmin? <i className="fi fi-rr-trash" onClick={()=>handleDelete(el.id)}/>:null }
                   <p className="question">{el.question}</p>
                   <p className="answer">{el.answer}</p>
                 </li>

@@ -389,6 +389,9 @@ body {
   padding: 1rem;
   background: rgba(23, 37, 84, 0.6);
 }
+#navbar-mobile .items .btn-disconnect {
+  color: var(--red-300);
+}
 #navbar-mobile .items button {
   background-color: transparent;
   color: var(--cyan-300);
@@ -428,6 +431,9 @@ body {
   #navbar .items {
     display: flex;
     gap: 1.5rem;
+  }
+  #navbar .items .btn-disconnect {
+    color: var(--red-300);
   }
   #navbar .items button {
     height: 2rem;

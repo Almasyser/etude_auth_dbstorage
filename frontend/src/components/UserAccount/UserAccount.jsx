@@ -11,13 +11,9 @@ export default function UserAccount({ userInfo, fromUsers, setShowDetail }) {
   const [mailInput, setMailInput] = useState(mail);
   const [phoneInput, setPhoneInput] = useState(phone);
   const [roleInput, setRoleInput] = useState(role);
-  const [passwordInput, setPasswordInput] = useState("Mot de passe");
   const { userToken } = useContext(AuthContext);
   const [message, setMessage] = useState(false);
   const navigate = useNavigate();
-  const handleFocus = () => {
-    setPasswordInput("");
-  };
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -120,34 +116,9 @@ export default function UserAccount({ userInfo, fromUsers, setShowDetail }) {
             </div>
           </div>
           <button type="submit" className="btn">
-            Valider modification
+            {message? "Modifications validées." : "Valider les modifications"}
           </button>
         </form>
-        <form onSubmit={handleSubmit}>
-          <div className="input-line">
-            <div className="input-field">
-              <label htmlFor="password">Mot de passe</label>
-              <div className="input">
-                <input
-                  name="password"
-                  type="text"
-                  value={passwordInput}
-                  id="password"
-                  onChange={(e)=>setPasswordInput(e.target.value)}
-                  onFocus={handleFocus}
-                />
-              </div>
-            </div>
-          </div>
-          <button type="submit" className="btn">
-            Valider changement de mot de passe
-          </button>
-        </form>
-        {message && (
-          <div>
-            <p>Modifications validées.</p>
-          </div>
-        )}
       </div>
     </>
   );
