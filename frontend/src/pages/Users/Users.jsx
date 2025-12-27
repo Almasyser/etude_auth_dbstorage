@@ -4,9 +4,8 @@ import AuthContext from "../../contexts/AuthContext";
 import Navbar from "../../components/Navbar/Navbar";
 import imgDefault from "../../assets/default.png";
 import NewUserAccount from "../../components/NewUserAccount/NewUserAccount";
-import "./Users.css";
-import MyAccount from "../MyAccount/MyAccount";
 import UserAccount from "../../components/UserAccount/UserAccount";
+import "./Users.css";
 function Users() {
   const AuthValue = useContext(AuthContext);
   const { userToken, userInfo } = AuthValue;

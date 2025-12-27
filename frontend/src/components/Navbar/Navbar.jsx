@@ -8,8 +8,6 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { userInfo } = useContext(AuthContext);
   const isAdmin = CheckAdmin(userInfo?.is_admin);
-  console.log("------------>",isAdmin, typeof(isAdmin));
-  
   return (
     <>
       <nav id="navbar">

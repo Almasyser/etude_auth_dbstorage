@@ -36,8 +36,6 @@ const verifyPassword = (req, res) => {
         const token = jwt.sign(payload, JWT_SECRET, {
           expiresIn: "8h",
         });
-        console.log("TOKEN",token);
-        
         delete req.user.hashed_password;
         res.status(200).send({ token, user: req.user });
       } else {
@@ -61,8 +59,6 @@ const verifyToken = (req, res, next) => {
       throw new Error("Authorization header has not the 'Bearer' type");
     }
     req.payload = jwt.verify(token, JWT_SECRET);
-    console.log("PAYLOAD",req.payload);
-    
     next();
   } catch (err) {
     console.error(err);

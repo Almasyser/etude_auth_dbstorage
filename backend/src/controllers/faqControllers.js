@@ -30,11 +30,8 @@ const read = (req, res) => {
 
 const edit = (req, res) => {
   const faq = req.body;
-
   // TODO validations (length, format...)
-
   faq.id = parseInt(req.params.id, 10);
-
   models.faq
     .update(faq)
     .then(([result]) => {
@@ -52,9 +49,7 @@ const edit = (req, res) => {
 
 const add = (req, res) => {
   const faq = req.body;
-
   // TODO validations (length, format...)
-
   models.faq
     .insert(faq)
     .then(([result]) => {

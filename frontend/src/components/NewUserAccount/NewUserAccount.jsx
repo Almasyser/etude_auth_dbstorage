@@ -4,7 +4,6 @@ import "./newuseraccount.css";
 import { useState, useContext} from "react";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
-
 function NewUserAccount() {
   // const { mail, lastname, firstname, phone, is_admin } = userInfo;
   const [firstnameInput, setFirstnameInput] = useState("Prenom")
@@ -16,8 +15,6 @@ function NewUserAccount() {
   const [roleInput,setRoleInput] = useState("role")
   const [photoInput,setPhotoInput] = useState("photo")
   const [avatarInput,setAvatarInput] = useState("avatar")
-  console.log(checkAdmin);
-
   const { userToken } = useContext(AuthContext);
   const [message, setMessage] = useState(false); //  setMessage
   const handleSubmit = (event) => {
@@ -25,7 +22,6 @@ function NewUserAccount() {
     const form = event.target;
     const formData = new FormData(form);
     const dataFromForm = Object.fromEntries(formData.entries());
-    console.log("dataFromForm:",dataFromForm);
     axios
       .post(`${import.meta.env.VITE_BACKEND_URL}/addUser`, dataFromForm, {
         headers: {
@@ -43,6 +39,11 @@ function NewUserAccount() {
         console.error(error.message);
       });
   };
+  const handleCheckAdmin=(e)=>{
+    setCheckAdmin(e.target.value);
+    
+  }
+  console.log(checkAdmin);
   return (
     <>
       <header>
@@ -122,8 +123,8 @@ function NewUserAccount() {
             </div>
           </div>
           <div className="input-line">
-            <label htmlFor="checkAdmin" className="label-check">Administrateur</label>
-            <div className="label-check" id="checkAdmin" onChange={(e)=> setCheckAdmin(e.target.value )}>
+            <label htmlFor="checkAdmin" className={checkAdmin === null? "label-check null":"label-check"}>Administrateur</label>
+            <div className="label-check" id="checkAdmin0" onChange={handleCheckAdmin}>
               <input type="radio" name="is_admin" value={true}/>Oui
               <input type="radio" name="is_admin" value={false}/>Non
             </div>
@@ -184,14 +185,4 @@ function NewUserAccount() {
     </>
   );
 }
-
-// NewUserAccount.propTypes = {
-//   userInfo: PropTypes.shape({
-//     mail: PropTypes.string.isRequired,
-//     lastname: PropTypes.string.isRequired,
-//     firstname: PropTypes.string.isRequired,
-//     phone: PropTypes.string.isRequired,
-//     id: PropTypes.number.isRequired,
-//   }).isRequired,
-// };
 export default NewUserAccount;

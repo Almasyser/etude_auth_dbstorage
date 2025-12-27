@@ -12,7 +12,6 @@ function NewFaq({setShowNewFaq}) {
     const form = event.target;
     const formData = new FormData(form);
     const dataFromForm = Object.fromEntries(formData.entries());
-    console.log("dataFromForm:",dataFromForm);
     axios
       .post(`${import.meta.env.VITE_BACKEND_URL}/faq`, dataFromForm, {
         headers: {

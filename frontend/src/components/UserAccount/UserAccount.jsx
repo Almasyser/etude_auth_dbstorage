@@ -5,11 +5,12 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
 export default function UserAccount({ userInfo, fromUsers, setShowDetail }) {
-  const { mail, lastname, firstname, phone, id } = userInfo;
+  const { mail, lastname, firstname, phone, role, id } = userInfo;
   const [firstnameInput, setFirstnameInput] = useState(firstname);
   const [lastnameInput, setLastnameInput] = useState(lastname);
   const [mailInput, setMailInput] = useState(mail);
   const [phoneInput, setPhoneInput] = useState(phone);
+  const [roleInput, setRoleInput] = useState(role);
   const [passwordInput, setPasswordInput] = useState("Mot de passe");
   const { userToken } = useContext(AuthContext);
   const [message, setMessage] = useState(false);
@@ -100,6 +101,20 @@ export default function UserAccount({ userInfo, fromUsers, setShowDetail }) {
                   value={phoneInput}
                   id="phone"
                   onChange={(e)=>setPhoneInput(e.target.value)}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="input-line">
+            <div className="input-field">
+              <label htmlFor="role">Role</label>
+              <div className="input">
+                <input
+                  name="role"
+                  type="text"
+                  value={roleInput}
+                  id="role"
+                  onChange={(e)=>setRoleInput(e.target.value)}
                 />
               </div>
             </div>
