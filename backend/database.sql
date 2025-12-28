@@ -40,7 +40,10 @@ INSERT INTO
         lastname,
         firstname,
         phone,
-        is_admin
+        is_admin,
+        role,
+        photo,
+        avatar
     )
 VALUES
     (
@@ -49,7 +52,10 @@ VALUES
         'testeur2',
         'Jean',
         '3288378372',
-        1
+        1,
+        'president',
+        'photo',
+        'avatar'
     );
 INSERT INTO
     `faq` VALUE (

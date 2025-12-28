@@ -1,0 +1,29 @@
+@use "./typography" as *;
+@use "./button" as *;
+@use "./shadows" as *;
+
+html,
+body {
+  font-feature-settings: "tnum" on, "lnum" on;
+  font-family: $font-family;
+  color: var(--grey-900);
+}
+
+main {
+  margin: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--blue-800);
+    background-color: var(--blue-800);
+    color: var(--cyan-100);
+    h1 {
+      @include title("xs", $weight: 500);
+    }
+  }
+  .content {
+    padding: 2rem;
+  }
+}

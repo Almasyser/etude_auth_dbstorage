@@ -11,10 +11,6 @@ class faqManager extends AbstractManager {
       [faq.question, faq.answer]
     );
   }
-
-  delete(faq) {
-    return this.database.query(`delete ${this.table} where id = ?`, [faq.id]);
-  }
 }
 
 module.exports = faqManager;

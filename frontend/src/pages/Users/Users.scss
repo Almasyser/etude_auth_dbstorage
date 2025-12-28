@@ -1,0 +1,169 @@
+@use "../../styles/colors" as *;
+.manage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100dvh;
+  margin-inline: 1%;
+  margin-top: 1rem;
+  .newuser{
+    position: fixed;
+    right: 16px;
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--green-700);
+    color: var(--cyan-50);
+    opacity: 0.6;
+    font-size: 1.6rem;
+    font-weight: 500;
+    &:hover{
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  header{
+    display: flex;
+    h1{
+      color: var(--cyan-100);
+    }
+  }
+}
+.carte{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem;
+  background: var(--blue-900);
+  p{
+    margin: 0;
+    padding: 0;
+  }
+}
+.photo{
+  width: 128px;
+  height: 128px;
+}
+.avatar{
+  width: 48px;
+  height: 48px;
+}
+.central{
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  :nth-child(1){
+    font-size: 1.6rem;
+    color: var(--cyan-50);
+    padding-top: 0.5rem;
+  }
+  :nth-child(2){
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--cyan-50);
+    padding-bottom: 0.5rem;
+  }
+  :nth-child(3){
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--cyan-100);
+    padding-bottom: 0.25rem;
+  }
+  :nth-child(4){
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+.droite{
+  position: absolute;
+  right: 16px;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  align-items:center;
+  .boutons{
+    // width: 100%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: right;
+    gap:1rem;
+    padding: 0.75rem 1rem 0.5rem 0;
+    cursor: pointer;
+    :nth-child(1){
+      font-size: 1.4rem;
+      color: var(--green-400);
+      &:hover{
+        color: var(--green-200);
+      }
+    }
+    :nth-child(2){
+      font-size: 1.4rem;
+      color: var(--red-400);
+      &:hover{
+        color: var(--red-200);
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 740px){
+  .photo{
+  width: 112px;
+  height: 112px;
+}
+  .central{
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  :nth-child(1){
+    font-size: 1rem;
+    color: var(--cyan-50);
+    padding-top: 0.5rem;
+  }
+  :nth-child(2){
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--cyan-50);
+    padding-bottom: 0.5rem;
+  }
+  :nth-child(3){
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cyan-100);
+    padding-bottom: 0.25rem;
+  }
+  :nth-child(4){
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+  .droite{
+      right: 0;
+      height: 100%;
+      .boutons{
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0.5rem 0.5rem 0 0;
+        padding: 0;
+
+        
+      }
+      .avatar, p{
+        display: none;
+      }
+      
+    }
+}
+
+  
+
+    
+  
+
