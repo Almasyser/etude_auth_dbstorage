@@ -340,7 +340,6 @@ p:last-child {
   opacity: 0.6;
   font-size: 1.6rem;
   font-weight: 500;
-  padding-bottom: 1.75rem;
 }
 .faq main .btn-newfaq:hover {
   opacity: 1;

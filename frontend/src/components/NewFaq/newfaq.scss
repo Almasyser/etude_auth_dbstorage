@@ -1,39 +1,90 @@
 @use "../../styles/colors" as *;
 @use "../../styles/typography" as *;
-.newfaq {
-  width: 90%;
-  margin: 0 auto 4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  color: var(--cyan-50);
-}
-.sujet {
-  height: 2.5rem;
-  background: var(--blue-950);
-  color: var(--cyan-100);
+@use "../../styles/shadows" as *;
+.newfaq{
+  position: absolute;
+  top: 10rem;
+  left: 32%;
+  width: 480px;
+  background-color: var(--blue-950);
+  padding: 1rem;
   border-radius: 8px;
-  padding-left: 1rem;
+  @include shadow("lg");
+  .entete{
+    position: relative;
+    height: 3rem;
+    background: var(--blue-900);
+    border-radius: 8px 8px 0 0;
+    h1{
+      color: var(--cyan-100);
+      padding: 1rem 0 0 1rem;
+    }
+    i{
+      color: var(--green-400);
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      &:hover{
+        color: var(--green-200);
+        cursor: pointer;
+      }
+    }
   }
-.texte {
-  height: 10rem;
-  background: var(--blue-950);
-  font-size: 1rem;
-  color: var(--cyan-200);
-  border-radius: 8px;
-  padding-left: 1rem;
-  vertical-align: top;
-}
-.btn{
-  width: 12rem;
-  height: 2rem;
-  background: transparent;
-  border: 1px solid var(--cyan-300);
-  border-radius: 8px;
-  color: var(--cyan-300);
-  &:hover{
-    border: 1px solid var(--cyan-100);
+  .form-newfaq {
+    border: ipx solid cyan;
+    width: 100%;
+    margin: 0 auto 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: var(--cyan-50);
+  }
+  .sujet {
+    height: 2.5rem;
+    background: var(--blue-950);
     color: var(--cyan-100);
-    cursor: pointer;
+    border-radius: 8px;
+    padding-left: 1rem;
   }
-}
+  .texte {
+    height: 10rem;
+    background: var(--blue-950);
+    font-size: 1rem;
+    color: var(--cyan-200);
+    border-radius: 8px;
+    padding-left: 1rem;
+    vertical-align: top;
+  }
+  .btn{
+    width: 12rem;
+    height: 2rem;
+    background: transparent;
+    border: 1px solid var(--cyan-300);
+    border-radius: 8px;
+    color: var(--cyan-300);
+    &:hover{
+      border: 1px solid var(--cyan-100);
+      color: var(--cyan-100);
+      cursor: pointer;
+    }
+    &:focus{
+        animation-name: valid;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        
+        @keyframes valid {
+          0%{ color: var(--cyan-300)};
+          20%{ color: var(--cyan-400)};
+          40%{ color: var(--green-400)};
+          60%{ color: var(--green-300)};
+          100%{ color: var(--green-300)};
+          
+        }
+      }
+    }
+  }
+  .msg-valide{
+    color: var(--cyan-200);
+  }
+
