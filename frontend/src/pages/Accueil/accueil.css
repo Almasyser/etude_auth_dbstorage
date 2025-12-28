@@ -211,62 +211,13 @@
   --yellow-950: #422006;
 }
 
-.useraccount {
-  position: absolute;
-  top: 16%;
-  left: 32%;
-  width: 480px;
-  border-radius: 8px;
-  background: var(--blue-950);
-  box-shadow: 0px 4px 8px -2px rgba(196, 206, 235, 0.1), 0px 2px 4px -2px rgba(196, 206, 235, 0.06);
-}
-.useraccount .header {
-  height: 3rem;
-  background: var(--blue-900);
-  border-radius: 8px 8px 0 0;
-}
-.useraccount .header h1 {
-  color: var(--cyan-100);
-  padding: 1rem 0 0 1rem;
-}
-.useraccount .header i {
-  color: var(--green-400);
-  position: absolute;
-  top: 16px;
-  right: 16px;
-}
-.useraccount .header i:hover {
-  color: var(--green-200);
-  cursor: pointer;
-}
-.useraccount .account {
+.accueil {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 1rem 1rem 2rem 1rem;
-  gap: 1rem;
+  height: 100vh;
 }
-.useraccount .account .input-line {
-  margin-top: 1rem;
-}
-.useraccount .account .input-field {
-  background-color: transparent;
-}
-.useraccount .account .input-field label {
+.accueil h1 {
+  font-size: 2rem;
   color: var(--cyan-200);
-}
-.useraccount .account .btn {
-  width: 100%;
-  margin-top: 1rem;
-  height: 2rem;
-  border-radius: 8px;
-  border: 1px solid var(--cyan-600);
-  background: transparent;
-  color: var(--cyan-500);
-}
-.useraccount .account .btn:hover {
-  border: 1px solid var(--cyan-400);
-  color: var(--cyan-300);
-  cursor: pointer;
-}/*# sourceMappingURL=UserAccount.css.map */
+  padding-top: 2rem;
+  text-align: center;
+}/*# sourceMappingURL=accueil.css.map */

@@ -4,7 +4,7 @@ import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
-export default function UserAccount({ userInfo, fromUsers, setShowDetail }) {
+export default function UserAccount({ userInfo, setShowDetail }) {
   const { mail, lastname, firstname, phone, role, id } = userInfo;
   const [firstnameInput, setFirstnameInput] = useState(firstname);
   const [lastnameInput, setLastnameInput] = useState(lastname);
@@ -38,16 +38,15 @@ export default function UserAccount({ userInfo, fromUsers, setShowDetail }) {
   };
   const handleRetour=()=>{
     navigate("/users");
-    fromUsers=false;
     setShowDetail(false);
   }
   return (
-    <>
-      <header>
+    <div className="useraccount">
+      <div className="header">
         <h1>Mes informations</h1>
-        {fromUsers && <i className="fi fi-rr-users" onClick={handleRetour}>&nbsp;Retour</i>}
-      </header>
-      <div className="content user-account">
+        <i className="fi fi-rr-users" onClick={handleRetour}>&nbsp;Retour</i>
+      </div>
+      <div className="account">
         <form onSubmit={handleSubmit}>
           <div className="input-line">
             <div className="input-field">
@@ -120,7 +119,7 @@ export default function UserAccount({ userInfo, fromUsers, setShowDetail }) {
           </button>
         </form>
       </div>
-    </>
+    </div>
   );
 }
 

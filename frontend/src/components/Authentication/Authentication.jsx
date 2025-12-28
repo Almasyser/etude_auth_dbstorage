@@ -31,7 +31,7 @@ export default function Authentication() {
         if (response.data.token) {
           setUser(response.data.token);
           setUserInfo(response.data.user);
-          navigate("/");
+          navigate("/home");
         } else {
           setFailAuth(true);
         }

@@ -56,7 +56,7 @@ function Users() {
         </div>
       )}
       {showNew && <NewUserAccount />}
-      {showDetail && <UserAccount userInfo={users[id]} fromUsers={true} setShowDetail={setShowDetail}/>}
+      {showDetail && <UserAccount userInfo={users[id]} setShowDetail={setShowDetail}/>}
     </>
   );
 }

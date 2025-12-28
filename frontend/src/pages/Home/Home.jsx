@@ -36,7 +36,7 @@ export default function Home() {
     isDataLoaded && userToken && (
       <div className="home">
         {usersDatas? <Navbar/> : <NavbarFirst />}
-        <h1>Page accueil</h1>
+        <h1>Page Home</h1>
       </div>
     )
   );

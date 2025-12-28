@@ -69,15 +69,7 @@ export default function Navbar() {
               <i className="fi fi-rr-user" /> Mon compte
             </button>
           </li>
-          <li>
-            <button
-              className="btn-disconnect"
-              type="button"
-              onClick={() => navigate("/")}
-            >
-              <i className="fi fi-rr-user" />
-            </button>
-          </li>
+
         </ul>
       </nav>
       <div id="navbar-mobile">
@@ -159,15 +151,7 @@ export default function Navbar() {
                 <i className="fi fi-rr-user" /> Mon compte
               </button>
             </li>
-            <li>
-              <button
-                className="btn-disconnect"
-                type="button"
-                onClick={() => navigate("/")}
-              >
-                <i className="fi fi-rr-user" /> Déconnection
-              </button>
-            </li>
+ 
           </ul>
         )}
       </div>
