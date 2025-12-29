@@ -324,8 +324,7 @@ p:last-child {
 }
 
 .faq main {
-  height: -moz-max-content;
-  height: max-content;
+  height: 100%;
   overflow: visible;
 }
 .faq main .btn-newfaq {

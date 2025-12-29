@@ -28,7 +28,7 @@ export default function Faq() {
         console.error(error.message);
       });
     if (!userToken) {
-      navigate("/");
+      navigate("/home");
     }
   }, [userToken, navigate]);
   const handleDelete = (item)=>{
@@ -51,7 +51,7 @@ export default function Faq() {
         console.error(error.message);
       });
     if (!userToken) {
-      navigate("/");
+      navigate("/home");
     }
   }
 console.log("admin",isAdmin);

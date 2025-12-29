@@ -1,0 +1,41 @@
+#navbarfirst {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-900);
+  padding: 12px 32px;
+  top: 0;
+  width: 100vw;
+  gap: 2rem;
+  z-index: 5;
+}
+#navbarfirst .logo {
+  cursor: pointer;
+}
+#navbarfirst .logo img {
+  height: 60px;
+}
+#navbarfirst .items {
+  display: flex;
+  gap: 1.5rem;
+}
+#navbarfirst .items button {
+  width: 4rem;
+  height: 4rem;
+  color: var(--cyan-500);
+  border: none;
+  background: transparent;
+  border: 2px double var(--cyan-500);
+  border-radius: 50%;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+#navbarfirst .items button:hover {
+  color: var(--green-200);
+  border-color: var(--green-200);
+  cursor: pointer;
+}
+#navbarfirst .items button i {
+  font-size: 2rem;
+}/*# sourceMappingURL=navbarfirst.css.map */

@@ -1,5 +1,5 @@
 import "./accueil.css";
-import NavbarFirst from "../../components/Navbar/NavbarFirst";
+import NavbarFirst from "../../components/NavbarFirst/NavbarFirst";
 
 function Accueil() {
   return (

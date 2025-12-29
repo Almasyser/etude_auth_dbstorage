@@ -1,10 +1,10 @@
-import "./Navbar.css";
+import "./navbarfirst.css";
 import { useNavigate } from "react-router-dom";
 function NavbarFirst() {
   const navigate= useNavigate();
   return (
     <>
-      <nav id="navbar">
+      <nav id="navbarfirst">
         <div
           className="logo"
           onClick={() => navigate("/")}
@@ -14,15 +14,6 @@ function NavbarFirst() {
         </div>
         <ul className="items">
           <li>
-              <button
-                className=""
-                type="button"
-                onClick={()=>navigate("/")}
-              >
-                <i className="fi fi-rr-home" /> Accueil
-              </button>
-            </li>
-            <li>
             <button
               className="btn-auth"
               type="button"
@@ -30,7 +21,7 @@ function NavbarFirst() {
             >
             <i className="fi fi-rr-user" />
               </button>
-            </li>
+          </li>
         </ul>
       </nav>
     </>

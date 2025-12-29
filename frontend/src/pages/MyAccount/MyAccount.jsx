@@ -26,7 +26,7 @@ export default function MyAccount() {
         console.error(error.message);
       });
     if (!userToken) {
-      navigate("/");
+      navigate("/home");
     }
   }, [userToken, id, navigate]);
 
