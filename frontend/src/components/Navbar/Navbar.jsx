@@ -18,7 +18,6 @@ export default function Navbar() {
         >
           <img src="../src/assets/Logo.png" alt="Logo" />
         </div>
-
         <ul className="items">
           <li>
               <button
@@ -69,7 +68,15 @@ export default function Navbar() {
               <i className="fi fi-rr-user" /> Mon compte
             </button>
           </li>
-
+          <li>
+            <button
+              className="btn-disconnect"
+              onClick={() => navigate("/")}
+              type="button"
+            >
+              <i className="fi fi-rr-user"/> Déconnecter
+            </button>
+          </li>
         </ul>
       </nav>
       <div id="navbar-mobile">
@@ -151,7 +158,15 @@ export default function Navbar() {
                 <i className="fi fi-rr-user" /> Mon compte
               </button>
             </li>
- 
+                <li>
+            <button
+              className="btn-disconnect"
+              onClick={() => navigate("/")}
+              type="button"
+            >
+              <i className="fi fi-rr-user"/> Déconnecter
+            </button>
+          </li>
           </ul>
         )}
       </div>

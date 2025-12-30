@@ -5,7 +5,7 @@ import "./newfaq.css";
 function NewFaq({newFaq, setNewFaq, setShowNewFaq}) {
   const [sujet, setSujet] = useState('');
   const [texte, setTexte] = useState('');
-  const { userToken, userInfo } = useContext(AuthContext);
+  const { userToken } = useContext(AuthContext);
   function timeout(delay) {
     return new Promise( res => setTimeout(res, delay) );
   }
@@ -40,10 +40,6 @@ function NewFaq({newFaq, setNewFaq, setShowNewFaq}) {
     setSujet("");
     setTexte("");
   }
-  console.log("new faq isAdmin ",userInfo.is_admin);
-  
-  
-  
   return (
     <div className="newfaq">
       <div className="entete">

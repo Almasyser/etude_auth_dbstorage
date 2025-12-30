@@ -365,7 +365,7 @@ p:last-child {
   align-items: center;
   justify-content: center;
   font-size: 10vh;
-  color: #fff;
+  color: var(--cyan-50);
 }
 .authentication-container .image img {
   max-width: 60%;

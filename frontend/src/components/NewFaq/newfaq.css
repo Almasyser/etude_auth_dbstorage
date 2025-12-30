@@ -403,20 +403,10 @@ p:last-child {
   0% {
     color: var(--cyan-300);
   }
-  20% {
-    color: var(--cyan-400);
-  }
   40% {
     color: var(--green-400);
-  }
-  60% {
-    color: var(--green-300);
   }
   100% {
     color: var(--green-300);
   }
-}
-
-.msg-valide {
-  color: var(--cyan-200);
 }/*# sourceMappingURL=newfaq.css.map */

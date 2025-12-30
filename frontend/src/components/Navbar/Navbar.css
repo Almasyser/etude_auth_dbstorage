@@ -383,10 +383,11 @@ p:last-child {
   align-items: flex-end;
   gap: 0.2rem;
   padding: 1rem;
-  background: rgba(23, 37, 84, 0.6);
+  background: rgba(23, 37, 84, 0.8);
 }
 #navbar-mobile .items .btn-disconnect {
-  color: var(--red-300);
+  color: var(--red-600);
+  font-weight: 100;
 }
 #navbar-mobile .items button {
   background-color: transparent;
@@ -429,7 +430,7 @@ p:last-child {
     gap: 1.5rem;
   }
   #navbar .items .btn-disconnect {
-    color: var(--red-300);
+    color: var(--red-600);
   }
   #navbar .items button {
     height: 2rem;

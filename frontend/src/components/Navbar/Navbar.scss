@@ -58,9 +58,10 @@
     align-items: flex-end;
     gap: 0.2rem;
     padding: 1rem;
-    background: rgba(23, 37, 84,0.6);
+    background: rgba(23, 37, 84,0.8);
     .btn-disconnect{
-      color: var(--red-300);
+      color: var(--red-600);
+      font-weight: 100;
     }
     button {
       background-color: transparent;
@@ -74,7 +75,6 @@
         color: var(--cyan-100);
         cursor: pointer;
       }
-
     }
   }
 }
@@ -107,7 +107,7 @@
       display: flex;
       gap: clamp(1rem, 1.5rem, 1.5rem);
       .btn-disconnect{
-        color: var(--red-300);
+        color: var(--red-600);
       }
       button {
         height: 2rem;

@@ -20,6 +20,11 @@ CREATE TABLE IF NOT EXISTS `auth_dbstorage`.`user` (
     `firstname` VARCHAR(100) NULL,
     `phone` VARCHAR(18) NULL,
     `is_admin` TINYINT NOT NULL,
+    `role` VARCHAR(128) NULL,
+    `photo` VARCHAR(64) NULL,
+    `avatar` VARCHAR(64) NULL,
+    `picture` BLOB NULL,
+    `date_in` DATE DEFAULT CURRENT_TIMESTAMP, 
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB;
 

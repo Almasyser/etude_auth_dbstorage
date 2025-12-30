@@ -52,10 +52,6 @@ export default function Faq() {
       navigate("/home");
     }
   }
-// console.log("FAQ admin --->",isAdmin);
-
-
-
   return (
     userToken && (
       <>

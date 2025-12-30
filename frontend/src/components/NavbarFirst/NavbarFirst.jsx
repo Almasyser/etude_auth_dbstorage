@@ -27,5 +27,4 @@ function NavbarFirst() {
     </>
   )
 }
-
 export default NavbarFirst

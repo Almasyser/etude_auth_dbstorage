@@ -5,7 +5,6 @@ import { useState, useContext} from "react";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
 function NewUserAccount({ users, setUsers}) {
-  // const { mail, lastname, firstname, phone, is_admin } = userInfo;
   const [firstnameInput, setFirstnameInput] = useState("Prenom")
   const [mailInput,setMailInput] = useState("Adresse mail")
   const [lastnameInput, setLastnameInput] = useState("Nom")
@@ -22,8 +21,6 @@ function NewUserAccount({ users, setUsers}) {
     const form = event.target;
     const formData = new FormData(form);
     const dataFromForm = Object.fromEntries(formData.entries());
-
-    
     axios
       .post(`${import.meta.env.VITE_BACKEND_URL}/addUser`, dataFromForm, {
         headers: {
@@ -49,8 +46,6 @@ function NewUserAccount({ users, setUsers}) {
     setCheckAdmin(e.target.value);
     
   }
-
-  console.log("users TYPO ",users);
   return (
     <>
       <header>

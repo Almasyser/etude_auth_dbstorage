@@ -29,9 +29,7 @@ function Users() {
     setShowDetail(true);
     setId(index);
   }
-  
   const handleDeleteUser = (id)=>{
-    console.log(id);
     axios
       .delete(`${import.meta.env.VITE_BACKEND_URL}/adminUser/user/${id}`, {
         headers: { Authorization: `Bearer ${userToken}` },
@@ -51,7 +49,6 @@ function Users() {
       navigate("/home");
     }
   }
-    
   return (
     <>
       <Navbar />

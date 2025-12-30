@@ -6,8 +6,7 @@ import AuthContext from "../../contexts/AuthContext";
 import "./Home.css";
 export default function Home() {
   const navigate = useNavigate();
-  const { userToken, userInfo } = useContext(AuthContext);
-  const isAdmin= userInfo.is_admin;
+  const { userToken } = useContext(AuthContext);
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [usersDatas, setUsersDatas]= useState();
   useEffect(() => {
@@ -31,8 +30,6 @@ export default function Home() {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userToken]);
-   console.log("Home isAdmin :",isAdmin," userdatas",usersDatas);
-   
   return (
     isDataLoaded && userToken && (
       <div className="home">
