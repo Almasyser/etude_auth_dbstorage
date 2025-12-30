@@ -53,7 +53,8 @@ const add = (req, res) => {
   models.faq
     .insert(faq)
     .then(([result]) => {
-      res.location(`/items/${result.insertId}`).sendStatus(201);
+      const newId  = result.insertId;
+      res.location(`/items/${result.insertId}`).status(201).send(newId); 
     })
     .catch((err) => {
       console.error(err);
@@ -63,7 +64,6 @@ const add = (req, res) => {
 
 const destroy = (req, res) => {
   const id = parseInt(req.params.id,10);
-  console.log(id, typeof(id));
   models.faq
     .delete(id)
     .then(([result]) => {

@@ -10,9 +10,8 @@ export default function Faq() {
   const { userToken, userInfo } = useContext(AuthContext);
   const isAdmin = userInfo.is_admin;
   const [isDataLoaded, setIsDataLoaded] = useState(false);
-  const [question, setQuestion] = useState();
+  const [newFaq, setNewFaq] = useState();
   const [showNewFaq, setShowNewFaq] = useState(false);
-  
   useEffect(() => {
     axios
       .get(`${import.meta.env.VITE_BACKEND_URL}/faq`, {
@@ -21,7 +20,7 @@ export default function Faq() {
         },
       })
       .then((response) => {
-        setQuestion(response.data);
+        setNewFaq(response.data);
         setIsDataLoaded(true);
       })
       .catch((error) => {
@@ -31,10 +30,9 @@ export default function Faq() {
       navigate("/home");
     }
   }, [userToken, navigate]);
-  const handleDelete = (item)=>{
-    console.log("DELETE",item, typeof(item));
+  const handleDelete = (id)=>{
     axios
-      .delete(`${import.meta.env.VITE_BACKEND_URL}/faq/${item}`, {
+      .delete(`${import.meta.env.VITE_BACKEND_URL}/faq/${id}`, {
         headers: {
           Authorization: `Bearer ${userToken}`,
         },
@@ -42,7 +40,7 @@ export default function Faq() {
       .then((response) => {
         if (response.status === 204) {
           console.log("faq effacée");
-          window.location.reload();
+          setNewFaq(newFaq.filter( item => item.id !== id))
         } else {
           console.error(response.status);
         }
@@ -54,35 +52,39 @@ export default function Faq() {
       navigate("/home");
     }
   }
-console.log("admin",isAdmin);
+// console.log("FAQ admin --->",isAdmin);
+
+
 
   return (
     userToken && (
-    <div className="faq">
-      <Navbar />
-      {isDataLoaded ? (
-        <main>
-          <header>
-            <button className="btn-newfaq"><i className="fi fi-rr-add" onClick={()=> setShowNewFaq(!showNewFaq)}/></button>
-            <h1>FAQ : Réponses aux questions fréquentes</h1>
-          </header>
-          <div className="content">
-            <ul className="faq-list">
-              {question.map((el) => (
-                <li key={el.id}>
-                  {isAdmin? <i className="fi fi-rr-trash" onClick={()=>handleDelete(el.id)}/>:null }
-                  <p className="question">{el.question}</p>
-                  <p className="answer">{el.answer}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </main>
-      ) : (
-        <p>Chargement...</p>
-      )}
-      {showNewFaq && <NewFaq setShowNewFaq={setShowNewFaq}/>}
-    </div>
+      <>
+        <div className="faq">
+          <Navbar />
+          {isDataLoaded ? (
+            <main>
+              <header>
+                <button className="btn-newfaq"><i className="fi fi-rr-add" onClick={()=> setShowNewFaq(!showNewFaq)}/></button>
+                <h1>FAQ : Réponses aux questions fréquentes</h1>
+              </header>
+              <div className="content">
+                <ul className="faq-list">
+                  {newFaq.map((el, index) => (
+                    <li key={index}>
+                      {isAdmin? <i className="fi fi-rr-trash" onClick={()=>handleDelete(el.id)}/>:null }
+                      <p className="question">{el.id}&nbsp;{el.question}</p>
+                      <p className="answer">{el.answer}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </main>
+          ) : (
+            <p>Chargement...</p>
+          )}
+        </div>
+        {showNewFaq && <NewFaq newFaq={newFaq} setNewFaq={setNewFaq} setShowNewFaq={setShowNewFaq}/>}
+      </>
     )
   );
 }

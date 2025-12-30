@@ -49,10 +49,11 @@ const addUser = (req, res) => {
   models.user
     .insert(newUser)
     .then(([result]) => {
+      const newId  = result.insertId;
+      res.send(newId);
       if (result.affectedRows !== 0) {
-        res.sendStatus(204);
-        console.log("user créé");
-        
+        res.status(204);
+        console.log("user créé",newId);
       } else {
         res.status(404).send("User not created");
       }
@@ -82,7 +83,8 @@ const modifyUser = (req, res) => {
 };
 
 const destroyUser = (req, res) => {
-   
+  console.log(req.params);
+  
   models.user
     .delete(req.params.id)
     .then(([result]) => {
@@ -90,6 +92,8 @@ const destroyUser = (req, res) => {
         res.sendStatus(404);
       } else {
         res.sendStatus(204);
+        console.log("user deleted");
+        
       }
     })
     .catch((err) => {

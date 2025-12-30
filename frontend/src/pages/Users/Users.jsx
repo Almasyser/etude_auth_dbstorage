@@ -1,4 +1,5 @@
 import { useEffect, useState, useContext } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
 import Navbar from "../../components/Navbar/Navbar";
@@ -7,6 +8,7 @@ import NewUserAccount from "../../components/NewUserAccount/NewUserAccount";
 import UserAccount from "../../components/UserAccount/UserAccount";
 import "./Users.css";
 function Users() {
+  const navigate= useNavigate();
   const AuthValue = useContext(AuthContext);
   const { userToken, userInfo } = AuthValue;
   const isAdmin =userInfo.is_admin;
@@ -27,6 +29,29 @@ function Users() {
     setShowDetail(true);
     setId(index);
   }
+  
+  const handleDeleteUser = (id)=>{
+    console.log(id);
+    axios
+      .delete(`${import.meta.env.VITE_BACKEND_URL}/adminUser/user/${id}`, {
+        headers: { Authorization: `Bearer ${userToken}` },
+      })
+      .then((response) => {
+        if (response.status === 204) {
+          console.log("faq effacée");
+          setUsers(users.filter( item => item.id !== id))
+        } else {
+          console.error(response.status);
+        }
+      })
+      .catch((error) => {
+        console.error(error.message);
+      });
+    if (!userToken) {
+      navigate("/home");
+    }
+  }
+    
   return (
     <>
       <Navbar />
@@ -42,20 +67,21 @@ function Users() {
               <span className="central">
                 <p>{el.role}</p>
                 <p>{`${el.firstname} ${el.lastname}`}</p>
+                <p>{el.id}</p>
                 <p>{el.email}</p>
                 <p>{el.mobile}</p>
               </span>
               <span className="droite">
                 <div className="boutons">
                   <i className="fi fi-rr-user" onClick={()=> handleDetailUser(index)}></i>
-                  {isAdmin && <i className="fi fi-rr-trash"></i>}
+                  {isAdmin && <i className="fi fi-rr-trash" onClick={()=>handleDeleteUser(el.id)}></i>}
                 </div>
               </span>
             </section>
-          ))}
+            ))}
         </div>
       )}
-      {showNew && <NewUserAccount />}
+      {showNew && <NewUserAccount users={users} setUsers={setUsers}/>}
       {showDetail && <UserAccount userInfo={users[id]} setShowDetail={setShowDetail}/>}
     </>
   );

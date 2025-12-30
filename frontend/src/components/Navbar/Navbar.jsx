@@ -13,7 +13,7 @@ export default function Navbar() {
       <nav id="navbar">
         <div
           className="logo"
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/home")}
           aria-hidden="true"
         >
           <img src="../src/assets/Logo.png" alt="Logo" />
@@ -24,7 +24,7 @@ export default function Navbar() {
               <button
                 className=""
                 type="button"
-                onClick={()=>navigate("/")}
+                onClick={()=>navigate("/home")}
               >
                 <i className="fi fi-rr-home" /> Accueil
               </button>
@@ -83,7 +83,7 @@ export default function Navbar() {
         <nav>
           <div
             className="logo"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/home")}
             aria-hidden="true"
           >
             <img src="../src/assets/Logo.png" alt="Logo" />
@@ -106,7 +106,7 @@ export default function Navbar() {
               <button
                   className=""
                   type="button"
-                  onClick={() => {}}
+                  onClick={() => navigate("/home")}
                 >
                 <i className="fi fi-rr-home" /> Accueil
               </button>

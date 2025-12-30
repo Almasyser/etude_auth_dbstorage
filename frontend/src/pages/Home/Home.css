@@ -332,4 +332,10 @@ p:last-child {
   color: var(--cyan-200);
   padding-top: 2rem;
   text-align: center;
+}
+.home ul, .home li {
+  color: var(--cyan-50);
+}
+.home ul {
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=Home.css.map */

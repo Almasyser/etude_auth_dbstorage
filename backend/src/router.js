@@ -31,7 +31,7 @@ router.put("/user/:id", verifyToken, hashPassword, checkId, user.modifyUser);
 router.delete(
   "/adminUser/user/:id",
   verifyToken,
-  verifyAdminRole,
+  // verifyAdminRole,
   user.destroyUser
 );
 router.get("/faq", verifyToken, faq.browse);

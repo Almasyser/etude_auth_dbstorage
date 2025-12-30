@@ -1,14 +1,16 @@
 @use "../../styles/colors" as *;
 @use "../../styles/shadows" as *;
 .useraccount{
-  position: absolute;
-  top: 16%;
-  left: 32%;
-  width: 480px;
+  position: relative;
+  top: 8rem;
+  left: 0;
+  margin: auto;
+  max-width: 480px;
   border-radius: 8px;
   background: var(--blue-950);
   @include shadow("md");
   .header{
+    position: relative;
     height: 3rem;
     background: var(--blue-900);
     border-radius: 8px 8px 0 0;

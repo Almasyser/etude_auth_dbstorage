@@ -2,21 +2,19 @@ import { useState, useContext } from "react";
 import AuthContext from "../../contexts/AuthContext";
 import axios from 'axios';
 import "./newfaq.css";
-function NewFaq({setShowNewFaq}) {
+function NewFaq({newFaq, setNewFaq, setShowNewFaq}) {
   const [sujet, setSujet] = useState('');
   const [texte, setTexte] = useState('');
-  const { userToken } = useContext(AuthContext);
-  const [message, setMessage] = useState(false);
+  const { userToken, userInfo } = useContext(AuthContext);
   function timeout(delay) {
     return new Promise( res => setTimeout(res, delay) );
   }
   const handleClick = ()=>{
-    window.location.reload();
     setShowNewFaq(false);
   }
   const handleSubmit = async(event) => {
-    await timeout(1000);
     event.preventDefault();
+    await timeout(1000);
     const form = event.target;
     const formData = new FormData(form);
     const dataFromForm = Object.fromEntries(formData.entries());
@@ -27,18 +25,25 @@ function NewFaq({setShowNewFaq}) {
         },
       })
       .then((response) => {
-        if (response.status === 204) {
-          setMessage(true);
+        if (response.status === 201) {
+          setNewFaq([...newFaq, { id: response.data, question:dataFromForm.question, answer:dataFromForm.answer }]);
+          handleClearFields();
         } else {
-          setMessage(false);
+          console.error("erreur d'ecritures FAQ")
         }
       })
       .catch((error) => {
         console.error(error.message);
       });
-      setShowNewFaq(true);
   }
-
+  const handleClearFields = ()=>{
+    setSujet("");
+    setTexte("");
+  }
+  console.log("new faq isAdmin ",userInfo.is_admin);
+  
+  
+  
   return (
     <div className="newfaq">
       <div className="entete">
@@ -52,9 +57,6 @@ function NewFaq({setShowNewFaq}) {
           Valider la question
         </button> : null}
       </form>
-      <div>
-        { message && <p className="msg-valide">Nouvel question postée avec succès..</p>}
-      </div>
     </div>
   )
 }

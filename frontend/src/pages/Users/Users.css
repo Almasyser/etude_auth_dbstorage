@@ -330,6 +330,53 @@
   color: var(--red-200);
 }
 
+.alert {
+  position: fixed;
+  width: 320px;
+  height: 128px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: var(--blue-950);
+  padding: 0 1rem;
+  border-radius: 8px;
+}
+.alert p {
+  color: var(--cyan-100);
+  padding: 0.5rem 0 0.5rem 0;
+}
+.alert .btn-alert {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  gap: 2rem;
+}
+.alert .btn-alert :nth-child(1) {
+  width: 10rem;
+  height: 1.8rem;
+  color: var(--cyan-400);
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid var(--cyan-400);
+}
+.alert .btn-alert :nth-child(1):hover {
+  color: var(--cyan-50);
+  border-color: var(--cyan-100);
+  cursor: pointer;
+}
+.alert .btn-alert :nth-child(2) {
+  width: 10rem;
+  color: var(--green-500);
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid var(--green-500);
+}
+.alert .btn-alert :nth-child(2):hover {
+  color: var(--green-300);
+  border-color: var(--green-400);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 740px) {
   .photo {
     width: 112px;

@@ -2,12 +2,12 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import NavbarFirst from "../../components/Navbar/NavbarFirst";
 import AuthContext from "../../contexts/AuthContext";
 import "./Home.css";
 export default function Home() {
   const navigate = useNavigate();
-  const { userToken } = useContext(AuthContext);
+  const { userToken, userInfo } = useContext(AuthContext);
+  const isAdmin= userInfo.is_admin;
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [usersDatas, setUsersDatas]= useState();
   useEffect(() => {
@@ -31,12 +31,27 @@ export default function Home() {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userToken]);
+   console.log("Home isAdmin :",isAdmin," userdatas",usersDatas);
    
   return (
     isDataLoaded && userToken && (
       <div className="home">
-        {usersDatas? <Navbar/> : <NavbarFirst />}
+        <Navbar/>
         <h1>Page Home</h1>
+        {usersDatas && usersDatas.map((el)=>{
+          return(
+            <ul key={el.id}>
+              <li><img src={el.picture} alt="PHOTO"/></li>
+              <li>Nom:{el.firstname}</li>
+              <li>Prénom:{el.lastname}</li>
+              <li>Role:{el.role}</li>
+              <li>Téléphone:{el.phone}</li>
+              <li>Mail:{el.mail}</li>
+              <li>Admin:{el.is_admin}</li>
+              <li>Avatar:{el.avatar}</li>
+            </ul>
+          )
+        })}
       </div>
     )
   );

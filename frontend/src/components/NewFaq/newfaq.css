@@ -325,9 +325,10 @@ p:last-child {
 
 .newfaq {
   position: absolute;
-  top: 10rem;
-  left: 32%;
-  width: 480px;
+  top: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 680px;
   background-color: var(--blue-950);
   padding: 1rem;
   border-radius: 8px;
@@ -338,10 +339,11 @@ p:last-child {
   height: 3rem;
   background: var(--blue-900);
   border-radius: 8px 8px 0 0;
+  margin-bottom: 1rem;
 }
 .newfaq .entete h1 {
   color: var(--cyan-100);
-  padding: 1rem 0 0 1rem;
+  padding: 1rem 16rem 0 1rem;
 }
 .newfaq .entete i {
   color: var(--green-400);
