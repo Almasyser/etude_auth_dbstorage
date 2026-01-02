@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
 import ConvertDateJMA from "../utils/ConvertDateJMA";
-export default function UserAccount({ userInfo, setShowDetail }) {
+export default function UserAccount({ userInfo, setShowUserAccount }) {
   const { mail, lastname, firstname, phone, role, date_in, id } = userInfo;
   const [firstnameInput, setFirstnameInput] = useState(firstname);
   const [lastnameInput, setLastnameInput] = useState(lastname);
@@ -39,12 +39,12 @@ export default function UserAccount({ userInfo, setShowDetail }) {
   };
   const handleRetour=()=>{
     navigate("/users");
-    setShowDetail(false);
+    setShowUserAccount(false);
   }
   return (
     <div className="useraccount">
       <div className="header">
-        <h1>Mes informations</h1>
+        <h1>Détails du compte</h1>
         <i className="fi fi-rr-users" onClick={handleRetour}>&nbsp;Retour</i>
       </div>
       <div className="account">

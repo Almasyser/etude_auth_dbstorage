@@ -212,9 +212,10 @@
 }
 
 .useraccount {
-  position: relative;
-  top: 8rem;
-  left: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: auto;
   max-width: 480px;
   border-radius: 8px;
@@ -254,10 +255,10 @@
 }
 .useraccount .account .input-field {
   background-color: transparent;
+  color: var(--cyan-200);
 }
 .useraccount .account .input-field label {
   cursor: pointer;
-  color: var(--cyan-200);
 }
 .useraccount .account .btn {
   width: 100%;

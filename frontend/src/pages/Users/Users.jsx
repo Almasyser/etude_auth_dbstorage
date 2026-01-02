@@ -14,7 +14,7 @@ function Users() {
   const isAdmin =userInfo.is_admin;
   const [users, setUsers] = useState();
   const [showNewUser, setShowNewUser] = useState(false);
-  const [showDetail, setShowDetail] = useState(false);
+  const [showUserAccount, setShowUserAccount] = useState(false);
   const [id, setId ] = useState(0);
   useEffect(() => {
     axios
@@ -26,7 +26,7 @@ function Users() {
        });
   }, [userToken]);
   const handleDetailUser=(index)=>{
-    setShowDetail(true);
+    setShowUserAccount(true);
     setId(index);
   }
   const handleDeleteUser = (id)=>{
@@ -79,7 +79,7 @@ function Users() {
         </div>
       )}
       {showNewUser && <NewUserAccount users={users} setUsers={setUsers} setShowNewUser={setShowNewUser}/>}
-      {showDetail && <UserAccount userInfo={users[id]} setShowDetail={setShowDetail}/>}
+      {showUserAccount && <UserAccount userInfo={users[id]} setShowUserAccount={setShowUserAccount}/>}
     </>
   );
 }

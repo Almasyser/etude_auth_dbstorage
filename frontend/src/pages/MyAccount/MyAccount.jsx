@@ -8,7 +8,7 @@ export default function MyAccount() {
   const { userToken, userInfo } = useContext(AuthContext);
   return (
     userToken && (
-      <>
+      <div className="myaccount">
         <Navbar />
         <div className="useraccount">
           <div className="header">
@@ -47,7 +47,7 @@ export default function MyAccount() {
             </div>
           </div>
         </div>
-      </>
+      </div>
     )
   );
 }
