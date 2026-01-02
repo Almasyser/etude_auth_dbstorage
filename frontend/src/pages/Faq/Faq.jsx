@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import AuthContext from "../../contexts/AuthContext";
 import NewFaq from "../../components/NewFaq/NewFaq";
+import ConvertDateJMA from "../../components/utils/ConvertDateJMA";
 import "./Faq.css";
 export default function Faq() {
   const navigate = useNavigate();
@@ -68,8 +69,11 @@ export default function Faq() {
                   {newFaq.map((el, index) => (
                     <li key={index}>
                       {isAdmin? <i className="fi fi-rr-trash" onClick={()=>handleDelete(el.id)}/>:null }
-                      <p className="question">{el.id}&nbsp;{el.question}</p>
-                      <p className="answer">{el.answer}</p>
+                        <span className="liste">
+                          <p className="question">{el.id}&nbsp;{el.question}</p>
+                          <p className="answer">{el.answer}</p>
+                          <p className="answer">Auteur: {el.author} le {ConvertDateJMA(el.date_in)}</p>
+                        </span>
                     </li>
                   ))}
                 </ul>

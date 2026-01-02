@@ -7,8 +7,8 @@ class faqManager extends AbstractManager {
 
   insert(faq) {
     return this.database.query(
-      `insert into ${this.table} (question, answer) values (?,?)`,
-      [faq.question, faq.answer]
+      `insert into ${this.table} (question, answer, author) values (?,?,?)`,
+      [faq.question, faq.answer, faq.author]
     );
   }
 }

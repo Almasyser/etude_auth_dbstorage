@@ -342,6 +342,8 @@ p:last-child {
   margin-bottom: 1rem;
 }
 .newfaq .entete h1 {
+  width: -moz-max-content;
+  width: max-content;
   color: var(--cyan-100);
   padding: 1rem 16rem 0 1rem;
 }
@@ -355,7 +357,7 @@ p:last-child {
   color: var(--green-200);
   cursor: pointer;
 }
-.newfaq .form-newfaq {
+.newfaq .formnewfaq {
   border: ipx solid cyan;
   width: 100%;
   margin: 0 auto 4rem;
@@ -379,6 +381,16 @@ p:last-child {
   border-radius: 8px;
   padding-left: 1rem;
   vertical-align: top;
+}
+.newfaq .author {
+  background: var(--blue-950);
+  color: var(--cyan-500);
+  border: none;
+}
+.newfaq .date_in {
+  background: var(--blue-950);
+  color: var(--cyan-500);
+  border: none;
 }
 .newfaq .btn {
   width: 12rem;

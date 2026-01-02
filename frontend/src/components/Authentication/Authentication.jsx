@@ -6,22 +6,13 @@ import AuthContext from "../../contexts/AuthContext";
 
 export default function Authentication() {
   const { setUser, setUserInfo } = useContext(AuthContext);
-
-  // regex definition for mail user
-
-  // useState definition
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordShown, setPasswordShown] = useState(false);
   const [failAuth, setFailAuth] = useState(false);
-
   const navigate = useNavigate();
-
-  // submit handler for the form
   const handleSubmit = (event) => {
     event.preventDefault();
-    // console.log(`${import.meta.env.VITE_BACKEND_URL}/user/login`);
-    
     const form = event.target;
     const formData = new FormData(form);
     const dataFromForm = Object.fromEntries(formData.entries());
@@ -41,20 +32,14 @@ export default function Authentication() {
         setFailAuth(true);
       });
   };
-
-  // handler for change in input mail
   const handleMailChange = (event) => {
     setMail(event.target.value);
   };
-
-  // handler for change in password input
   const handlePasswordChange = (event) => setPassword(event.target.value);
-
   // toggle to change type input for password to show it if user click on the SHOW button
   const togglePassword = () => {
     setPasswordShown(!passwordShown);
   };
-
   return (
     <div className="connection">
       <form onSubmit={handleSubmit}>
