@@ -4,8 +4,9 @@ import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
+import ConvertDateJMA from "../utils/ConvertDateJMA";
 export default function UserAccount({ userInfo, setShowDetail }) {
-  const { mail, lastname, firstname, phone, role, id } = userInfo;
+  const { mail, lastname, firstname, phone, role, date_in, id } = userInfo;
   const [firstnameInput, setFirstnameInput] = useState(firstname);
   const [lastnameInput, setLastnameInput] = useState(lastname);
   const [mailInput, setMailInput] = useState(mail);
@@ -111,6 +112,14 @@ export default function UserAccount({ userInfo, setShowDetail }) {
                   id="role"
                   onChange={(e)=>setRoleInput(e.target.value)}
                 />
+              </div>
+            </div>
+          </div>
+          <div className="input-line">
+            <div className="input-field">
+              <label htmlFor="role">Compte créé le: </label>
+              <div className="input">
+                {ConvertDateJMA(date_in)}
               </div>
             </div>
           </div>

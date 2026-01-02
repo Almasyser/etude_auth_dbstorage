@@ -256,6 +256,7 @@
   background-color: transparent;
 }
 .useraccount .account .input-field label {
+  cursor: pointer;
   color: var(--cyan-200);
 }
 .useraccount .account .btn {
