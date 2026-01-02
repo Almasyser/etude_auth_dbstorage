@@ -4,7 +4,7 @@ import "./newuseraccount.css";
 import { useState, useContext} from "react";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
-function NewUserAccount({ users, setUsers}) {
+function NewUserAccount({ users, setUsers, setShowNewUser }) {
   const [firstnameInput, setFirstnameInput] = useState("Prenom")
   const [mailInput,setMailInput] = useState("Adresse mail")
   const [lastnameInput, setLastnameInput] = useState("Nom")
@@ -31,9 +31,9 @@ function NewUserAccount({ users, setUsers}) {
         if (response.status === 200) {
           setMessage(true);
           const builted = {...dataFromForm, ['id']: response.data}
-          console.log("xx->", builted);
           users.push(builted);
           setUsers(users);
+          setShowNewUser(false);
         } else {
           setMessage(false);
         }
@@ -46,12 +46,16 @@ function NewUserAccount({ users, setUsers}) {
     setCheckAdmin(e.target.value);
     
   }
+  const handleClick = ()=>{
+    setShowNewUser(false);
+  }
   return (
-    <>
-      <header>
+    <section className="newuseraccount">
+      <header className="entete">
         <h1>Inscription</h1>
+        <i className="fi fi-rr-users" onClick={handleClick}>&nbsp;Retour</i>
       </header>
-      <div className="content user-account">
+      <div className="content">
         <form onSubmit={handleSubmit}>
           <div className="input-line">
             <div className="input-field">
@@ -176,7 +180,7 @@ function NewUserAccount({ users, setUsers}) {
               </div>
             </div>
           </div>
-          <button type="submit" className="btn">
+          <button type="submit" className={checkAdmin !== null? "btn" : "btn disabled"} >
             Valider le nouvel utilisateur
           </button>
         </form>
@@ -184,7 +188,7 @@ function NewUserAccount({ users, setUsers}) {
           { message? <p>Nouvel utilisateur créé avec succès..</p>:<p>erreur creation usager</p>}
         </div>
       </div>
-    </>
+    </section>
   );
 }
 export default NewUserAccount;

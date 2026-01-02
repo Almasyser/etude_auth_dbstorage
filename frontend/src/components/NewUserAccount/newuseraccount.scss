@@ -1,23 +1,87 @@
+@use "../../styles/shadows" as *;
 @use "../../styles/colors" as *;
-.label-check{
-  color: var(--cyan-50);
-  display: flex;
-  &.null{
-    color: var(--red-500);
-    font-weight: 600;
-    animation-name: varie;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    @keyframes varie {
-      0%{color: var(--red-500)}
-      40%{color: var(--red-400)}
-      80%{color: var(--red-100)}
+.newuseraccount{
+  position: absolute;
+  top: 12rem;
+  left: 50%;
+  transform: translateX(-50%);
+  // max-width: 880px;
+  background-color: var(--blue-950);
+  // padding: 1rem;
+  border-radius: 8px;
+  @include shadow("lg");
+  .entete{
+    height: 3rem;
+    width: 100%;
+    background: var(--blue-900);
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 1rem;
+    h1{
+      color: var(--cyan-100);
+      padding: 1rem 16rem 0 1rem;
+    }
+    i{
+      color: var(--green-400);
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      &:hover{
+        color: var(--green-200);
+        cursor: pointer;
+      }
     }
   }
-  input{
-    width: 32px;
+  .label-check{
+    color: var(--cyan-50);
+    display: flex;
+    &.null{
+      color: var(--red-400);
+      font-weight: 400;
+      
+ 
+    }
   }
-  
+  .input-field{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    .input{
+      background-color: var(--blue-800);
+      :nth-child(1){
+        cursor: pointer;
+         background-color: transparent;
+      }
+    }
+  }
+  .btn{
+    width: 12rem;
+    height: 2rem;
+    background: transparent;
+    border: 1px solid var(--cyan-300);
+    border-radius: 8px;
+    color: var(--cyan-300);
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    &:hover{
+      border: 1px solid var(--cyan-100);
+      color: var(--cyan-100);
+      cursor: pointer;
+    }
+    &:focus{
+        animation-name: valid;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        
+        @keyframes valid {
+          0%{ color: var(--cyan-300)};
+          40%{ color: var(--green-400)};
+          100%{ color: var(--green-300)};
+        }
+      }
+    &.disabled{
+      cursor:default;
+      border-color:  var(--cyan-700);
+      color: var(--cyan-700);
+    }
+    }
 }
 
 

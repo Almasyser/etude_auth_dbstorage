@@ -13,7 +13,7 @@ function Users() {
   const { userToken, userInfo } = AuthValue;
   const isAdmin =userInfo.is_admin;
   const [users, setUsers] = useState();
-  const [showNew, setShowNew] = useState(false);
+  const [showNewUser, setShowNewUser] = useState(false);
   const [showDetail, setShowDetail] = useState(false);
   const [id, setId ] = useState(0);
   useEffect(() => {
@@ -54,7 +54,7 @@ function Users() {
       <Navbar />
       {users && (
         <div className="manage">
-          <button className="newuser"><i className="fi fi-rr-user-add" onClick={()=> setShowNew(!showNew)}/></button>
+          <button className="newuser"><i className="fi fi-rr-user-add" onClick={()=> setShowNewUser(!showNewUser)}/></button>
           <header>
             <h1>Gestion des Utilisateurs</h1>
           </header>
@@ -78,7 +78,7 @@ function Users() {
             ))}
         </div>
       )}
-      {showNew && <NewUserAccount users={users} setUsers={setUsers}/>}
+      {showNewUser && <NewUserAccount users={users} setUsers={setUsers} setShowNewUser={setShowNewUser}/>}
       {showDetail && <UserAccount userInfo={users[id]} setShowDetail={setShowDetail}/>}
     </>
   );
