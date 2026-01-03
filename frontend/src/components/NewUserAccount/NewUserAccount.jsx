@@ -4,6 +4,7 @@ import "./newuseraccount.css";
 import { useState, useContext} from "react";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
+import LoadPhoto from "../LoadPhoto/LoadPhoto";
 function NewUserAccount({ users, setUsers, setShowNewUser }) {
   const [firstnameInput, setFirstnameInput] = useState("Prenom")
   const [mailInput,setMailInput] = useState("Adresse mail")
@@ -14,8 +15,11 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
   const [roleInput,setRoleInput] = useState("role")
   const [photoInput,setPhotoInput] = useState("photo")
   const [avatarInput,setAvatarInput] = useState("avatar")
+  const [picture, setPicture] = useState();
   const { userToken } = useContext(AuthContext);
-  const [message, setMessage] = useState(false); //  setMessage
+  const [message, setMessage] = useState(false); 
+  const [showLoadPhoto, setShowLoadPhoto] = useState(false);
+  //  setMessage
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -30,7 +34,7 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
       .then((response) => {
         if (response.status === 200) {
           setMessage(true);
-          const builted = {...dataFromForm, ['id']: response.data}
+          const builted = {...dataFromForm, ['id']: response.data, ['picture']: picture}
           users.push(builted);
           setUsers(users);
           setShowNewUser(false);
@@ -180,13 +184,15 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
               </div>
             </div>
           </div>
-          <button type="submit" className={checkAdmin !== null? "btn" : "btn disabled"} >
-            Valider le nouvel utilisateur
-          </button>
+          <div className="btnbox">
+            <button type="submit" className={checkAdmin !== null? "btn" : "btn disabled"} >
+              Valider le nouvel utilisateur
+            </button>
+            <button type='button' className="btn" onClick={()=>setShowLoadPhoto(!showLoadPhoto)}>Ajouter une photo</button>
+          </div>
         </form>
-        <div>
-          { message? <p>Nouvel utilisateur créé avec succès..</p>:<p>erreur creation usager</p>}
-        </div>
+        { !message? <p  className="success">Nouvel utilisateur créé avec succès..</p>:<p>&nbsp;</p>}
+        {showLoadPhoto && <LoadPhoto setPicture={setPicture} />}
       </div>
     </section>
   );

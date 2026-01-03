@@ -259,6 +259,10 @@
   cursor: pointer;
   background-color: transparent;
 }
+.newuseraccount .btnbox {
+  display: flex;
+  justify-content: space-evenly;
+}
 .newuseraccount .btn {
   width: 12rem;
   height: 2rem;
@@ -266,7 +270,7 @@
   border: 1px solid var(--cyan-300);
   border-radius: 8px;
   color: var(--cyan-300);
-  margin: 0.5rem 1rem 0.5rem 1rem;
+  margin: 1rem;
 }
 .newuseraccount .btn:hover {
   border: 1px solid var(--cyan-100);
@@ -294,4 +298,9 @@
   cursor: default;
   border-color: var(--cyan-700);
   color: var(--cyan-700);
+}
+.newuseraccount .success {
+  color: var(--cyan-400);
+  font-size: 0.8rem;
+  padding-left: 1rem;
 }/*# sourceMappingURL=newuseraccount.css.map */

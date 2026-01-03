@@ -37,8 +37,6 @@
     &.null{
       color: var(--red-400);
       font-weight: 400;
-      
- 
     }
   }
   .input-field{
@@ -51,6 +49,10 @@
       }
     }
   }
+  .btnbox{
+    display: flex;
+    justify-content: space-evenly;
+  }
   .btn{
     width: 12rem;
     height: 2rem;
@@ -58,7 +60,7 @@
     border: 1px solid var(--cyan-300);
     border-radius: 8px;
     color: var(--cyan-300);
-    margin: 0.5rem 1rem 0.5rem 1rem;
+    margin: 1rem;
     &:hover{
       border: 1px solid var(--cyan-100);
       color: var(--cyan-100);
@@ -81,7 +83,13 @@
       border-color:  var(--cyan-700);
       color: var(--cyan-700);
     }
-    }
+  }
+  .success{
+    color: var(--cyan-400);
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    
+  }
 }
 
 
