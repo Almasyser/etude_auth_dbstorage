@@ -1,25 +1,28 @@
-// import { useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
-// import superagent from 'superagent';
 import "./loadphoto.css";
-
 function LoadPhoto({setPicture}) {
-  const { acceptedFiles, getRootProps, getInputProps } = useDropzone();
+  const { acceptedFiles, getRootProps, getInputProps } = useDropzone({
+    accept:{
+      'image/jpeg':[],
+      'image/png':[],
+      'image/svg':[]
+    }
+  });
   const files = acceptedFiles.map((file)=>{
     setPicture(file.path)
     return file.path;
     }
   )
+  console.log("files :", files);
   return (
-    <div className='loadphoto'>
-      <div {...getRootProps()}>
-        <input {...getInputProps()} />
-        <p>Glissez-déposez une photo</p>
-      </div>
-      <p>{files}</p>
-      <img src={files}/>
-      
-    </div>
+    <>
+      <form className='loadphoto'>
+        <div {...getRootProps()}>
+          <input {...getInputProps()} />
+          <p>Glissez-déposez une photo</p>
+        </div>
+      </form>
+    </>
   )
 }
 

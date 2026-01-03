@@ -84,7 +84,6 @@ const modifyUser = (req, res) => {
 
 const destroyUser = (req, res) => {
   console.log(req.params);
-  
   models.user
     .delete(req.params.id)
     .then(([result]) => {

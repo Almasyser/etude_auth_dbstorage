@@ -191,8 +191,8 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
             <button type='button' className="btn" onClick={()=>setShowLoadPhoto(!showLoadPhoto)}>Ajouter une photo</button>
           </div>
         </form>
-        { !message? <p  className="success">Nouvel utilisateur créé avec succès..</p>:<p>&nbsp;</p>}
-        {showLoadPhoto && <LoadPhoto setPicture={setPicture} />}
+        { message? <p  className="success">Nouvel utilisateur créé avec succès..</p>:<p>&nbsp;</p>}
+        { showLoadPhoto && <LoadPhoto picture={picture} setPicture={setPicture} />}
       </div>
     </section>
   );

@@ -12,10 +12,10 @@ class UserManager extends AbstractManager {
   }
 
   insert(newUser) {
-    const { mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar } = newUser;
+    const { mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar, picture } = newUser;
     return this.database.query(
-      `INSERT INTO ${this.table} (mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-      [mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar]
+      `INSERT INTO ${this.table} (mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar, picture) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      [mail, hashed_password, lastname, firstname, phone, is_admin, role, photo, avatar, picture]
     );
   }
 

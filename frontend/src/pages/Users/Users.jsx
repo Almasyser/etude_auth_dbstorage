@@ -1,9 +1,8 @@
 import { useEffect, useState, useContext } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
 import Navbar from "../../components/Navbar/Navbar";
-import imgDefault from "../../assets/default.png";
 import NewUserAccount from "../../components/NewUserAccount/NewUserAccount";
 import UserAccount from "../../components/UserAccount/UserAccount";
 import "./Users.css";
@@ -60,7 +59,7 @@ function Users() {
           </header>
           {users.map((el, index) => (
             <section className="carte" key={el.id}>
-              <img className="photo" src={imgDefault} alt="###" />
+              <img className="photo" src={el.picture} alt="###" />
               <span className="central">
                 <p>{el.role}</p>
                 <p>{`${el.firstname} ${el.lastname}`}</p>
