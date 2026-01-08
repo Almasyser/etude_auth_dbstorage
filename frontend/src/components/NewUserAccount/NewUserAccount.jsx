@@ -13,9 +13,9 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
   const [phoneInput, setPhoneInput] = useState("Telephone")
   const [passwordInput, setPasswordInput] = useState("Mot de passe")
   const [roleInput,setRoleInput] = useState("role")
-  const [photoInput,setPhotoInput] = useState("photo")
+  const [photo,setPhoto] = useState("photo")
   const [avatarInput,setAvatarInput] = useState("avatar")
-  const [picture, setPicture] = useState();
+  // const [picture, setPicture] = useState();
   const { userToken } = useContext(AuthContext);
   const [message, setMessage] = useState(false); 
   const [showLoadPhoto, setShowLoadPhoto] = useState(false);
@@ -34,7 +34,7 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
       .then((response) => {
         if (response.status === 200) {
           setMessage(true);
-          const builted = {...dataFromForm, ['id']: response.data, ['picture']: picture}
+          const builted = {...dataFromForm, ['id']: response.data, ['picture']: photo}
           users.push(builted);
           setUsers(users);
           setShowNewUser(false);
@@ -161,10 +161,10 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
                 <input
                   name="photo"
                   type="text"
-                  value={photoInput}
+                  value={photo}
                   id="photo"
-                  onChange={(e)=>setPhotoInput(e.target.value)}
-                  onFocus={()=>setPhotoInput("")}
+                  onChange={(e)=>setPhoto(e.target.value)}
+                  onFocus={()=>setPhoto("")}
                 />
               </div>
             </div>
@@ -192,7 +192,7 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
           </div>
         </form>
         { message? <p  className="success">Nouvel utilisateur créé avec succès..</p>:<p>&nbsp;</p>}
-        { showLoadPhoto && <LoadPhoto picture={picture} setPicture={setPicture} />}
+        { showLoadPhoto && <LoadPhoto photo={photo} setPhoto={setPhoto} />}
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import { useDropzone } from 'react-dropzone';
 import "./loadphoto.css";
-function LoadPhoto({setPicture}) {
+function LoadPhoto({setPhoto}) {
   const { acceptedFiles, getRootProps, getInputProps } = useDropzone({
     accept:{
       'image/jpeg':[],
@@ -9,7 +9,7 @@ function LoadPhoto({setPicture}) {
     }
   });
   const files = acceptedFiles.map((file)=>{
-    setPicture(file.path)
+    setPhoto(file.path)
     return file.path;
     }
   )

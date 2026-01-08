@@ -59,7 +59,7 @@ function Users() {
           </header>
           {users.map((el, index) => (
             <section className="carte" key={el.id}>
-              <img className="photo" src={el.picture} alt="###" />
+              <img className="photo" src={el.photo} alt="###" />
               <span className="central">
                 <p>{el.role}</p>
                 <p>{`${el.firstname} ${el.lastname}`}</p>

@@ -19,8 +19,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "concurrently \"npm run server\" \"npm run dev\"",
+	"dev": "cd frontend && npm run dev",
+    "server": "cd backend && nodemon index.js",
+    "build": "vite build --outDir dist",
+	"preview": "vite preview",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

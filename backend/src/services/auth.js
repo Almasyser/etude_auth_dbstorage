@@ -8,7 +8,6 @@ const hashingOptions = {
   timeCost: 5,
   parallelism: 1,
 };
-
 const hashPassword = (req, res, next) => {
   if (req.body.password) {
     argon2
@@ -26,7 +25,6 @@ const hashPassword = (req, res, next) => {
     next();
   }
 };
-
 const verifyPassword = (req, res) => {
   argon2
     .verify(req.user.hashed_password, req.body.password)
@@ -47,7 +45,6 @@ const verifyPassword = (req, res) => {
       res.sendStatus(500);
     });
 };
-
 const verifyToken = (req, res, next) => {
   try {
     const authorizationHeader = req.get("Authorization");
@@ -65,7 +62,6 @@ const verifyToken = (req, res, next) => {
     res.sendStatus(401);
   }
 };
-
 const verifyAdminRole = (req, res, next) => {
   const isAdmin = req.get("is_admin");
   if (isAdmin) {
@@ -74,7 +70,6 @@ const verifyAdminRole = (req, res, next) => {
     res.sendStatus(403).send("Forbidden");
   }
 };
-
 const checkId = (req, res, next) => {
   const id = parseInt(req.params.id, 10);
   const payload = req.payload.sub;
@@ -84,7 +79,6 @@ const checkId = (req, res, next) => {
     res.status(403).send("Forbidden");
   }
 };
-
 module.exports = {
   hashPassword,
   verifyPassword,

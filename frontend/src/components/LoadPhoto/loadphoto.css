@@ -243,6 +243,5 @@
   cursor: pointer;
 }
 .loadphoto img {
-  width: 64px;
-  height: 64px;
+  padding-left: 1rem;
 }/*# sourceMappingURL=loadphoto.css.map */

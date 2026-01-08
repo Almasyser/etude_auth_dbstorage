@@ -38,7 +38,7 @@ export default function Home() {
         {usersDatas && usersDatas.map((el)=>{
           return(
             <ul key={el.id}>
-              <li><img src={el.picture} alt="PHOTO"/></li>
+              <li><img src={el.photo} alt="PHOTO"/></li>
               <li>Nom:{el.firstname}</li>
               <li>Prénom:{el.lastname}</li>
               <li>Role:{el.role}</li>

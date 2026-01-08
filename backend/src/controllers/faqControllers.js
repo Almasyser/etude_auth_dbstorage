@@ -1,5 +1,4 @@
 const models = require("../models");
-
 const browse = (req, res) => {
   models.faq
     .findAll()
@@ -11,7 +10,6 @@ const browse = (req, res) => {
       res.sendStatus(500);
     });
 };
-
 const read = (req, res) => {
   models.faq
     .find(req.params.id)
@@ -27,7 +25,6 @@ const read = (req, res) => {
       res.sendStatus(500);
     });
 };
-
 const edit = (req, res) => {
   const faq = req.body;
   // TODO validations (length, format...)
@@ -46,7 +43,6 @@ const edit = (req, res) => {
       res.sendStatus(500);
     });
 };
-
 const add = (req, res) => {
   const faq = req.body;
   models.faq
@@ -60,7 +56,6 @@ const add = (req, res) => {
       res.sendStatus(500);
     });
 };
-
 const destroy = (req, res) => {
   const id = parseInt(req.params.id,10);
   models.faq
@@ -77,7 +72,6 @@ const destroy = (req, res) => {
       res.sendStatus(500);
     });
 };
-
 module.exports = {
   browse,
   read,

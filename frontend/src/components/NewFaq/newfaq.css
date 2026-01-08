@@ -358,7 +358,7 @@ p:last-child {
   cursor: pointer;
 }
 .newfaq .formnewfaq {
-  border: ipx solid cyan;
+  border: ipx solid var(--cyan-500);
   width: 100%;
   margin: 0 auto 4rem;
   display: flex;

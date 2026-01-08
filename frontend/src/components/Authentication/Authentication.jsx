@@ -40,6 +40,11 @@ export default function Authentication() {
   const togglePassword = () => {
     setPasswordShown(!passwordShown);
   };
+  const handleCancel = ()=>{
+    setMail('');
+    setPassword('');
+    navigate('/');
+  }
   return (
     <div className="connection">
       <form onSubmit={handleSubmit}>
@@ -90,6 +95,9 @@ export default function Authentication() {
           Se connecter
         </button>
       </form>
+      <button type="button" className="cancel-button" onClick={handleCancel}>
+          Retour à l'accueil
+        </button>
       {failAuth && (
         <div className="fail-auth-modal">
           <p>Les champs renseignés ne correspondent pas.</p>
