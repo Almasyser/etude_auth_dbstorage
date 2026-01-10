@@ -15,6 +15,7 @@ export default function MyAccount() {
             <h1>Mes informations</h1>
           </div>
           <div className="account">
+            <img src={userInfo.photo} alt="PHOTO"/>
             <div className="input-line">
               <div className="input-field">
                 <label>Prénom</label>

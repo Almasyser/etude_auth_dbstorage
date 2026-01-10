@@ -32,12 +32,13 @@ const verifyPassword = (req, res) => {
       if (isVerified) {
         const payload = { sub: req.user.id };
         const token = jwt.sign(payload, JWT_SECRET, {
-          expiresIn: "8h",
+          expiresIn: "24h",
         });
         delete req.user.hashed_password;
         res.status(200).send({ token, user: req.user });
       } else {
         res.sendStatus(401);
+        console.error("JWT error")
       }
     })
     .catch((err) => {

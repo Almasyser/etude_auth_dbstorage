@@ -3,6 +3,12 @@
   width: 100%;
   height: 100vh;
 }
-.myaccount .input {
-  color: var(--cyan-300);
+.myaccount .useraccount {
+  width: 60%;
+}
+.myaccount img {
+  width: 96px;
+  height: 96px;
+  border: 1px solid var(--blue-500);
+  border-radius: 8px;
 }/*# sourceMappingURL=MyAccount.css.map */
