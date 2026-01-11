@@ -37,4 +37,5 @@ router.delete(
 router.get("/faq", verifyToken, faq.browse);
 router.post("/faq", verifyToken, faq.add);
 router.delete("/faq/:id", verifyToken, faq.destroy);
+
 module.exports = router;

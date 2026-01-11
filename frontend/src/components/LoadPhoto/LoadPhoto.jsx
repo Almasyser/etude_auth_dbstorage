@@ -3,9 +3,8 @@ import "./loadphoto.css";
 function LoadPhoto({setPhoto}) {
   const { acceptedFiles, getRootProps, getInputProps } = useDropzone({
     accept:{
-      'image/jpeg':[],
-      'image/png':[],
-      'image/svg':[]
+      'image/*': ['.jpeg', '.jpg', '.png'],
+  
     }
   });
   const files = acceptedFiles.map((file)=>{

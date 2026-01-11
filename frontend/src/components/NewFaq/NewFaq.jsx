@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import AuthContext from "../../contexts/AuthContext";
 import axios from 'axios';
 import ConvertDateJMA from "../utils/ConvertDateJMA";
+import FileUploader from "../FileUpload/FileUploader";
 import "./newfaq.css";
 function NewFaq({newFaq, setNewFaq, setShowNewFaq}) {
   const [sujet, setSujet] = useState('');
@@ -9,6 +10,7 @@ function NewFaq({newFaq, setNewFaq, setShowNewFaq}) {
   const [dateIn] = useState(new Date());
   const { userToken, userInfo } = useContext(AuthContext);
   const { firstname, lastname } = userInfo;
+  // const {newFile, setNewFile} = useState({});
   function timeout(delay) {
     return new Promise( res => setTimeout(res, delay) );
   }
@@ -65,6 +67,7 @@ function NewFaq({newFaq, setNewFaq, setShowNewFaq}) {
           Valider la question
         </button> : null}
       </form>
+      <FileUploader/>
     </div>
   )
 }

@@ -31,13 +31,21 @@ CREATE TABLE IF NOT EXISTS `auth_dbstorage`.`user` (
 -- -----------------------------------------------------
 -- Table `auth_dbstorage`.`FAQ`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `auth_dbstorage`.`FAQ` (
+CREATE TABLE IF NOT EXISTS `auth_dbstorage`.`faq` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `question` text NOT NULL,
     `answer` text NOT NULL,
     `author` VARCHAR(64) NULL,
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB;
+CREATE TABLE IF NOT EXISTS `auth_dbstorage`.`files` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(255) NOT NULL,
+  `mimetype` VARCHAR(100) NOT NULL,
+  `size` INT NOT NULL,
+  `data` LONGBLOB NOT NULL,
+  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
 INSERT INTO
     `user`(
