@@ -18,7 +18,6 @@ const FileUploader = () => {
       setPreview(null);
     }
   }, []);
-
   // Configuration de react-dropzone
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
@@ -30,14 +29,11 @@ const FileUploader = () => {
     },
     maxFiles: 1,
   });
-
   // Fonction pour envoyer le fichier au backend
   const uploadFile = async () => {
     if (files.length === 0) return;
-
     const formData = new FormData();
     formData.append('file', files[0]);
-
     try {
       const response = await axios.post('http://localhost:5000/upload', formData, {
         headers: {

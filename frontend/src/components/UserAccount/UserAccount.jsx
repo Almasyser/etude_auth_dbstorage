@@ -7,19 +7,20 @@ import AuthContext from "../../contexts/AuthContext";
 import ConvertDateJMA from "../utils/ConvertDateJMA";
 export default function UserAccount({ userInfo, setShowUserAccount }) {
   const { mail, lastname, firstname, phone, role, date_in, id } = userInfo;
-  const [firstnameInput, setFirstnameInput] = useState(firstname);
-  const [lastnameInput, setLastnameInput] = useState(lastname);
-  const [mailInput, setMailInput] = useState(mail);
-  const [phoneInput, setPhoneInput] = useState(phone);
-  const [roleInput, setRoleInput] = useState(role);
+  const [ firstnameInput, setFirstnameInput ] = useState(firstname);
+  const [ lastnameInput, setLastnameInput ] = useState(lastname);
+  const [ mailInput, setMailInput ] = useState(mail);
+  const [ phoneInput, setPhoneInput ] = useState(phone);
+  const [ roleInput, setRoleInput ] = useState(role);
   const { userToken } = useContext(AuthContext);
-  const [message, setMessage] = useState(false);
+  const [ message, setMessage ] = useState(false);
   const navigate = useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
     const dataFromForm = Object.fromEntries(formData.entries());
+     
     axios
       .put(`${import.meta.env.VITE_BACKEND_URL}/user/${id}`, dataFromForm, {
         headers: {

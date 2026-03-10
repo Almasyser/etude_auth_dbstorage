@@ -332,16 +332,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--grey-600);
-  border: 1px solid var(--grey-600);
 }
 .button-sm-grey-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-grey-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--grey-600);
+  border: 1px solid var(--grey-600);
 }
 .button-sm-grey-solid:hover {
   color: var(--white);
@@ -365,16 +367,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--grey-700);
-  border: 1px solid var(--grey-200);
-  background-color: var(--grey-50);
 }
 .button-sm-grey-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-grey-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--grey-700);
+  border: 1px solid var(--grey-200);
+  background-color: var(--grey-50);
 }
 .button-sm-grey-outline:hover {
   background-color: var(--grey-100);
@@ -393,13 +397,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--grey-700);
-  background-color: transparent;
 }
 .button-sm-grey-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-grey-link {
+  color: var(--grey-700);
+  background-color: transparent;
 }
 .button-sm-grey-link:hover {
   color: var(--grey-900);
@@ -417,16 +423,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--error-600);
-  border: 1px solid var(--error-600);
 }
 .button-sm-error-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-error-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--error-600);
+  border: 1px solid var(--error-600);
 }
 .button-sm-error-solid:hover {
   color: var(--white);
@@ -450,16 +458,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--error-700);
-  border: 1px solid var(--error-200);
-  background-color: var(--error-50);
 }
 .button-sm-error-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-error-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--error-700);
+  border: 1px solid var(--error-200);
+  background-color: var(--error-50);
 }
 .button-sm-error-outline:hover {
   background-color: var(--error-100);
@@ -478,13 +488,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--error-700);
-  background-color: transparent;
 }
 .button-sm-error-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-error-link {
+  color: var(--error-700);
+  background-color: transparent;
 }
 .button-sm-error-link:hover {
   color: var(--error-900);
@@ -502,16 +514,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--warning-600);
-  border: 1px solid var(--warning-600);
 }
 .button-sm-warning-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-warning-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--warning-600);
+  border: 1px solid var(--warning-600);
 }
 .button-sm-warning-solid:hover {
   color: var(--white);
@@ -535,16 +549,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--warning-700);
-  border: 1px solid var(--warning-200);
-  background-color: var(--warning-50);
 }
 .button-sm-warning-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-warning-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--warning-700);
+  border: 1px solid var(--warning-200);
+  background-color: var(--warning-50);
 }
 .button-sm-warning-outline:hover {
   background-color: var(--warning-100);
@@ -563,13 +579,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--warning-700);
-  background-color: transparent;
 }
 .button-sm-warning-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-warning-link {
+  color: var(--warning-700);
+  background-color: transparent;
 }
 .button-sm-warning-link:hover {
   color: var(--warning-900);
@@ -587,16 +605,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--success-600);
-  border: 1px solid var(--success-600);
 }
 .button-sm-success-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-success-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--success-600);
+  border: 1px solid var(--success-600);
 }
 .button-sm-success-solid:hover {
   color: var(--white);
@@ -620,16 +640,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--success-700);
-  border: 1px solid var(--success-200);
-  background-color: var(--success-50);
 }
 .button-sm-success-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-success-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--success-700);
+  border: 1px solid var(--success-200);
+  background-color: var(--success-50);
 }
 .button-sm-success-outline:hover {
   background-color: var(--success-100);
@@ -648,13 +670,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--success-700);
-  background-color: transparent;
 }
 .button-sm-success-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-success-link {
+  color: var(--success-700);
+  background-color: transparent;
 }
 .button-sm-success-link:hover {
   color: var(--success-900);
@@ -672,16 +696,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--amber-600);
-  border: 1px solid var(--amber-600);
 }
 .button-sm-amber-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-amber-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--amber-600);
+  border: 1px solid var(--amber-600);
 }
 .button-sm-amber-solid:hover {
   color: var(--white);
@@ -705,16 +731,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--amber-700);
-  border: 1px solid var(--amber-200);
-  background-color: var(--amber-50);
 }
 .button-sm-amber-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-amber-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--amber-700);
+  border: 1px solid var(--amber-200);
+  background-color: var(--amber-50);
 }
 .button-sm-amber-outline:hover {
   background-color: var(--amber-100);
@@ -733,13 +761,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--amber-700);
-  background-color: transparent;
 }
 .button-sm-amber-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-amber-link {
+  color: var(--amber-700);
+  background-color: transparent;
 }
 .button-sm-amber-link:hover {
   color: var(--amber-900);
@@ -757,16 +787,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--blue-600);
-  border: 1px solid var(--blue-600);
 }
 .button-sm-blue-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-blue-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--blue-600);
+  border: 1px solid var(--blue-600);
 }
 .button-sm-blue-solid:hover {
   color: var(--white);
@@ -790,16 +822,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--blue-700);
-  border: 1px solid var(--blue-200);
-  background-color: var(--blue-50);
 }
 .button-sm-blue-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-blue-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--blue-700);
+  border: 1px solid var(--blue-200);
+  background-color: var(--blue-50);
 }
 .button-sm-blue-outline:hover {
   background-color: var(--blue-100);
@@ -818,13 +852,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--blue-700);
-  background-color: transparent;
 }
 .button-sm-blue-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-blue-link {
+  color: var(--blue-700);
+  background-color: transparent;
 }
 .button-sm-blue-link:hover {
   color: var(--blue-900);
@@ -842,16 +878,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--cyan-600);
-  border: 1px solid var(--cyan-600);
 }
 .button-sm-cyan-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-cyan-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--cyan-600);
+  border: 1px solid var(--cyan-600);
 }
 .button-sm-cyan-solid:hover {
   color: var(--white);
@@ -875,16 +913,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--cyan-700);
-  border: 1px solid var(--cyan-200);
-  background-color: var(--cyan-50);
 }
 .button-sm-cyan-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-cyan-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--cyan-700);
+  border: 1px solid var(--cyan-200);
+  background-color: var(--cyan-50);
 }
 .button-sm-cyan-outline:hover {
   background-color: var(--cyan-100);
@@ -903,13 +943,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--cyan-700);
-  background-color: transparent;
 }
 .button-sm-cyan-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-cyan-link {
+  color: var(--cyan-700);
+  background-color: transparent;
 }
 .button-sm-cyan-link:hover {
   color: var(--cyan-900);
@@ -927,16 +969,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--emerald-600);
-  border: 1px solid var(--emerald-600);
 }
 .button-sm-emerald-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-emerald-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--emerald-600);
+  border: 1px solid var(--emerald-600);
 }
 .button-sm-emerald-solid:hover {
   color: var(--white);
@@ -960,16 +1004,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--emerald-700);
-  border: 1px solid var(--emerald-200);
-  background-color: var(--emerald-50);
 }
 .button-sm-emerald-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-emerald-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--emerald-700);
+  border: 1px solid var(--emerald-200);
+  background-color: var(--emerald-50);
 }
 .button-sm-emerald-outline:hover {
   background-color: var(--emerald-100);
@@ -988,13 +1034,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--emerald-700);
-  background-color: transparent;
 }
 .button-sm-emerald-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-emerald-link {
+  color: var(--emerald-700);
+  background-color: transparent;
 }
 .button-sm-emerald-link:hover {
   color: var(--emerald-900);
@@ -1012,16 +1060,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--fuchsia-600);
-  border: 1px solid var(--fuchsia-600);
 }
 .button-sm-fuchsia-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-fuchsia-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--fuchsia-600);
+  border: 1px solid var(--fuchsia-600);
 }
 .button-sm-fuchsia-solid:hover {
   color: var(--white);
@@ -1045,16 +1095,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--fuchsia-700);
-  border: 1px solid var(--fuchsia-200);
-  background-color: var(--fuchsia-50);
 }
 .button-sm-fuchsia-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-fuchsia-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--fuchsia-700);
+  border: 1px solid var(--fuchsia-200);
+  background-color: var(--fuchsia-50);
 }
 .button-sm-fuchsia-outline:hover {
   background-color: var(--fuchsia-100);
@@ -1073,13 +1125,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--fuchsia-700);
-  background-color: transparent;
 }
 .button-sm-fuchsia-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-fuchsia-link {
+  color: var(--fuchsia-700);
+  background-color: transparent;
 }
 .button-sm-fuchsia-link:hover {
   color: var(--fuchsia-900);
@@ -1097,16 +1151,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--green-600);
-  border: 1px solid var(--green-600);
 }
 .button-sm-green-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-green-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--green-600);
+  border: 1px solid var(--green-600);
 }
 .button-sm-green-solid:hover {
   color: var(--white);
@@ -1130,16 +1186,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--green-700);
-  border: 1px solid var(--green-200);
-  background-color: var(--green-50);
 }
 .button-sm-green-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-green-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--green-700);
+  border: 1px solid var(--green-200);
+  background-color: var(--green-50);
 }
 .button-sm-green-outline:hover {
   background-color: var(--green-100);
@@ -1158,13 +1216,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--green-700);
-  background-color: transparent;
 }
 .button-sm-green-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-green-link {
+  color: var(--green-700);
+  background-color: transparent;
 }
 .button-sm-green-link:hover {
   color: var(--green-900);
@@ -1182,16 +1242,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--indigo-600);
-  border: 1px solid var(--indigo-600);
 }
 .button-sm-indigo-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-indigo-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--indigo-600);
+  border: 1px solid var(--indigo-600);
 }
 .button-sm-indigo-solid:hover {
   color: var(--white);
@@ -1215,16 +1277,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--indigo-700);
-  border: 1px solid var(--indigo-200);
-  background-color: var(--indigo-50);
 }
 .button-sm-indigo-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-indigo-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--indigo-700);
+  border: 1px solid var(--indigo-200);
+  background-color: var(--indigo-50);
 }
 .button-sm-indigo-outline:hover {
   background-color: var(--indigo-100);
@@ -1243,13 +1307,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--indigo-700);
-  background-color: transparent;
 }
 .button-sm-indigo-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-indigo-link {
+  color: var(--indigo-700);
+  background-color: transparent;
 }
 .button-sm-indigo-link:hover {
   color: var(--indigo-900);
@@ -1267,16 +1333,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--lime-600);
-  border: 1px solid var(--lime-600);
 }
 .button-sm-lime-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-lime-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--lime-600);
+  border: 1px solid var(--lime-600);
 }
 .button-sm-lime-solid:hover {
   color: var(--white);
@@ -1300,16 +1368,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--lime-700);
-  border: 1px solid var(--lime-200);
-  background-color: var(--lime-50);
 }
 .button-sm-lime-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-lime-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--lime-700);
+  border: 1px solid var(--lime-200);
+  background-color: var(--lime-50);
 }
 .button-sm-lime-outline:hover {
   background-color: var(--lime-100);
@@ -1328,13 +1398,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--lime-700);
-  background-color: transparent;
 }
 .button-sm-lime-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-lime-link {
+  color: var(--lime-700);
+  background-color: transparent;
 }
 .button-sm-lime-link:hover {
   color: var(--lime-900);
@@ -1352,16 +1424,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--orange-600);
-  border: 1px solid var(--orange-600);
 }
 .button-sm-orange-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-orange-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--orange-600);
+  border: 1px solid var(--orange-600);
 }
 .button-sm-orange-solid:hover {
   color: var(--white);
@@ -1385,16 +1459,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--orange-700);
-  border: 1px solid var(--orange-200);
-  background-color: var(--orange-50);
 }
 .button-sm-orange-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-orange-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--orange-700);
+  border: 1px solid var(--orange-200);
+  background-color: var(--orange-50);
 }
 .button-sm-orange-outline:hover {
   background-color: var(--orange-100);
@@ -1413,13 +1489,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--orange-700);
-  background-color: transparent;
 }
 .button-sm-orange-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-orange-link {
+  color: var(--orange-700);
+  background-color: transparent;
 }
 .button-sm-orange-link:hover {
   color: var(--orange-900);
@@ -1437,16 +1515,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--pink-600);
-  border: 1px solid var(--pink-600);
 }
 .button-sm-pink-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-pink-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--pink-600);
+  border: 1px solid var(--pink-600);
 }
 .button-sm-pink-solid:hover {
   color: var(--white);
@@ -1470,16 +1550,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--pink-700);
-  border: 1px solid var(--pink-200);
-  background-color: var(--pink-50);
 }
 .button-sm-pink-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-pink-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--pink-700);
+  border: 1px solid var(--pink-200);
+  background-color: var(--pink-50);
 }
 .button-sm-pink-outline:hover {
   background-color: var(--pink-100);
@@ -1498,13 +1580,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--pink-700);
-  background-color: transparent;
 }
 .button-sm-pink-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-pink-link {
+  color: var(--pink-700);
+  background-color: transparent;
 }
 .button-sm-pink-link:hover {
   color: var(--pink-900);
@@ -1522,16 +1606,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--purple-600);
-  border: 1px solid var(--purple-600);
 }
 .button-sm-purple-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-purple-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--purple-600);
+  border: 1px solid var(--purple-600);
 }
 .button-sm-purple-solid:hover {
   color: var(--white);
@@ -1555,16 +1641,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--purple-700);
-  border: 1px solid var(--purple-200);
-  background-color: var(--purple-50);
 }
 .button-sm-purple-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-purple-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--purple-700);
+  border: 1px solid var(--purple-200);
+  background-color: var(--purple-50);
 }
 .button-sm-purple-outline:hover {
   background-color: var(--purple-100);
@@ -1583,13 +1671,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--purple-700);
-  background-color: transparent;
 }
 .button-sm-purple-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-purple-link {
+  color: var(--purple-700);
+  background-color: transparent;
 }
 .button-sm-purple-link:hover {
   color: var(--purple-900);
@@ -1607,16 +1697,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--red-600);
-  border: 1px solid var(--red-600);
 }
 .button-sm-red-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-red-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--red-600);
+  border: 1px solid var(--red-600);
 }
 .button-sm-red-solid:hover {
   color: var(--white);
@@ -1640,16 +1732,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--red-700);
-  border: 1px solid var(--red-200);
-  background-color: var(--red-50);
 }
 .button-sm-red-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-red-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--red-700);
+  border: 1px solid var(--red-200);
+  background-color: var(--red-50);
 }
 .button-sm-red-outline:hover {
   background-color: var(--red-100);
@@ -1668,13 +1762,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--red-700);
-  background-color: transparent;
 }
 .button-sm-red-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-red-link {
+  color: var(--red-700);
+  background-color: transparent;
 }
 .button-sm-red-link:hover {
   color: var(--red-900);
@@ -1692,16 +1788,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--rose-600);
-  border: 1px solid var(--rose-600);
 }
 .button-sm-rose-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-rose-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--rose-600);
+  border: 1px solid var(--rose-600);
 }
 .button-sm-rose-solid:hover {
   color: var(--white);
@@ -1725,16 +1823,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--rose-700);
-  border: 1px solid var(--rose-200);
-  background-color: var(--rose-50);
 }
 .button-sm-rose-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-rose-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--rose-700);
+  border: 1px solid var(--rose-200);
+  background-color: var(--rose-50);
 }
 .button-sm-rose-outline:hover {
   background-color: var(--rose-100);
@@ -1753,13 +1853,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--rose-700);
-  background-color: transparent;
 }
 .button-sm-rose-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-rose-link {
+  color: var(--rose-700);
+  background-color: transparent;
 }
 .button-sm-rose-link:hover {
   color: var(--rose-900);
@@ -1777,16 +1879,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--sky-600);
-  border: 1px solid var(--sky-600);
 }
 .button-sm-sky-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-sky-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--sky-600);
+  border: 1px solid var(--sky-600);
 }
 .button-sm-sky-solid:hover {
   color: var(--white);
@@ -1810,16 +1914,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--sky-700);
-  border: 1px solid var(--sky-200);
-  background-color: var(--sky-50);
 }
 .button-sm-sky-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-sky-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--sky-700);
+  border: 1px solid var(--sky-200);
+  background-color: var(--sky-50);
 }
 .button-sm-sky-outline:hover {
   background-color: var(--sky-100);
@@ -1838,13 +1944,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--sky-700);
-  background-color: transparent;
 }
 .button-sm-sky-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-sky-link {
+  color: var(--sky-700);
+  background-color: transparent;
 }
 .button-sm-sky-link:hover {
   color: var(--sky-900);
@@ -1862,16 +1970,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--teal-600);
-  border: 1px solid var(--teal-600);
 }
 .button-sm-teal-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-teal-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--teal-600);
+  border: 1px solid var(--teal-600);
 }
 .button-sm-teal-solid:hover {
   color: var(--white);
@@ -1895,16 +2005,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--teal-700);
-  border: 1px solid var(--teal-200);
-  background-color: var(--teal-50);
 }
 .button-sm-teal-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-teal-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--teal-700);
+  border: 1px solid var(--teal-200);
+  background-color: var(--teal-50);
 }
 .button-sm-teal-outline:hover {
   background-color: var(--teal-100);
@@ -1923,13 +2035,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--teal-700);
-  background-color: transparent;
 }
 .button-sm-teal-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-teal-link {
+  color: var(--teal-700);
+  background-color: transparent;
 }
 .button-sm-teal-link:hover {
   color: var(--teal-900);
@@ -1947,16 +2061,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--violet-600);
-  border: 1px solid var(--violet-600);
 }
 .button-sm-violet-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-violet-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--violet-600);
+  border: 1px solid var(--violet-600);
 }
 .button-sm-violet-solid:hover {
   color: var(--white);
@@ -1980,16 +2096,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--violet-700);
-  border: 1px solid var(--violet-200);
-  background-color: var(--violet-50);
 }
 .button-sm-violet-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-violet-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--violet-700);
+  border: 1px solid var(--violet-200);
+  background-color: var(--violet-50);
 }
 .button-sm-violet-outline:hover {
   background-color: var(--violet-100);
@@ -2008,13 +2126,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--violet-700);
-  background-color: transparent;
 }
 .button-sm-violet-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-violet-link {
+  color: var(--violet-700);
+  background-color: transparent;
 }
 .button-sm-violet-link:hover {
   color: var(--violet-900);
@@ -2032,16 +2152,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--yellow-600);
-  border: 1px solid var(--yellow-600);
 }
 .button-sm-yellow-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-yellow-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--yellow-600);
+  border: 1px solid var(--yellow-600);
 }
 .button-sm-yellow-solid:hover {
   color: var(--white);
@@ -2065,16 +2187,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--yellow-700);
-  border: 1px solid var(--yellow-200);
-  background-color: var(--yellow-50);
 }
 .button-sm-yellow-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-yellow-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--yellow-700);
+  border: 1px solid var(--yellow-200);
+  background-color: var(--yellow-50);
 }
 .button-sm-yellow-outline:hover {
   background-color: var(--yellow-100);
@@ -2093,13 +2217,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--yellow-700);
-  background-color: transparent;
 }
 .button-sm-yellow-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-sm-yellow-link {
+  color: var(--yellow-700);
+  background-color: transparent;
 }
 .button-sm-yellow-link:hover {
   color: var(--yellow-900);
@@ -2117,16 +2243,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--grey-600);
-  border: 1px solid var(--grey-600);
 }
 .button-md-grey-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-grey-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--grey-600);
+  border: 1px solid var(--grey-600);
 }
 .button-md-grey-solid:hover {
   color: var(--white);
@@ -2150,16 +2278,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--grey-700);
-  border: 1px solid var(--grey-200);
-  background-color: var(--grey-50);
 }
 .button-md-grey-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-grey-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--grey-700);
+  border: 1px solid var(--grey-200);
+  background-color: var(--grey-50);
 }
 .button-md-grey-outline:hover {
   background-color: var(--grey-100);
@@ -2178,13 +2308,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--grey-700);
-  background-color: transparent;
 }
 .button-md-grey-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-grey-link {
+  color: var(--grey-700);
+  background-color: transparent;
 }
 .button-md-grey-link:hover {
   color: var(--grey-900);
@@ -2202,16 +2334,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--error-600);
-  border: 1px solid var(--error-600);
 }
 .button-md-error-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-error-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--error-600);
+  border: 1px solid var(--error-600);
 }
 .button-md-error-solid:hover {
   color: var(--white);
@@ -2235,16 +2369,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--error-700);
-  border: 1px solid var(--error-200);
-  background-color: var(--error-50);
 }
 .button-md-error-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-error-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--error-700);
+  border: 1px solid var(--error-200);
+  background-color: var(--error-50);
 }
 .button-md-error-outline:hover {
   background-color: var(--error-100);
@@ -2263,13 +2399,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--error-700);
-  background-color: transparent;
 }
 .button-md-error-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-error-link {
+  color: var(--error-700);
+  background-color: transparent;
 }
 .button-md-error-link:hover {
   color: var(--error-900);
@@ -2287,16 +2425,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--warning-600);
-  border: 1px solid var(--warning-600);
 }
 .button-md-warning-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-warning-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--warning-600);
+  border: 1px solid var(--warning-600);
 }
 .button-md-warning-solid:hover {
   color: var(--white);
@@ -2320,16 +2460,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--warning-700);
-  border: 1px solid var(--warning-200);
-  background-color: var(--warning-50);
 }
 .button-md-warning-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-warning-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--warning-700);
+  border: 1px solid var(--warning-200);
+  background-color: var(--warning-50);
 }
 .button-md-warning-outline:hover {
   background-color: var(--warning-100);
@@ -2348,13 +2490,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--warning-700);
-  background-color: transparent;
 }
 .button-md-warning-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-warning-link {
+  color: var(--warning-700);
+  background-color: transparent;
 }
 .button-md-warning-link:hover {
   color: var(--warning-900);
@@ -2372,16 +2516,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--success-600);
-  border: 1px solid var(--success-600);
 }
 .button-md-success-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-success-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--success-600);
+  border: 1px solid var(--success-600);
 }
 .button-md-success-solid:hover {
   color: var(--white);
@@ -2405,16 +2551,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--success-700);
-  border: 1px solid var(--success-200);
-  background-color: var(--success-50);
 }
 .button-md-success-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-success-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--success-700);
+  border: 1px solid var(--success-200);
+  background-color: var(--success-50);
 }
 .button-md-success-outline:hover {
   background-color: var(--success-100);
@@ -2433,13 +2581,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--success-700);
-  background-color: transparent;
 }
 .button-md-success-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-success-link {
+  color: var(--success-700);
+  background-color: transparent;
 }
 .button-md-success-link:hover {
   color: var(--success-900);
@@ -2457,16 +2607,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--amber-600);
-  border: 1px solid var(--amber-600);
 }
 .button-md-amber-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-amber-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--amber-600);
+  border: 1px solid var(--amber-600);
 }
 .button-md-amber-solid:hover {
   color: var(--white);
@@ -2490,16 +2642,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--amber-700);
-  border: 1px solid var(--amber-200);
-  background-color: var(--amber-50);
 }
 .button-md-amber-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-amber-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--amber-700);
+  border: 1px solid var(--amber-200);
+  background-color: var(--amber-50);
 }
 .button-md-amber-outline:hover {
   background-color: var(--amber-100);
@@ -2518,13 +2672,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--amber-700);
-  background-color: transparent;
 }
 .button-md-amber-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-amber-link {
+  color: var(--amber-700);
+  background-color: transparent;
 }
 .button-md-amber-link:hover {
   color: var(--amber-900);
@@ -2542,16 +2698,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--blue-600);
-  border: 1px solid var(--blue-600);
 }
 .button-md-blue-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-blue-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--blue-600);
+  border: 1px solid var(--blue-600);
 }
 .button-md-blue-solid:hover {
   color: var(--white);
@@ -2575,16 +2733,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--blue-700);
-  border: 1px solid var(--blue-200);
-  background-color: var(--blue-50);
 }
 .button-md-blue-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-blue-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--blue-700);
+  border: 1px solid var(--blue-200);
+  background-color: var(--blue-50);
 }
 .button-md-blue-outline:hover {
   background-color: var(--blue-100);
@@ -2603,13 +2763,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--blue-700);
-  background-color: transparent;
 }
 .button-md-blue-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-blue-link {
+  color: var(--blue-700);
+  background-color: transparent;
 }
 .button-md-blue-link:hover {
   color: var(--blue-900);
@@ -2627,16 +2789,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--cyan-600);
-  border: 1px solid var(--cyan-600);
 }
 .button-md-cyan-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-cyan-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--cyan-600);
+  border: 1px solid var(--cyan-600);
 }
 .button-md-cyan-solid:hover {
   color: var(--white);
@@ -2660,16 +2824,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--cyan-700);
-  border: 1px solid var(--cyan-200);
-  background-color: var(--cyan-50);
 }
 .button-md-cyan-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-cyan-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--cyan-700);
+  border: 1px solid var(--cyan-200);
+  background-color: var(--cyan-50);
 }
 .button-md-cyan-outline:hover {
   background-color: var(--cyan-100);
@@ -2688,13 +2854,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--cyan-700);
-  background-color: transparent;
 }
 .button-md-cyan-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-cyan-link {
+  color: var(--cyan-700);
+  background-color: transparent;
 }
 .button-md-cyan-link:hover {
   color: var(--cyan-900);
@@ -2712,16 +2880,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--emerald-600);
-  border: 1px solid var(--emerald-600);
 }
 .button-md-emerald-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-emerald-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--emerald-600);
+  border: 1px solid var(--emerald-600);
 }
 .button-md-emerald-solid:hover {
   color: var(--white);
@@ -2745,16 +2915,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--emerald-700);
-  border: 1px solid var(--emerald-200);
-  background-color: var(--emerald-50);
 }
 .button-md-emerald-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-emerald-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--emerald-700);
+  border: 1px solid var(--emerald-200);
+  background-color: var(--emerald-50);
 }
 .button-md-emerald-outline:hover {
   background-color: var(--emerald-100);
@@ -2773,13 +2945,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--emerald-700);
-  background-color: transparent;
 }
 .button-md-emerald-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-emerald-link {
+  color: var(--emerald-700);
+  background-color: transparent;
 }
 .button-md-emerald-link:hover {
   color: var(--emerald-900);
@@ -2797,16 +2971,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--fuchsia-600);
-  border: 1px solid var(--fuchsia-600);
 }
 .button-md-fuchsia-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-fuchsia-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--fuchsia-600);
+  border: 1px solid var(--fuchsia-600);
 }
 .button-md-fuchsia-solid:hover {
   color: var(--white);
@@ -2830,16 +3006,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--fuchsia-700);
-  border: 1px solid var(--fuchsia-200);
-  background-color: var(--fuchsia-50);
 }
 .button-md-fuchsia-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-fuchsia-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--fuchsia-700);
+  border: 1px solid var(--fuchsia-200);
+  background-color: var(--fuchsia-50);
 }
 .button-md-fuchsia-outline:hover {
   background-color: var(--fuchsia-100);
@@ -2858,13 +3036,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--fuchsia-700);
-  background-color: transparent;
 }
 .button-md-fuchsia-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-fuchsia-link {
+  color: var(--fuchsia-700);
+  background-color: transparent;
 }
 .button-md-fuchsia-link:hover {
   color: var(--fuchsia-900);
@@ -2882,16 +3062,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--green-600);
-  border: 1px solid var(--green-600);
 }
 .button-md-green-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-green-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--green-600);
+  border: 1px solid var(--green-600);
 }
 .button-md-green-solid:hover {
   color: var(--white);
@@ -2915,16 +3097,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--green-700);
-  border: 1px solid var(--green-200);
-  background-color: var(--green-50);
 }
 .button-md-green-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-green-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--green-700);
+  border: 1px solid var(--green-200);
+  background-color: var(--green-50);
 }
 .button-md-green-outline:hover {
   background-color: var(--green-100);
@@ -2943,13 +3127,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--green-700);
-  background-color: transparent;
 }
 .button-md-green-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-green-link {
+  color: var(--green-700);
+  background-color: transparent;
 }
 .button-md-green-link:hover {
   color: var(--green-900);
@@ -2967,16 +3153,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--indigo-600);
-  border: 1px solid var(--indigo-600);
 }
 .button-md-indigo-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-indigo-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--indigo-600);
+  border: 1px solid var(--indigo-600);
 }
 .button-md-indigo-solid:hover {
   color: var(--white);
@@ -3000,16 +3188,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--indigo-700);
-  border: 1px solid var(--indigo-200);
-  background-color: var(--indigo-50);
 }
 .button-md-indigo-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-indigo-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--indigo-700);
+  border: 1px solid var(--indigo-200);
+  background-color: var(--indigo-50);
 }
 .button-md-indigo-outline:hover {
   background-color: var(--indigo-100);
@@ -3028,13 +3218,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--indigo-700);
-  background-color: transparent;
 }
 .button-md-indigo-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-indigo-link {
+  color: var(--indigo-700);
+  background-color: transparent;
 }
 .button-md-indigo-link:hover {
   color: var(--indigo-900);
@@ -3052,16 +3244,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--lime-600);
-  border: 1px solid var(--lime-600);
 }
 .button-md-lime-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-lime-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--lime-600);
+  border: 1px solid var(--lime-600);
 }
 .button-md-lime-solid:hover {
   color: var(--white);
@@ -3085,16 +3279,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--lime-700);
-  border: 1px solid var(--lime-200);
-  background-color: var(--lime-50);
 }
 .button-md-lime-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-lime-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--lime-700);
+  border: 1px solid var(--lime-200);
+  background-color: var(--lime-50);
 }
 .button-md-lime-outline:hover {
   background-color: var(--lime-100);
@@ -3113,13 +3309,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--lime-700);
-  background-color: transparent;
 }
 .button-md-lime-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-lime-link {
+  color: var(--lime-700);
+  background-color: transparent;
 }
 .button-md-lime-link:hover {
   color: var(--lime-900);
@@ -3137,16 +3335,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--orange-600);
-  border: 1px solid var(--orange-600);
 }
 .button-md-orange-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-orange-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--orange-600);
+  border: 1px solid var(--orange-600);
 }
 .button-md-orange-solid:hover {
   color: var(--white);
@@ -3170,16 +3370,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--orange-700);
-  border: 1px solid var(--orange-200);
-  background-color: var(--orange-50);
 }
 .button-md-orange-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-orange-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--orange-700);
+  border: 1px solid var(--orange-200);
+  background-color: var(--orange-50);
 }
 .button-md-orange-outline:hover {
   background-color: var(--orange-100);
@@ -3198,13 +3400,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--orange-700);
-  background-color: transparent;
 }
 .button-md-orange-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-orange-link {
+  color: var(--orange-700);
+  background-color: transparent;
 }
 .button-md-orange-link:hover {
   color: var(--orange-900);
@@ -3222,16 +3426,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--pink-600);
-  border: 1px solid var(--pink-600);
 }
 .button-md-pink-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-pink-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--pink-600);
+  border: 1px solid var(--pink-600);
 }
 .button-md-pink-solid:hover {
   color: var(--white);
@@ -3255,16 +3461,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--pink-700);
-  border: 1px solid var(--pink-200);
-  background-color: var(--pink-50);
 }
 .button-md-pink-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-pink-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--pink-700);
+  border: 1px solid var(--pink-200);
+  background-color: var(--pink-50);
 }
 .button-md-pink-outline:hover {
   background-color: var(--pink-100);
@@ -3283,13 +3491,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--pink-700);
-  background-color: transparent;
 }
 .button-md-pink-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-pink-link {
+  color: var(--pink-700);
+  background-color: transparent;
 }
 .button-md-pink-link:hover {
   color: var(--pink-900);
@@ -3307,16 +3517,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--purple-600);
-  border: 1px solid var(--purple-600);
 }
 .button-md-purple-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-purple-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--purple-600);
+  border: 1px solid var(--purple-600);
 }
 .button-md-purple-solid:hover {
   color: var(--white);
@@ -3340,16 +3552,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--purple-700);
-  border: 1px solid var(--purple-200);
-  background-color: var(--purple-50);
 }
 .button-md-purple-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-purple-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--purple-700);
+  border: 1px solid var(--purple-200);
+  background-color: var(--purple-50);
 }
 .button-md-purple-outline:hover {
   background-color: var(--purple-100);
@@ -3368,13 +3582,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--purple-700);
-  background-color: transparent;
 }
 .button-md-purple-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-purple-link {
+  color: var(--purple-700);
+  background-color: transparent;
 }
 .button-md-purple-link:hover {
   color: var(--purple-900);
@@ -3392,16 +3608,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--red-600);
-  border: 1px solid var(--red-600);
 }
 .button-md-red-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-red-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--red-600);
+  border: 1px solid var(--red-600);
 }
 .button-md-red-solid:hover {
   color: var(--white);
@@ -3425,16 +3643,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--red-700);
-  border: 1px solid var(--red-200);
-  background-color: var(--red-50);
 }
 .button-md-red-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-red-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--red-700);
+  border: 1px solid var(--red-200);
+  background-color: var(--red-50);
 }
 .button-md-red-outline:hover {
   background-color: var(--red-100);
@@ -3453,13 +3673,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--red-700);
-  background-color: transparent;
 }
 .button-md-red-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-red-link {
+  color: var(--red-700);
+  background-color: transparent;
 }
 .button-md-red-link:hover {
   color: var(--red-900);
@@ -3477,16 +3699,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--rose-600);
-  border: 1px solid var(--rose-600);
 }
 .button-md-rose-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-rose-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--rose-600);
+  border: 1px solid var(--rose-600);
 }
 .button-md-rose-solid:hover {
   color: var(--white);
@@ -3510,16 +3734,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--rose-700);
-  border: 1px solid var(--rose-200);
-  background-color: var(--rose-50);
 }
 .button-md-rose-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-rose-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--rose-700);
+  border: 1px solid var(--rose-200);
+  background-color: var(--rose-50);
 }
 .button-md-rose-outline:hover {
   background-color: var(--rose-100);
@@ -3538,13 +3764,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--rose-700);
-  background-color: transparent;
 }
 .button-md-rose-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-rose-link {
+  color: var(--rose-700);
+  background-color: transparent;
 }
 .button-md-rose-link:hover {
   color: var(--rose-900);
@@ -3562,16 +3790,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--sky-600);
-  border: 1px solid var(--sky-600);
 }
 .button-md-sky-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-sky-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--sky-600);
+  border: 1px solid var(--sky-600);
 }
 .button-md-sky-solid:hover {
   color: var(--white);
@@ -3595,16 +3825,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--sky-700);
-  border: 1px solid var(--sky-200);
-  background-color: var(--sky-50);
 }
 .button-md-sky-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-sky-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--sky-700);
+  border: 1px solid var(--sky-200);
+  background-color: var(--sky-50);
 }
 .button-md-sky-outline:hover {
   background-color: var(--sky-100);
@@ -3623,13 +3855,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--sky-700);
-  background-color: transparent;
 }
 .button-md-sky-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-sky-link {
+  color: var(--sky-700);
+  background-color: transparent;
 }
 .button-md-sky-link:hover {
   color: var(--sky-900);
@@ -3647,16 +3881,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--teal-600);
-  border: 1px solid var(--teal-600);
 }
 .button-md-teal-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-teal-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--teal-600);
+  border: 1px solid var(--teal-600);
 }
 .button-md-teal-solid:hover {
   color: var(--white);
@@ -3680,16 +3916,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--teal-700);
-  border: 1px solid var(--teal-200);
-  background-color: var(--teal-50);
 }
 .button-md-teal-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-teal-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--teal-700);
+  border: 1px solid var(--teal-200);
+  background-color: var(--teal-50);
 }
 .button-md-teal-outline:hover {
   background-color: var(--teal-100);
@@ -3708,13 +3946,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--teal-700);
-  background-color: transparent;
 }
 .button-md-teal-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-teal-link {
+  color: var(--teal-700);
+  background-color: transparent;
 }
 .button-md-teal-link:hover {
   color: var(--teal-900);
@@ -3732,16 +3972,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--violet-600);
-  border: 1px solid var(--violet-600);
 }
 .button-md-violet-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-violet-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--violet-600);
+  border: 1px solid var(--violet-600);
 }
 .button-md-violet-solid:hover {
   color: var(--white);
@@ -3765,16 +4007,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--violet-700);
-  border: 1px solid var(--violet-200);
-  background-color: var(--violet-50);
 }
 .button-md-violet-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-violet-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--violet-700);
+  border: 1px solid var(--violet-200);
+  background-color: var(--violet-50);
 }
 .button-md-violet-outline:hover {
   background-color: var(--violet-100);
@@ -3793,13 +4037,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--violet-700);
-  background-color: transparent;
 }
 .button-md-violet-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-violet-link {
+  color: var(--violet-700);
+  background-color: transparent;
 }
 .button-md-violet-link:hover {
   color: var(--violet-900);
@@ -3817,16 +4063,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--yellow-600);
-  border: 1px solid var(--yellow-600);
 }
 .button-md-yellow-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-yellow-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--yellow-600);
+  border: 1px solid var(--yellow-600);
 }
 .button-md-yellow-solid:hover {
   color: var(--white);
@@ -3850,16 +4098,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--yellow-700);
-  border: 1px solid var(--yellow-200);
-  background-color: var(--yellow-50);
 }
 .button-md-yellow-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-yellow-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--yellow-700);
+  border: 1px solid var(--yellow-200);
+  background-color: var(--yellow-50);
 }
 .button-md-yellow-outline:hover {
   background-color: var(--yellow-100);
@@ -3878,13 +4128,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--yellow-700);
-  background-color: transparent;
 }
 .button-md-yellow-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-md-yellow-link {
+  color: var(--yellow-700);
+  background-color: transparent;
 }
 .button-md-yellow-link:hover {
   color: var(--yellow-900);
@@ -3902,16 +4154,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--grey-600);
-  border: 1px solid var(--grey-600);
 }
 .button-lg-grey-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-grey-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--grey-600);
+  border: 1px solid var(--grey-600);
 }
 .button-lg-grey-solid:hover {
   color: var(--white);
@@ -3935,16 +4189,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--grey-700);
-  border: 1px solid var(--grey-200);
-  background-color: var(--grey-50);
 }
 .button-lg-grey-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-grey-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--grey-700);
+  border: 1px solid var(--grey-200);
+  background-color: var(--grey-50);
 }
 .button-lg-grey-outline:hover {
   background-color: var(--grey-100);
@@ -3963,13 +4219,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--grey-700);
-  background-color: transparent;
 }
 .button-lg-grey-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-grey-link {
+  color: var(--grey-700);
+  background-color: transparent;
 }
 .button-lg-grey-link:hover {
   color: var(--grey-900);
@@ -3987,16 +4245,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--error-600);
-  border: 1px solid var(--error-600);
 }
 .button-lg-error-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-error-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--error-600);
+  border: 1px solid var(--error-600);
 }
 .button-lg-error-solid:hover {
   color: var(--white);
@@ -4020,16 +4280,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--error-700);
-  border: 1px solid var(--error-200);
-  background-color: var(--error-50);
 }
 .button-lg-error-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-error-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--error-700);
+  border: 1px solid var(--error-200);
+  background-color: var(--error-50);
 }
 .button-lg-error-outline:hover {
   background-color: var(--error-100);
@@ -4048,13 +4310,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--error-700);
-  background-color: transparent;
 }
 .button-lg-error-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-error-link {
+  color: var(--error-700);
+  background-color: transparent;
 }
 .button-lg-error-link:hover {
   color: var(--error-900);
@@ -4072,16 +4336,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--warning-600);
-  border: 1px solid var(--warning-600);
 }
 .button-lg-warning-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-warning-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--warning-600);
+  border: 1px solid var(--warning-600);
 }
 .button-lg-warning-solid:hover {
   color: var(--white);
@@ -4105,16 +4371,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--warning-700);
-  border: 1px solid var(--warning-200);
-  background-color: var(--warning-50);
 }
 .button-lg-warning-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-warning-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--warning-700);
+  border: 1px solid var(--warning-200);
+  background-color: var(--warning-50);
 }
 .button-lg-warning-outline:hover {
   background-color: var(--warning-100);
@@ -4133,13 +4401,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--warning-700);
-  background-color: transparent;
 }
 .button-lg-warning-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-warning-link {
+  color: var(--warning-700);
+  background-color: transparent;
 }
 .button-lg-warning-link:hover {
   color: var(--warning-900);
@@ -4157,16 +4427,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--success-600);
-  border: 1px solid var(--success-600);
 }
 .button-lg-success-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-success-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--success-600);
+  border: 1px solid var(--success-600);
 }
 .button-lg-success-solid:hover {
   color: var(--white);
@@ -4190,16 +4462,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--success-700);
-  border: 1px solid var(--success-200);
-  background-color: var(--success-50);
 }
 .button-lg-success-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-success-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--success-700);
+  border: 1px solid var(--success-200);
+  background-color: var(--success-50);
 }
 .button-lg-success-outline:hover {
   background-color: var(--success-100);
@@ -4218,13 +4492,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--success-700);
-  background-color: transparent;
 }
 .button-lg-success-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-success-link {
+  color: var(--success-700);
+  background-color: transparent;
 }
 .button-lg-success-link:hover {
   color: var(--success-900);
@@ -4242,16 +4518,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--amber-600);
-  border: 1px solid var(--amber-600);
 }
 .button-lg-amber-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-amber-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--amber-600);
+  border: 1px solid var(--amber-600);
 }
 .button-lg-amber-solid:hover {
   color: var(--white);
@@ -4275,16 +4553,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--amber-700);
-  border: 1px solid var(--amber-200);
-  background-color: var(--amber-50);
 }
 .button-lg-amber-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-amber-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--amber-700);
+  border: 1px solid var(--amber-200);
+  background-color: var(--amber-50);
 }
 .button-lg-amber-outline:hover {
   background-color: var(--amber-100);
@@ -4303,13 +4583,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--amber-700);
-  background-color: transparent;
 }
 .button-lg-amber-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-amber-link {
+  color: var(--amber-700);
+  background-color: transparent;
 }
 .button-lg-amber-link:hover {
   color: var(--amber-900);
@@ -4327,16 +4609,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--blue-600);
-  border: 1px solid var(--blue-600);
 }
 .button-lg-blue-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-blue-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--blue-600);
+  border: 1px solid var(--blue-600);
 }
 .button-lg-blue-solid:hover {
   color: var(--white);
@@ -4360,16 +4644,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--blue-700);
-  border: 1px solid var(--blue-200);
-  background-color: var(--blue-50);
 }
 .button-lg-blue-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-blue-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--blue-700);
+  border: 1px solid var(--blue-200);
+  background-color: var(--blue-50);
 }
 .button-lg-blue-outline:hover {
   background-color: var(--blue-100);
@@ -4388,13 +4674,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--blue-700);
-  background-color: transparent;
 }
 .button-lg-blue-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-blue-link {
+  color: var(--blue-700);
+  background-color: transparent;
 }
 .button-lg-blue-link:hover {
   color: var(--blue-900);
@@ -4412,16 +4700,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--cyan-600);
-  border: 1px solid var(--cyan-600);
 }
 .button-lg-cyan-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-cyan-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--cyan-600);
+  border: 1px solid var(--cyan-600);
 }
 .button-lg-cyan-solid:hover {
   color: var(--white);
@@ -4445,16 +4735,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--cyan-700);
-  border: 1px solid var(--cyan-200);
-  background-color: var(--cyan-50);
 }
 .button-lg-cyan-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-cyan-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--cyan-700);
+  border: 1px solid var(--cyan-200);
+  background-color: var(--cyan-50);
 }
 .button-lg-cyan-outline:hover {
   background-color: var(--cyan-100);
@@ -4473,13 +4765,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--cyan-700);
-  background-color: transparent;
 }
 .button-lg-cyan-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-cyan-link {
+  color: var(--cyan-700);
+  background-color: transparent;
 }
 .button-lg-cyan-link:hover {
   color: var(--cyan-900);
@@ -4497,16 +4791,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--emerald-600);
-  border: 1px solid var(--emerald-600);
 }
 .button-lg-emerald-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-emerald-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--emerald-600);
+  border: 1px solid var(--emerald-600);
 }
 .button-lg-emerald-solid:hover {
   color: var(--white);
@@ -4530,16 +4826,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--emerald-700);
-  border: 1px solid var(--emerald-200);
-  background-color: var(--emerald-50);
 }
 .button-lg-emerald-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-emerald-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--emerald-700);
+  border: 1px solid var(--emerald-200);
+  background-color: var(--emerald-50);
 }
 .button-lg-emerald-outline:hover {
   background-color: var(--emerald-100);
@@ -4558,13 +4856,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--emerald-700);
-  background-color: transparent;
 }
 .button-lg-emerald-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-emerald-link {
+  color: var(--emerald-700);
+  background-color: transparent;
 }
 .button-lg-emerald-link:hover {
   color: var(--emerald-900);
@@ -4582,16 +4882,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--fuchsia-600);
-  border: 1px solid var(--fuchsia-600);
 }
 .button-lg-fuchsia-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-fuchsia-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--fuchsia-600);
+  border: 1px solid var(--fuchsia-600);
 }
 .button-lg-fuchsia-solid:hover {
   color: var(--white);
@@ -4615,16 +4917,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--fuchsia-700);
-  border: 1px solid var(--fuchsia-200);
-  background-color: var(--fuchsia-50);
 }
 .button-lg-fuchsia-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-fuchsia-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--fuchsia-700);
+  border: 1px solid var(--fuchsia-200);
+  background-color: var(--fuchsia-50);
 }
 .button-lg-fuchsia-outline:hover {
   background-color: var(--fuchsia-100);
@@ -4643,13 +4947,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--fuchsia-700);
-  background-color: transparent;
 }
 .button-lg-fuchsia-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-fuchsia-link {
+  color: var(--fuchsia-700);
+  background-color: transparent;
 }
 .button-lg-fuchsia-link:hover {
   color: var(--fuchsia-900);
@@ -4667,16 +4973,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--green-600);
-  border: 1px solid var(--green-600);
 }
 .button-lg-green-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-green-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--green-600);
+  border: 1px solid var(--green-600);
 }
 .button-lg-green-solid:hover {
   color: var(--white);
@@ -4700,16 +5008,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--green-700);
-  border: 1px solid var(--green-200);
-  background-color: var(--green-50);
 }
 .button-lg-green-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-green-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--green-700);
+  border: 1px solid var(--green-200);
+  background-color: var(--green-50);
 }
 .button-lg-green-outline:hover {
   background-color: var(--green-100);
@@ -4728,13 +5038,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--green-700);
-  background-color: transparent;
 }
 .button-lg-green-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-green-link {
+  color: var(--green-700);
+  background-color: transparent;
 }
 .button-lg-green-link:hover {
   color: var(--green-900);
@@ -4752,16 +5064,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--indigo-600);
-  border: 1px solid var(--indigo-600);
 }
 .button-lg-indigo-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-indigo-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--indigo-600);
+  border: 1px solid var(--indigo-600);
 }
 .button-lg-indigo-solid:hover {
   color: var(--white);
@@ -4785,16 +5099,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--indigo-700);
-  border: 1px solid var(--indigo-200);
-  background-color: var(--indigo-50);
 }
 .button-lg-indigo-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-indigo-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--indigo-700);
+  border: 1px solid var(--indigo-200);
+  background-color: var(--indigo-50);
 }
 .button-lg-indigo-outline:hover {
   background-color: var(--indigo-100);
@@ -4813,13 +5129,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--indigo-700);
-  background-color: transparent;
 }
 .button-lg-indigo-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-indigo-link {
+  color: var(--indigo-700);
+  background-color: transparent;
 }
 .button-lg-indigo-link:hover {
   color: var(--indigo-900);
@@ -4837,16 +5155,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--lime-600);
-  border: 1px solid var(--lime-600);
 }
 .button-lg-lime-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-lime-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--lime-600);
+  border: 1px solid var(--lime-600);
 }
 .button-lg-lime-solid:hover {
   color: var(--white);
@@ -4870,16 +5190,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--lime-700);
-  border: 1px solid var(--lime-200);
-  background-color: var(--lime-50);
 }
 .button-lg-lime-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-lime-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--lime-700);
+  border: 1px solid var(--lime-200);
+  background-color: var(--lime-50);
 }
 .button-lg-lime-outline:hover {
   background-color: var(--lime-100);
@@ -4898,13 +5220,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--lime-700);
-  background-color: transparent;
 }
 .button-lg-lime-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-lime-link {
+  color: var(--lime-700);
+  background-color: transparent;
 }
 .button-lg-lime-link:hover {
   color: var(--lime-900);
@@ -4922,16 +5246,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--orange-600);
-  border: 1px solid var(--orange-600);
 }
 .button-lg-orange-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-orange-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--orange-600);
+  border: 1px solid var(--orange-600);
 }
 .button-lg-orange-solid:hover {
   color: var(--white);
@@ -4955,16 +5281,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--orange-700);
-  border: 1px solid var(--orange-200);
-  background-color: var(--orange-50);
 }
 .button-lg-orange-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-orange-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--orange-700);
+  border: 1px solid var(--orange-200);
+  background-color: var(--orange-50);
 }
 .button-lg-orange-outline:hover {
   background-color: var(--orange-100);
@@ -4983,13 +5311,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--orange-700);
-  background-color: transparent;
 }
 .button-lg-orange-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-orange-link {
+  color: var(--orange-700);
+  background-color: transparent;
 }
 .button-lg-orange-link:hover {
   color: var(--orange-900);
@@ -5007,16 +5337,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--pink-600);
-  border: 1px solid var(--pink-600);
 }
 .button-lg-pink-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-pink-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--pink-600);
+  border: 1px solid var(--pink-600);
 }
 .button-lg-pink-solid:hover {
   color: var(--white);
@@ -5040,16 +5372,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--pink-700);
-  border: 1px solid var(--pink-200);
-  background-color: var(--pink-50);
 }
 .button-lg-pink-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-pink-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--pink-700);
+  border: 1px solid var(--pink-200);
+  background-color: var(--pink-50);
 }
 .button-lg-pink-outline:hover {
   background-color: var(--pink-100);
@@ -5068,13 +5402,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--pink-700);
-  background-color: transparent;
 }
 .button-lg-pink-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-pink-link {
+  color: var(--pink-700);
+  background-color: transparent;
 }
 .button-lg-pink-link:hover {
   color: var(--pink-900);
@@ -5092,16 +5428,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--purple-600);
-  border: 1px solid var(--purple-600);
 }
 .button-lg-purple-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-purple-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--purple-600);
+  border: 1px solid var(--purple-600);
 }
 .button-lg-purple-solid:hover {
   color: var(--white);
@@ -5125,16 +5463,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--purple-700);
-  border: 1px solid var(--purple-200);
-  background-color: var(--purple-50);
 }
 .button-lg-purple-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-purple-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--purple-700);
+  border: 1px solid var(--purple-200);
+  background-color: var(--purple-50);
 }
 .button-lg-purple-outline:hover {
   background-color: var(--purple-100);
@@ -5153,13 +5493,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--purple-700);
-  background-color: transparent;
 }
 .button-lg-purple-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-purple-link {
+  color: var(--purple-700);
+  background-color: transparent;
 }
 .button-lg-purple-link:hover {
   color: var(--purple-900);
@@ -5177,16 +5519,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--red-600);
-  border: 1px solid var(--red-600);
 }
 .button-lg-red-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-red-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--red-600);
+  border: 1px solid var(--red-600);
 }
 .button-lg-red-solid:hover {
   color: var(--white);
@@ -5210,16 +5554,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--red-700);
-  border: 1px solid var(--red-200);
-  background-color: var(--red-50);
 }
 .button-lg-red-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-red-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--red-700);
+  border: 1px solid var(--red-200);
+  background-color: var(--red-50);
 }
 .button-lg-red-outline:hover {
   background-color: var(--red-100);
@@ -5238,13 +5584,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--red-700);
-  background-color: transparent;
 }
 .button-lg-red-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-red-link {
+  color: var(--red-700);
+  background-color: transparent;
 }
 .button-lg-red-link:hover {
   color: var(--red-900);
@@ -5262,16 +5610,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--rose-600);
-  border: 1px solid var(--rose-600);
 }
 .button-lg-rose-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-rose-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--rose-600);
+  border: 1px solid var(--rose-600);
 }
 .button-lg-rose-solid:hover {
   color: var(--white);
@@ -5295,16 +5645,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--rose-700);
-  border: 1px solid var(--rose-200);
-  background-color: var(--rose-50);
 }
 .button-lg-rose-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-rose-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--rose-700);
+  border: 1px solid var(--rose-200);
+  background-color: var(--rose-50);
 }
 .button-lg-rose-outline:hover {
   background-color: var(--rose-100);
@@ -5323,13 +5675,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--rose-700);
-  background-color: transparent;
 }
 .button-lg-rose-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-rose-link {
+  color: var(--rose-700);
+  background-color: transparent;
 }
 .button-lg-rose-link:hover {
   color: var(--rose-900);
@@ -5347,16 +5701,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--sky-600);
-  border: 1px solid var(--sky-600);
 }
 .button-lg-sky-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-sky-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--sky-600);
+  border: 1px solid var(--sky-600);
 }
 .button-lg-sky-solid:hover {
   color: var(--white);
@@ -5380,16 +5736,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--sky-700);
-  border: 1px solid var(--sky-200);
-  background-color: var(--sky-50);
 }
 .button-lg-sky-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-sky-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--sky-700);
+  border: 1px solid var(--sky-200);
+  background-color: var(--sky-50);
 }
 .button-lg-sky-outline:hover {
   background-color: var(--sky-100);
@@ -5408,13 +5766,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--sky-700);
-  background-color: transparent;
 }
 .button-lg-sky-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-sky-link {
+  color: var(--sky-700);
+  background-color: transparent;
 }
 .button-lg-sky-link:hover {
   color: var(--sky-900);
@@ -5432,16 +5792,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--teal-600);
-  border: 1px solid var(--teal-600);
 }
 .button-lg-teal-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-teal-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--teal-600);
+  border: 1px solid var(--teal-600);
 }
 .button-lg-teal-solid:hover {
   color: var(--white);
@@ -5465,16 +5827,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--teal-700);
-  border: 1px solid var(--teal-200);
-  background-color: var(--teal-50);
 }
 .button-lg-teal-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-teal-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--teal-700);
+  border: 1px solid var(--teal-200);
+  background-color: var(--teal-50);
 }
 .button-lg-teal-outline:hover {
   background-color: var(--teal-100);
@@ -5493,13 +5857,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--teal-700);
-  background-color: transparent;
 }
 .button-lg-teal-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-teal-link {
+  color: var(--teal-700);
+  background-color: transparent;
 }
 .button-lg-teal-link:hover {
   color: var(--teal-900);
@@ -5517,16 +5883,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--violet-600);
-  border: 1px solid var(--violet-600);
 }
 .button-lg-violet-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-violet-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--violet-600);
+  border: 1px solid var(--violet-600);
 }
 .button-lg-violet-solid:hover {
   color: var(--white);
@@ -5550,16 +5918,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--violet-700);
-  border: 1px solid var(--violet-200);
-  background-color: var(--violet-50);
 }
 .button-lg-violet-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-violet-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--violet-700);
+  border: 1px solid var(--violet-200);
+  background-color: var(--violet-50);
 }
 .button-lg-violet-outline:hover {
   background-color: var(--violet-100);
@@ -5578,13 +5948,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--violet-700);
-  background-color: transparent;
 }
 .button-lg-violet-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-violet-link {
+  color: var(--violet-700);
+  background-color: transparent;
 }
 .button-lg-violet-link:hover {
   color: var(--violet-900);
@@ -5602,16 +5974,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--yellow-600);
-  border: 1px solid var(--yellow-600);
 }
 .button-lg-yellow-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-yellow-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--yellow-600);
+  border: 1px solid var(--yellow-600);
 }
 .button-lg-yellow-solid:hover {
   color: var(--white);
@@ -5635,16 +6009,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--yellow-700);
-  border: 1px solid var(--yellow-200);
-  background-color: var(--yellow-50);
 }
 .button-lg-yellow-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-yellow-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--yellow-700);
+  border: 1px solid var(--yellow-200);
+  background-color: var(--yellow-50);
 }
 .button-lg-yellow-outline:hover {
   background-color: var(--yellow-100);
@@ -5663,13 +6039,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--yellow-700);
-  background-color: transparent;
 }
 .button-lg-yellow-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-lg-yellow-link {
+  color: var(--yellow-700);
+  background-color: transparent;
 }
 .button-lg-yellow-link:hover {
   color: var(--yellow-900);
@@ -5687,16 +6065,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--grey-600);
-  border: 1px solid var(--grey-600);
 }
 .button-xl-grey-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-grey-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--grey-600);
+  border: 1px solid var(--grey-600);
 }
 .button-xl-grey-solid:hover {
   color: var(--white);
@@ -5720,16 +6100,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--grey-700);
-  border: 1px solid var(--grey-200);
-  background-color: var(--grey-50);
 }
 .button-xl-grey-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-grey-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--grey-700);
+  border: 1px solid var(--grey-200);
+  background-color: var(--grey-50);
 }
 .button-xl-grey-outline:hover {
   background-color: var(--grey-100);
@@ -5748,13 +6130,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--grey-700);
-  background-color: transparent;
 }
 .button-xl-grey-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-grey-link {
+  color: var(--grey-700);
+  background-color: transparent;
 }
 .button-xl-grey-link:hover {
   color: var(--grey-900);
@@ -5772,16 +6156,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--error-600);
-  border: 1px solid var(--error-600);
 }
 .button-xl-error-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-error-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--error-600);
+  border: 1px solid var(--error-600);
 }
 .button-xl-error-solid:hover {
   color: var(--white);
@@ -5805,16 +6191,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--error-700);
-  border: 1px solid var(--error-200);
-  background-color: var(--error-50);
 }
 .button-xl-error-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-error-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--error-700);
+  border: 1px solid var(--error-200);
+  background-color: var(--error-50);
 }
 .button-xl-error-outline:hover {
   background-color: var(--error-100);
@@ -5833,13 +6221,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--error-700);
-  background-color: transparent;
 }
 .button-xl-error-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-error-link {
+  color: var(--error-700);
+  background-color: transparent;
 }
 .button-xl-error-link:hover {
   color: var(--error-900);
@@ -5857,16 +6247,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--warning-600);
-  border: 1px solid var(--warning-600);
 }
 .button-xl-warning-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-warning-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--warning-600);
+  border: 1px solid var(--warning-600);
 }
 .button-xl-warning-solid:hover {
   color: var(--white);
@@ -5890,16 +6282,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--warning-700);
-  border: 1px solid var(--warning-200);
-  background-color: var(--warning-50);
 }
 .button-xl-warning-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-warning-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--warning-700);
+  border: 1px solid var(--warning-200);
+  background-color: var(--warning-50);
 }
 .button-xl-warning-outline:hover {
   background-color: var(--warning-100);
@@ -5918,13 +6312,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--warning-700);
-  background-color: transparent;
 }
 .button-xl-warning-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-warning-link {
+  color: var(--warning-700);
+  background-color: transparent;
 }
 .button-xl-warning-link:hover {
   color: var(--warning-900);
@@ -5942,16 +6338,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--success-600);
-  border: 1px solid var(--success-600);
 }
 .button-xl-success-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-success-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--success-600);
+  border: 1px solid var(--success-600);
 }
 .button-xl-success-solid:hover {
   color: var(--white);
@@ -5975,16 +6373,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--success-700);
-  border: 1px solid var(--success-200);
-  background-color: var(--success-50);
 }
 .button-xl-success-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-success-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--success-700);
+  border: 1px solid var(--success-200);
+  background-color: var(--success-50);
 }
 .button-xl-success-outline:hover {
   background-color: var(--success-100);
@@ -6003,13 +6403,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--success-700);
-  background-color: transparent;
 }
 .button-xl-success-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-success-link {
+  color: var(--success-700);
+  background-color: transparent;
 }
 .button-xl-success-link:hover {
   color: var(--success-900);
@@ -6027,16 +6429,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--amber-600);
-  border: 1px solid var(--amber-600);
 }
 .button-xl-amber-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-amber-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--amber-600);
+  border: 1px solid var(--amber-600);
 }
 .button-xl-amber-solid:hover {
   color: var(--white);
@@ -6060,16 +6464,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--amber-700);
-  border: 1px solid var(--amber-200);
-  background-color: var(--amber-50);
 }
 .button-xl-amber-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-amber-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--amber-700);
+  border: 1px solid var(--amber-200);
+  background-color: var(--amber-50);
 }
 .button-xl-amber-outline:hover {
   background-color: var(--amber-100);
@@ -6088,13 +6494,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--amber-700);
-  background-color: transparent;
 }
 .button-xl-amber-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-amber-link {
+  color: var(--amber-700);
+  background-color: transparent;
 }
 .button-xl-amber-link:hover {
   color: var(--amber-900);
@@ -6112,16 +6520,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--blue-600);
-  border: 1px solid var(--blue-600);
 }
 .button-xl-blue-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-blue-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--blue-600);
+  border: 1px solid var(--blue-600);
 }
 .button-xl-blue-solid:hover {
   color: var(--white);
@@ -6145,16 +6555,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--blue-700);
-  border: 1px solid var(--blue-200);
-  background-color: var(--blue-50);
 }
 .button-xl-blue-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-blue-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--blue-700);
+  border: 1px solid var(--blue-200);
+  background-color: var(--blue-50);
 }
 .button-xl-blue-outline:hover {
   background-color: var(--blue-100);
@@ -6173,13 +6585,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--blue-700);
-  background-color: transparent;
 }
 .button-xl-blue-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-blue-link {
+  color: var(--blue-700);
+  background-color: transparent;
 }
 .button-xl-blue-link:hover {
   color: var(--blue-900);
@@ -6197,16 +6611,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--cyan-600);
-  border: 1px solid var(--cyan-600);
 }
 .button-xl-cyan-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-cyan-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--cyan-600);
+  border: 1px solid var(--cyan-600);
 }
 .button-xl-cyan-solid:hover {
   color: var(--white);
@@ -6230,16 +6646,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--cyan-700);
-  border: 1px solid var(--cyan-200);
-  background-color: var(--cyan-50);
 }
 .button-xl-cyan-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-cyan-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--cyan-700);
+  border: 1px solid var(--cyan-200);
+  background-color: var(--cyan-50);
 }
 .button-xl-cyan-outline:hover {
   background-color: var(--cyan-100);
@@ -6258,13 +6676,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--cyan-700);
-  background-color: transparent;
 }
 .button-xl-cyan-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-cyan-link {
+  color: var(--cyan-700);
+  background-color: transparent;
 }
 .button-xl-cyan-link:hover {
   color: var(--cyan-900);
@@ -6282,16 +6702,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--emerald-600);
-  border: 1px solid var(--emerald-600);
 }
 .button-xl-emerald-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-emerald-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--emerald-600);
+  border: 1px solid var(--emerald-600);
 }
 .button-xl-emerald-solid:hover {
   color: var(--white);
@@ -6315,16 +6737,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--emerald-700);
-  border: 1px solid var(--emerald-200);
-  background-color: var(--emerald-50);
 }
 .button-xl-emerald-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-emerald-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--emerald-700);
+  border: 1px solid var(--emerald-200);
+  background-color: var(--emerald-50);
 }
 .button-xl-emerald-outline:hover {
   background-color: var(--emerald-100);
@@ -6343,13 +6767,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--emerald-700);
-  background-color: transparent;
 }
 .button-xl-emerald-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-emerald-link {
+  color: var(--emerald-700);
+  background-color: transparent;
 }
 .button-xl-emerald-link:hover {
   color: var(--emerald-900);
@@ -6367,16 +6793,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--fuchsia-600);
-  border: 1px solid var(--fuchsia-600);
 }
 .button-xl-fuchsia-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-fuchsia-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--fuchsia-600);
+  border: 1px solid var(--fuchsia-600);
 }
 .button-xl-fuchsia-solid:hover {
   color: var(--white);
@@ -6400,16 +6828,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--fuchsia-700);
-  border: 1px solid var(--fuchsia-200);
-  background-color: var(--fuchsia-50);
 }
 .button-xl-fuchsia-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-fuchsia-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--fuchsia-700);
+  border: 1px solid var(--fuchsia-200);
+  background-color: var(--fuchsia-50);
 }
 .button-xl-fuchsia-outline:hover {
   background-color: var(--fuchsia-100);
@@ -6428,13 +6858,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--fuchsia-700);
-  background-color: transparent;
 }
 .button-xl-fuchsia-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-fuchsia-link {
+  color: var(--fuchsia-700);
+  background-color: transparent;
 }
 .button-xl-fuchsia-link:hover {
   color: var(--fuchsia-900);
@@ -6452,16 +6884,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--green-600);
-  border: 1px solid var(--green-600);
 }
 .button-xl-green-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-green-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--green-600);
+  border: 1px solid var(--green-600);
 }
 .button-xl-green-solid:hover {
   color: var(--white);
@@ -6485,16 +6919,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--green-700);
-  border: 1px solid var(--green-200);
-  background-color: var(--green-50);
 }
 .button-xl-green-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-green-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--green-700);
+  border: 1px solid var(--green-200);
+  background-color: var(--green-50);
 }
 .button-xl-green-outline:hover {
   background-color: var(--green-100);
@@ -6513,13 +6949,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--green-700);
-  background-color: transparent;
 }
 .button-xl-green-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-green-link {
+  color: var(--green-700);
+  background-color: transparent;
 }
 .button-xl-green-link:hover {
   color: var(--green-900);
@@ -6537,16 +6975,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--indigo-600);
-  border: 1px solid var(--indigo-600);
 }
 .button-xl-indigo-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-indigo-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--indigo-600);
+  border: 1px solid var(--indigo-600);
 }
 .button-xl-indigo-solid:hover {
   color: var(--white);
@@ -6570,16 +7010,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--indigo-700);
-  border: 1px solid var(--indigo-200);
-  background-color: var(--indigo-50);
 }
 .button-xl-indigo-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-indigo-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--indigo-700);
+  border: 1px solid var(--indigo-200);
+  background-color: var(--indigo-50);
 }
 .button-xl-indigo-outline:hover {
   background-color: var(--indigo-100);
@@ -6598,13 +7040,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--indigo-700);
-  background-color: transparent;
 }
 .button-xl-indigo-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-indigo-link {
+  color: var(--indigo-700);
+  background-color: transparent;
 }
 .button-xl-indigo-link:hover {
   color: var(--indigo-900);
@@ -6622,16 +7066,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--lime-600);
-  border: 1px solid var(--lime-600);
 }
 .button-xl-lime-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-lime-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--lime-600);
+  border: 1px solid var(--lime-600);
 }
 .button-xl-lime-solid:hover {
   color: var(--white);
@@ -6655,16 +7101,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--lime-700);
-  border: 1px solid var(--lime-200);
-  background-color: var(--lime-50);
 }
 .button-xl-lime-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-lime-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--lime-700);
+  border: 1px solid var(--lime-200);
+  background-color: var(--lime-50);
 }
 .button-xl-lime-outline:hover {
   background-color: var(--lime-100);
@@ -6683,13 +7131,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--lime-700);
-  background-color: transparent;
 }
 .button-xl-lime-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-lime-link {
+  color: var(--lime-700);
+  background-color: transparent;
 }
 .button-xl-lime-link:hover {
   color: var(--lime-900);
@@ -6707,16 +7157,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--orange-600);
-  border: 1px solid var(--orange-600);
 }
 .button-xl-orange-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-orange-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--orange-600);
+  border: 1px solid var(--orange-600);
 }
 .button-xl-orange-solid:hover {
   color: var(--white);
@@ -6740,16 +7192,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--orange-700);
-  border: 1px solid var(--orange-200);
-  background-color: var(--orange-50);
 }
 .button-xl-orange-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-orange-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--orange-700);
+  border: 1px solid var(--orange-200);
+  background-color: var(--orange-50);
 }
 .button-xl-orange-outline:hover {
   background-color: var(--orange-100);
@@ -6768,13 +7222,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--orange-700);
-  background-color: transparent;
 }
 .button-xl-orange-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-orange-link {
+  color: var(--orange-700);
+  background-color: transparent;
 }
 .button-xl-orange-link:hover {
   color: var(--orange-900);
@@ -6792,16 +7248,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--pink-600);
-  border: 1px solid var(--pink-600);
 }
 .button-xl-pink-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-pink-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--pink-600);
+  border: 1px solid var(--pink-600);
 }
 .button-xl-pink-solid:hover {
   color: var(--white);
@@ -6825,16 +7283,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--pink-700);
-  border: 1px solid var(--pink-200);
-  background-color: var(--pink-50);
 }
 .button-xl-pink-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-pink-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--pink-700);
+  border: 1px solid var(--pink-200);
+  background-color: var(--pink-50);
 }
 .button-xl-pink-outline:hover {
   background-color: var(--pink-100);
@@ -6853,13 +7313,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--pink-700);
-  background-color: transparent;
 }
 .button-xl-pink-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-pink-link {
+  color: var(--pink-700);
+  background-color: transparent;
 }
 .button-xl-pink-link:hover {
   color: var(--pink-900);
@@ -6877,16 +7339,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--purple-600);
-  border: 1px solid var(--purple-600);
 }
 .button-xl-purple-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-purple-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--purple-600);
+  border: 1px solid var(--purple-600);
 }
 .button-xl-purple-solid:hover {
   color: var(--white);
@@ -6910,16 +7374,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--purple-700);
-  border: 1px solid var(--purple-200);
-  background-color: var(--purple-50);
 }
 .button-xl-purple-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-purple-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--purple-700);
+  border: 1px solid var(--purple-200);
+  background-color: var(--purple-50);
 }
 .button-xl-purple-outline:hover {
   background-color: var(--purple-100);
@@ -6938,13 +7404,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--purple-700);
-  background-color: transparent;
 }
 .button-xl-purple-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-purple-link {
+  color: var(--purple-700);
+  background-color: transparent;
 }
 .button-xl-purple-link:hover {
   color: var(--purple-900);
@@ -6962,16 +7430,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--red-600);
-  border: 1px solid var(--red-600);
 }
 .button-xl-red-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-red-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--red-600);
+  border: 1px solid var(--red-600);
 }
 .button-xl-red-solid:hover {
   color: var(--white);
@@ -6995,16 +7465,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--red-700);
-  border: 1px solid var(--red-200);
-  background-color: var(--red-50);
 }
 .button-xl-red-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-red-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--red-700);
+  border: 1px solid var(--red-200);
+  background-color: var(--red-50);
 }
 .button-xl-red-outline:hover {
   background-color: var(--red-100);
@@ -7023,13 +7495,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--red-700);
-  background-color: transparent;
 }
 .button-xl-red-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-red-link {
+  color: var(--red-700);
+  background-color: transparent;
 }
 .button-xl-red-link:hover {
   color: var(--red-900);
@@ -7047,16 +7521,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--rose-600);
-  border: 1px solid var(--rose-600);
 }
 .button-xl-rose-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-rose-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--rose-600);
+  border: 1px solid var(--rose-600);
 }
 .button-xl-rose-solid:hover {
   color: var(--white);
@@ -7080,16 +7556,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--rose-700);
-  border: 1px solid var(--rose-200);
-  background-color: var(--rose-50);
 }
 .button-xl-rose-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-rose-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--rose-700);
+  border: 1px solid var(--rose-200);
+  background-color: var(--rose-50);
 }
 .button-xl-rose-outline:hover {
   background-color: var(--rose-100);
@@ -7108,13 +7586,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--rose-700);
-  background-color: transparent;
 }
 .button-xl-rose-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-rose-link {
+  color: var(--rose-700);
+  background-color: transparent;
 }
 .button-xl-rose-link:hover {
   color: var(--rose-900);
@@ -7132,16 +7612,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--sky-600);
-  border: 1px solid var(--sky-600);
 }
 .button-xl-sky-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-sky-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--sky-600);
+  border: 1px solid var(--sky-600);
 }
 .button-xl-sky-solid:hover {
   color: var(--white);
@@ -7165,16 +7647,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--sky-700);
-  border: 1px solid var(--sky-200);
-  background-color: var(--sky-50);
 }
 .button-xl-sky-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-sky-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--sky-700);
+  border: 1px solid var(--sky-200);
+  background-color: var(--sky-50);
 }
 .button-xl-sky-outline:hover {
   background-color: var(--sky-100);
@@ -7193,13 +7677,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--sky-700);
-  background-color: transparent;
 }
 .button-xl-sky-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-sky-link {
+  color: var(--sky-700);
+  background-color: transparent;
 }
 .button-xl-sky-link:hover {
   color: var(--sky-900);
@@ -7217,16 +7703,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--teal-600);
-  border: 1px solid var(--teal-600);
 }
 .button-xl-teal-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-teal-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--teal-600);
+  border: 1px solid var(--teal-600);
 }
 .button-xl-teal-solid:hover {
   color: var(--white);
@@ -7250,16 +7738,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--teal-700);
-  border: 1px solid var(--teal-200);
-  background-color: var(--teal-50);
 }
 .button-xl-teal-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-teal-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--teal-700);
+  border: 1px solid var(--teal-200);
+  background-color: var(--teal-50);
 }
 .button-xl-teal-outline:hover {
   background-color: var(--teal-100);
@@ -7278,13 +7768,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--teal-700);
-  background-color: transparent;
 }
 .button-xl-teal-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-teal-link {
+  color: var(--teal-700);
+  background-color: transparent;
 }
 .button-xl-teal-link:hover {
   color: var(--teal-900);
@@ -7302,16 +7794,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--violet-600);
-  border: 1px solid var(--violet-600);
 }
 .button-xl-violet-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-violet-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--violet-600);
+  border: 1px solid var(--violet-600);
 }
 .button-xl-violet-solid:hover {
   color: var(--white);
@@ -7335,16 +7829,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--violet-700);
-  border: 1px solid var(--violet-200);
-  background-color: var(--violet-50);
 }
 .button-xl-violet-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-violet-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--violet-700);
+  border: 1px solid var(--violet-200);
+  background-color: var(--violet-50);
 }
 .button-xl-violet-outline:hover {
   background-color: var(--violet-100);
@@ -7363,13 +7859,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--violet-700);
-  background-color: transparent;
 }
 .button-xl-violet-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-violet-link {
+  color: var(--violet-700);
+  background-color: transparent;
 }
 .button-xl-violet-link:hover {
   color: var(--violet-900);
@@ -7387,16 +7885,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--yellow-600);
-  border: 1px solid var(--yellow-600);
 }
 .button-xl-yellow-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-yellow-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--yellow-600);
+  border: 1px solid var(--yellow-600);
 }
 .button-xl-yellow-solid:hover {
   color: var(--white);
@@ -7420,16 +7920,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--yellow-700);
-  border: 1px solid var(--yellow-200);
-  background-color: var(--yellow-50);
 }
 .button-xl-yellow-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-yellow-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--yellow-700);
+  border: 1px solid var(--yellow-200);
+  background-color: var(--yellow-50);
 }
 .button-xl-yellow-outline:hover {
   background-color: var(--yellow-100);
@@ -7448,13 +7950,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--yellow-700);
-  background-color: transparent;
 }
 .button-xl-yellow-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-xl-yellow-link {
+  color: var(--yellow-700);
+  background-color: transparent;
 }
 .button-xl-yellow-link:hover {
   color: var(--yellow-900);
@@ -7472,16 +7976,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--grey-600);
-  border: 1px solid var(--grey-600);
 }
 .button-2xl-grey-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-grey-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--grey-600);
+  border: 1px solid var(--grey-600);
 }
 .button-2xl-grey-solid:hover {
   color: var(--white);
@@ -7505,16 +8011,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--grey-700);
-  border: 1px solid var(--grey-200);
-  background-color: var(--grey-50);
 }
 .button-2xl-grey-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-grey-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--grey-700);
+  border: 1px solid var(--grey-200);
+  background-color: var(--grey-50);
 }
 .button-2xl-grey-outline:hover {
   background-color: var(--grey-100);
@@ -7533,13 +8041,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--grey-700);
-  background-color: transparent;
 }
 .button-2xl-grey-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-grey-link {
+  color: var(--grey-700);
+  background-color: transparent;
 }
 .button-2xl-grey-link:hover {
   color: var(--grey-900);
@@ -7557,16 +8067,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--error-600);
-  border: 1px solid var(--error-600);
 }
 .button-2xl-error-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-error-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--error-600);
+  border: 1px solid var(--error-600);
 }
 .button-2xl-error-solid:hover {
   color: var(--white);
@@ -7590,16 +8102,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--error-700);
-  border: 1px solid var(--error-200);
-  background-color: var(--error-50);
 }
 .button-2xl-error-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-error-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--error-700);
+  border: 1px solid var(--error-200);
+  background-color: var(--error-50);
 }
 .button-2xl-error-outline:hover {
   background-color: var(--error-100);
@@ -7618,13 +8132,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--error-700);
-  background-color: transparent;
 }
 .button-2xl-error-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-error-link {
+  color: var(--error-700);
+  background-color: transparent;
 }
 .button-2xl-error-link:hover {
   color: var(--error-900);
@@ -7642,16 +8158,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--warning-600);
-  border: 1px solid var(--warning-600);
 }
 .button-2xl-warning-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-warning-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--warning-600);
+  border: 1px solid var(--warning-600);
 }
 .button-2xl-warning-solid:hover {
   color: var(--white);
@@ -7675,16 +8193,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--warning-700);
-  border: 1px solid var(--warning-200);
-  background-color: var(--warning-50);
 }
 .button-2xl-warning-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-warning-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--warning-700);
+  border: 1px solid var(--warning-200);
+  background-color: var(--warning-50);
 }
 .button-2xl-warning-outline:hover {
   background-color: var(--warning-100);
@@ -7703,13 +8223,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--warning-700);
-  background-color: transparent;
 }
 .button-2xl-warning-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-warning-link {
+  color: var(--warning-700);
+  background-color: transparent;
 }
 .button-2xl-warning-link:hover {
   color: var(--warning-900);
@@ -7727,16 +8249,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--success-600);
-  border: 1px solid var(--success-600);
 }
 .button-2xl-success-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-success-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--success-600);
+  border: 1px solid var(--success-600);
 }
 .button-2xl-success-solid:hover {
   color: var(--white);
@@ -7760,16 +8284,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--success-700);
-  border: 1px solid var(--success-200);
-  background-color: var(--success-50);
 }
 .button-2xl-success-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-success-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--success-700);
+  border: 1px solid var(--success-200);
+  background-color: var(--success-50);
 }
 .button-2xl-success-outline:hover {
   background-color: var(--success-100);
@@ -7788,13 +8314,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--success-700);
-  background-color: transparent;
 }
 .button-2xl-success-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-success-link {
+  color: var(--success-700);
+  background-color: transparent;
 }
 .button-2xl-success-link:hover {
   color: var(--success-900);
@@ -7812,16 +8340,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--amber-600);
-  border: 1px solid var(--amber-600);
 }
 .button-2xl-amber-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-amber-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--amber-600);
+  border: 1px solid var(--amber-600);
 }
 .button-2xl-amber-solid:hover {
   color: var(--white);
@@ -7845,16 +8375,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--amber-700);
-  border: 1px solid var(--amber-200);
-  background-color: var(--amber-50);
 }
 .button-2xl-amber-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-amber-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--amber-700);
+  border: 1px solid var(--amber-200);
+  background-color: var(--amber-50);
 }
 .button-2xl-amber-outline:hover {
   background-color: var(--amber-100);
@@ -7873,13 +8405,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--amber-700);
-  background-color: transparent;
 }
 .button-2xl-amber-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-amber-link {
+  color: var(--amber-700);
+  background-color: transparent;
 }
 .button-2xl-amber-link:hover {
   color: var(--amber-900);
@@ -7897,16 +8431,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--blue-600);
-  border: 1px solid var(--blue-600);
 }
 .button-2xl-blue-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-blue-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--blue-600);
+  border: 1px solid var(--blue-600);
 }
 .button-2xl-blue-solid:hover {
   color: var(--white);
@@ -7930,16 +8466,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--blue-700);
-  border: 1px solid var(--blue-200);
-  background-color: var(--blue-50);
 }
 .button-2xl-blue-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-blue-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--blue-700);
+  border: 1px solid var(--blue-200);
+  background-color: var(--blue-50);
 }
 .button-2xl-blue-outline:hover {
   background-color: var(--blue-100);
@@ -7958,13 +8496,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--blue-700);
-  background-color: transparent;
 }
 .button-2xl-blue-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-blue-link {
+  color: var(--blue-700);
+  background-color: transparent;
 }
 .button-2xl-blue-link:hover {
   color: var(--blue-900);
@@ -7982,16 +8522,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--cyan-600);
-  border: 1px solid var(--cyan-600);
 }
 .button-2xl-cyan-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-cyan-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--cyan-600);
+  border: 1px solid var(--cyan-600);
 }
 .button-2xl-cyan-solid:hover {
   color: var(--white);
@@ -8015,16 +8557,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--cyan-700);
-  border: 1px solid var(--cyan-200);
-  background-color: var(--cyan-50);
 }
 .button-2xl-cyan-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-cyan-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--cyan-700);
+  border: 1px solid var(--cyan-200);
+  background-color: var(--cyan-50);
 }
 .button-2xl-cyan-outline:hover {
   background-color: var(--cyan-100);
@@ -8043,13 +8587,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--cyan-700);
-  background-color: transparent;
 }
 .button-2xl-cyan-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-cyan-link {
+  color: var(--cyan-700);
+  background-color: transparent;
 }
 .button-2xl-cyan-link:hover {
   color: var(--cyan-900);
@@ -8067,16 +8613,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--emerald-600);
-  border: 1px solid var(--emerald-600);
 }
 .button-2xl-emerald-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-emerald-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--emerald-600);
+  border: 1px solid var(--emerald-600);
 }
 .button-2xl-emerald-solid:hover {
   color: var(--white);
@@ -8100,16 +8648,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--emerald-700);
-  border: 1px solid var(--emerald-200);
-  background-color: var(--emerald-50);
 }
 .button-2xl-emerald-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-emerald-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--emerald-700);
+  border: 1px solid var(--emerald-200);
+  background-color: var(--emerald-50);
 }
 .button-2xl-emerald-outline:hover {
   background-color: var(--emerald-100);
@@ -8128,13 +8678,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--emerald-700);
-  background-color: transparent;
 }
 .button-2xl-emerald-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-emerald-link {
+  color: var(--emerald-700);
+  background-color: transparent;
 }
 .button-2xl-emerald-link:hover {
   color: var(--emerald-900);
@@ -8152,16 +8704,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--fuchsia-600);
-  border: 1px solid var(--fuchsia-600);
 }
 .button-2xl-fuchsia-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-fuchsia-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--fuchsia-600);
+  border: 1px solid var(--fuchsia-600);
 }
 .button-2xl-fuchsia-solid:hover {
   color: var(--white);
@@ -8185,16 +8739,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--fuchsia-700);
-  border: 1px solid var(--fuchsia-200);
-  background-color: var(--fuchsia-50);
 }
 .button-2xl-fuchsia-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-fuchsia-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--fuchsia-700);
+  border: 1px solid var(--fuchsia-200);
+  background-color: var(--fuchsia-50);
 }
 .button-2xl-fuchsia-outline:hover {
   background-color: var(--fuchsia-100);
@@ -8213,13 +8769,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--fuchsia-700);
-  background-color: transparent;
 }
 .button-2xl-fuchsia-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-fuchsia-link {
+  color: var(--fuchsia-700);
+  background-color: transparent;
 }
 .button-2xl-fuchsia-link:hover {
   color: var(--fuchsia-900);
@@ -8237,16 +8795,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--green-600);
-  border: 1px solid var(--green-600);
 }
 .button-2xl-green-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-green-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--green-600);
+  border: 1px solid var(--green-600);
 }
 .button-2xl-green-solid:hover {
   color: var(--white);
@@ -8270,16 +8830,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--green-700);
-  border: 1px solid var(--green-200);
-  background-color: var(--green-50);
 }
 .button-2xl-green-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-green-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--green-700);
+  border: 1px solid var(--green-200);
+  background-color: var(--green-50);
 }
 .button-2xl-green-outline:hover {
   background-color: var(--green-100);
@@ -8298,13 +8860,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--green-700);
-  background-color: transparent;
 }
 .button-2xl-green-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-green-link {
+  color: var(--green-700);
+  background-color: transparent;
 }
 .button-2xl-green-link:hover {
   color: var(--green-900);
@@ -8322,16 +8886,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--indigo-600);
-  border: 1px solid var(--indigo-600);
 }
 .button-2xl-indigo-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-indigo-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--indigo-600);
+  border: 1px solid var(--indigo-600);
 }
 .button-2xl-indigo-solid:hover {
   color: var(--white);
@@ -8355,16 +8921,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--indigo-700);
-  border: 1px solid var(--indigo-200);
-  background-color: var(--indigo-50);
 }
 .button-2xl-indigo-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-indigo-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--indigo-700);
+  border: 1px solid var(--indigo-200);
+  background-color: var(--indigo-50);
 }
 .button-2xl-indigo-outline:hover {
   background-color: var(--indigo-100);
@@ -8383,13 +8951,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--indigo-700);
-  background-color: transparent;
 }
 .button-2xl-indigo-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-indigo-link {
+  color: var(--indigo-700);
+  background-color: transparent;
 }
 .button-2xl-indigo-link:hover {
   color: var(--indigo-900);
@@ -8407,16 +8977,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--lime-600);
-  border: 1px solid var(--lime-600);
 }
 .button-2xl-lime-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-lime-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--lime-600);
+  border: 1px solid var(--lime-600);
 }
 .button-2xl-lime-solid:hover {
   color: var(--white);
@@ -8440,16 +9012,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--lime-700);
-  border: 1px solid var(--lime-200);
-  background-color: var(--lime-50);
 }
 .button-2xl-lime-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-lime-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--lime-700);
+  border: 1px solid var(--lime-200);
+  background-color: var(--lime-50);
 }
 .button-2xl-lime-outline:hover {
   background-color: var(--lime-100);
@@ -8468,13 +9042,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--lime-700);
-  background-color: transparent;
 }
 .button-2xl-lime-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-lime-link {
+  color: var(--lime-700);
+  background-color: transparent;
 }
 .button-2xl-lime-link:hover {
   color: var(--lime-900);
@@ -8492,16 +9068,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--orange-600);
-  border: 1px solid var(--orange-600);
 }
 .button-2xl-orange-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-orange-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--orange-600);
+  border: 1px solid var(--orange-600);
 }
 .button-2xl-orange-solid:hover {
   color: var(--white);
@@ -8525,16 +9103,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--orange-700);
-  border: 1px solid var(--orange-200);
-  background-color: var(--orange-50);
 }
 .button-2xl-orange-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-orange-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--orange-700);
+  border: 1px solid var(--orange-200);
+  background-color: var(--orange-50);
 }
 .button-2xl-orange-outline:hover {
   background-color: var(--orange-100);
@@ -8553,13 +9133,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--orange-700);
-  background-color: transparent;
 }
 .button-2xl-orange-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-orange-link {
+  color: var(--orange-700);
+  background-color: transparent;
 }
 .button-2xl-orange-link:hover {
   color: var(--orange-900);
@@ -8577,16 +9159,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--pink-600);
-  border: 1px solid var(--pink-600);
 }
 .button-2xl-pink-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-pink-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--pink-600);
+  border: 1px solid var(--pink-600);
 }
 .button-2xl-pink-solid:hover {
   color: var(--white);
@@ -8610,16 +9194,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--pink-700);
-  border: 1px solid var(--pink-200);
-  background-color: var(--pink-50);
 }
 .button-2xl-pink-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-pink-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--pink-700);
+  border: 1px solid var(--pink-200);
+  background-color: var(--pink-50);
 }
 .button-2xl-pink-outline:hover {
   background-color: var(--pink-100);
@@ -8638,13 +9224,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--pink-700);
-  background-color: transparent;
 }
 .button-2xl-pink-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-pink-link {
+  color: var(--pink-700);
+  background-color: transparent;
 }
 .button-2xl-pink-link:hover {
   color: var(--pink-900);
@@ -8662,16 +9250,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--purple-600);
-  border: 1px solid var(--purple-600);
 }
 .button-2xl-purple-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-purple-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--purple-600);
+  border: 1px solid var(--purple-600);
 }
 .button-2xl-purple-solid:hover {
   color: var(--white);
@@ -8695,16 +9285,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--purple-700);
-  border: 1px solid var(--purple-200);
-  background-color: var(--purple-50);
 }
 .button-2xl-purple-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-purple-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--purple-700);
+  border: 1px solid var(--purple-200);
+  background-color: var(--purple-50);
 }
 .button-2xl-purple-outline:hover {
   background-color: var(--purple-100);
@@ -8723,13 +9315,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--purple-700);
-  background-color: transparent;
 }
 .button-2xl-purple-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-purple-link {
+  color: var(--purple-700);
+  background-color: transparent;
 }
 .button-2xl-purple-link:hover {
   color: var(--purple-900);
@@ -8747,16 +9341,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--red-600);
-  border: 1px solid var(--red-600);
 }
 .button-2xl-red-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-red-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--red-600);
+  border: 1px solid var(--red-600);
 }
 .button-2xl-red-solid:hover {
   color: var(--white);
@@ -8780,16 +9376,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--red-700);
-  border: 1px solid var(--red-200);
-  background-color: var(--red-50);
 }
 .button-2xl-red-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-red-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--red-700);
+  border: 1px solid var(--red-200);
+  background-color: var(--red-50);
 }
 .button-2xl-red-outline:hover {
   background-color: var(--red-100);
@@ -8808,13 +9406,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--red-700);
-  background-color: transparent;
 }
 .button-2xl-red-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-red-link {
+  color: var(--red-700);
+  background-color: transparent;
 }
 .button-2xl-red-link:hover {
   color: var(--red-900);
@@ -8832,16 +9432,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--rose-600);
-  border: 1px solid var(--rose-600);
 }
 .button-2xl-rose-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-rose-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--rose-600);
+  border: 1px solid var(--rose-600);
 }
 .button-2xl-rose-solid:hover {
   color: var(--white);
@@ -8865,16 +9467,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--rose-700);
-  border: 1px solid var(--rose-200);
-  background-color: var(--rose-50);
 }
 .button-2xl-rose-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-rose-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--rose-700);
+  border: 1px solid var(--rose-200);
+  background-color: var(--rose-50);
 }
 .button-2xl-rose-outline:hover {
   background-color: var(--rose-100);
@@ -8893,13 +9497,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--rose-700);
-  background-color: transparent;
 }
 .button-2xl-rose-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-rose-link {
+  color: var(--rose-700);
+  background-color: transparent;
 }
 .button-2xl-rose-link:hover {
   color: var(--rose-900);
@@ -8917,16 +9523,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--sky-600);
-  border: 1px solid var(--sky-600);
 }
 .button-2xl-sky-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-sky-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--sky-600);
+  border: 1px solid var(--sky-600);
 }
 .button-2xl-sky-solid:hover {
   color: var(--white);
@@ -8950,16 +9558,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--sky-700);
-  border: 1px solid var(--sky-200);
-  background-color: var(--sky-50);
 }
 .button-2xl-sky-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-sky-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--sky-700);
+  border: 1px solid var(--sky-200);
+  background-color: var(--sky-50);
 }
 .button-2xl-sky-outline:hover {
   background-color: var(--sky-100);
@@ -8978,13 +9588,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--sky-700);
-  background-color: transparent;
 }
 .button-2xl-sky-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-sky-link {
+  color: var(--sky-700);
+  background-color: transparent;
 }
 .button-2xl-sky-link:hover {
   color: var(--sky-900);
@@ -9002,16 +9614,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--teal-600);
-  border: 1px solid var(--teal-600);
 }
 .button-2xl-teal-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-teal-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--teal-600);
+  border: 1px solid var(--teal-600);
 }
 .button-2xl-teal-solid:hover {
   color: var(--white);
@@ -9035,16 +9649,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--teal-700);
-  border: 1px solid var(--teal-200);
-  background-color: var(--teal-50);
 }
 .button-2xl-teal-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-teal-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--teal-700);
+  border: 1px solid var(--teal-200);
+  background-color: var(--teal-50);
 }
 .button-2xl-teal-outline:hover {
   background-color: var(--teal-100);
@@ -9063,13 +9679,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--teal-700);
-  background-color: transparent;
 }
 .button-2xl-teal-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-teal-link {
+  color: var(--teal-700);
+  background-color: transparent;
 }
 .button-2xl-teal-link:hover {
   color: var(--teal-900);
@@ -9087,16 +9705,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--violet-600);
-  border: 1px solid var(--violet-600);
 }
 .button-2xl-violet-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-violet-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--violet-600);
+  border: 1px solid var(--violet-600);
 }
 .button-2xl-violet-solid:hover {
   color: var(--white);
@@ -9120,16 +9740,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--violet-700);
-  border: 1px solid var(--violet-200);
-  background-color: var(--violet-50);
 }
 .button-2xl-violet-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-violet-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--violet-700);
+  border: 1px solid var(--violet-200);
+  background-color: var(--violet-50);
 }
 .button-2xl-violet-outline:hover {
   background-color: var(--violet-100);
@@ -9148,13 +9770,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--violet-700);
-  background-color: transparent;
 }
 .button-2xl-violet-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-violet-link {
+  color: var(--violet-700);
+  background-color: transparent;
 }
 .button-2xl-violet-link:hover {
   color: var(--violet-900);
@@ -9172,16 +9796,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--white);
-  background-color: var(--yellow-600);
-  border: 1px solid var(--yellow-600);
 }
 .button-2xl-yellow-solid i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-yellow-solid {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--yellow-600);
+  border: 1px solid var(--yellow-600);
 }
 .button-2xl-yellow-solid:hover {
   color: var(--white);
@@ -9205,16 +9831,18 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
-  border-radius: 8px;
-  color: var(--yellow-700);
-  border: 1px solid var(--yellow-200);
-  background-color: var(--yellow-50);
 }
 .button-2xl-yellow-outline i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-yellow-outline {
+  box-shadow: 0px 1px 2px rgba(196, 206, 235, 0.05);
+  border-radius: 8px;
+  color: var(--yellow-700);
+  border: 1px solid var(--yellow-200);
+  background-color: var(--yellow-50);
 }
 .button-2xl-yellow-outline:hover {
   background-color: var(--yellow-100);
@@ -9233,13 +9861,15 @@ p:last-child {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  color: var(--yellow-700);
-  background-color: transparent;
 }
 .button-2xl-yellow-link i:before {
   line-height: unset;
   display: inline-block;
   vertical-align: middle;
+}
+.button-2xl-yellow-link {
+  color: var(--yellow-700);
+  background-color: transparent;
 }
 .button-2xl-yellow-link:hover {
   color: var(--yellow-900);

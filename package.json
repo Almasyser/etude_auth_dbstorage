@@ -20,10 +20,10 @@
   },
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run dev\"",
-	"dev": "cd frontend && npm run dev",
+	  "dev": "cd frontend && npm run dev",
     "server": "cd backend && nodemon index.js",
     "build": "vite build --outDir dist",
-	"preview": "vite preview",
+	  "preview": "vite preview",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

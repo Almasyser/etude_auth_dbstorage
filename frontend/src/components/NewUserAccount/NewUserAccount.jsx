@@ -6,6 +6,7 @@ import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
 import LoadPhoto from "../LoadPhoto/LoadPhoto";
 function NewUserAccount({ users, setUsers, setShowNewUser }) {
+  console.log("URL ",import.meta.env.VITE_BACKEND_URL);
   const [firstnameInput, setFirstnameInput] = useState("Prenom")
   const [mailInput,setMailInput] = useState("Adresse mail")
   const [lastnameInput, setLastnameInput] = useState("Nom")
@@ -25,16 +26,18 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
     const form = event.target;
     const formData = new FormData(form);
     const dataFromForm = Object.fromEntries(formData.entries());
+    const dataComplet = {...dataFromForm, hashed_password:""};
+          // console.log("DFF ",dataComplet);
     axios
-      .post(`${import.meta.env.VITE_BACKEND_URL}/addUser`, dataFromForm, {
-        headers: {
-          Authorization: `Bearer ${userToken}`,
-        },
-      })
-      .then((response) => {
-        if (response.status === 200) {
-          setMessage(true);
-          const builted = {...dataFromForm, ['id']: response.data, ['picture']: photo}
+    .post(`${import.meta.env.VITE_BACKEND_URL}/addUser`, dataComplet, {
+      headers: {
+        Authorization: `Bearer ${userToken}`,
+      },
+    })
+    .then((response) => {
+      if (response.status === 200) {
+        setMessage(true);
+        const builted = {...dataComplet, ['id']: response.data}
           users.push(builted);
           setUsers(users);
           setShowNewUser(false);
@@ -43,7 +46,7 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
         }
       })
       .catch((error) => {
-        console.error(error.message);
+        console.error(error);
       });
   };
   const handleCheckAdmin=(e)=>{

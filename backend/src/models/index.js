@@ -1,4 +1,4 @@
-// require("dotenv").config();
+require("dotenv").config();
 const mysql = require("mysql2/promise");
 
 // create a connection pool to the database
@@ -10,6 +10,7 @@ const pool = mysql.createPool({
   password: DB_PASSWORD,
   database: DB_NAME,
 });
+// console.log("LOG",DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME );
 
 // try a connection
 pool.getConnection().catch(() => {

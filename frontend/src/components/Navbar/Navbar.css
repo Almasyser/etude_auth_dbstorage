@@ -368,10 +368,12 @@ p:last-child {
   padding: 0;
   margin: 0 1rem 0 0;
   font-size: 1.8rem;
-  cursor: pointer;
 }
 #navbar-mobile nav .burger:hover {
   color: var(--cyan-200);
+}
+#navbar-mobile nav .burger {
+  cursor: pointer;
 }
 #navbar-mobile .items {
   z-index: 6;
