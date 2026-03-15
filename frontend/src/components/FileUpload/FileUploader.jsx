@@ -1,6 +1,7 @@
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import axios from 'axios';
+import "./fileuploader.css"
 
 const FileUploader = () => {
   const [files, setFiles] = useState([]);
@@ -33,9 +34,14 @@ const FileUploader = () => {
   const uploadFile = async () => {
     if (files.length === 0) return;
     const formData = new FormData();
-    formData.append('file', files[0]);
+    formData.append('path', files[0].path);
+    formData.append('name', files[0].name);
+    console.log("FORMDATA",formData);
+    console.log(`${import.meta.env.VITE_BACKEND_URL}/upload`);
+    
     try {
-      const response = await axios.post('http://localhost:5000/upload', formData, {
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/upload`, formData, {
+        
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -48,17 +54,9 @@ const FileUploader = () => {
   };
 
   return (
-    <div>
-      <div
-        {...getRootProps()}
-        style={{
-          border: '2px dashed #ccc',
-          padding: '20px',
-          textAlign: 'center',
-          cursor: 'pointer',
-          marginBottom: '20px',
-        }}
-      >
+    <div className='container'>
+      <div className='box'
+        {...getRootProps()}>
         <input {...getInputProps()} />
         {isDragActive ? (
           <p>Déposez le fichier ici ...</p>
@@ -68,7 +66,7 @@ const FileUploader = () => {
       </div>
 
       {files.length > 0 && (
-        <div>
+        <div className='comments'>
           <h3>Fichier sélectionné :</h3>
           <p>{files[0].name} ({Math.round(files[0].size / 1024)} Ko)</p>
           {preview && <img src={preview} alt="Aperçu" style={{ maxWidth: '100%', maxHeight: '200px' }} />}

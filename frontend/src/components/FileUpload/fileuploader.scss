@@ -1,0 +1,22 @@
+@use "../../styles/colors" as *;
+.container{
+    background: transparent;
+}
+.box{
+    color: white;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.comments{
+    h3{
+        color:azure;
+        font-style: italic;
+        padding-bottom: 0.5rem;
+    }
+    p{
+        color:antiquewhite;
+    }
+}

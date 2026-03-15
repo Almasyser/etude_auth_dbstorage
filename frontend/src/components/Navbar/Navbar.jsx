@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useState, useContext } from "react";
 import AuthContext from "../../contexts/AuthContext";
 import CheckAdmin from "../utils/CheckAdmin";
+
 export default function Navbar() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,9 +34,9 @@ export default function Navbar() {
               <button
                 className=""
                 type="button"
-                onClick={()=>{}}
+                onClick={()=>navigate("/loadFile")}
               >
-                <i className="fi fi-rr-plus" /> Ajouter un smartphone
+                <i className="fi fi-rr-plus" /> Charger un fichier
               </button>
             </li>
           )}
@@ -123,9 +124,9 @@ export default function Navbar() {
                 <button
                   className=""
                   type="button"
-                  onClick={() => {}}
+                  onClick={() => navigate("/loadFile")}
                 >
-                  <i className="fi fi-rr-plus" /> Ajouter un smartphone
+                  <i className="fi fi-rr-plus" /> Charger un fichier
                 </button>
               </li>
             )}

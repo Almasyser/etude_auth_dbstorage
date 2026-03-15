@@ -6,6 +6,7 @@ import Faq from "./pages/Faq/Faq";
 import AuthenticationPage from "./pages/AuthenticationPage/AuthenticationPage";
 import Users from "./pages/Users/Users";
 import MyAccount from ".//pages/MyAccount/MyAccount";
+import FileUploader from "./components/FileUpload/FileUploader";
 import "./styles/reset.css";
 import "./styles/index.scss";
 import "./App.css";
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Accueil />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/loadfile" element={<FileUploader/>}/>
             <Route path="/auth" element={<AuthenticationPage />} />
             <Route path="/user" element={<MyAccount />} />
             <Route path="/faq" element={<Faq />} />

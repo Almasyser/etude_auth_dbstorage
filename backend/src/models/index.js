@@ -31,6 +31,10 @@ const FaqManager = require("./FaqManager");
 models.faq = new FaqManager();
 models.faq.setDatabase(pool);
 
+const UpLoadManager = require("./UpLoadManager");
+models.files = new UpLoadManager();
+models.files.setDatabase(pool);
+
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
 const handler = {

@@ -9,6 +9,7 @@ const {
 } = require("./services/auth");
 const user = require("./controllers/userControllers");
 const faq = require("./controllers/faqControllers");
+const upload = require("./controllers/upLoadControlers");
 router.post("/user/login", user.authenticationCheck, verifyPassword);
 router.post("/addUser", hashPassword, user.addUser);
 router.put(
@@ -37,5 +38,7 @@ router.delete(
 router.get("/faq", verifyToken, faq.browse);
 router.post("/faq", verifyToken, faq.add);
 router.delete("/faq/:id", verifyToken, faq.destroy);
+
+router.post("/upload", upload.add);
 
 module.exports = router;
