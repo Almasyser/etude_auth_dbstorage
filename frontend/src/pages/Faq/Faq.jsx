@@ -55,7 +55,7 @@ export default function Faq() {
   }
   return (
     userToken && (
-      <>
+      <div className="nav-container">
         <div className="faq">
           <Navbar />
           {isDataLoaded ? (
@@ -84,7 +84,7 @@ export default function Faq() {
           )}
         </div>
         {showNewFaq && <NewFaq newFaq={newFaq} setNewFaq={setNewFaq} setShowNewFaq={setShowNewFaq}/>}
-      </>
+      </div>
     )
   );
 }

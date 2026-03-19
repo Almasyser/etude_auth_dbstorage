@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
+import Navbar from "../Navbar/Navbar";
 import axios from 'axios';
 import "./fileuploader.css"
 
@@ -55,6 +56,7 @@ const FileUploader = () => {
 
   return (
     <div className='container'>
+      <Navbar />
       <div className='box'
         {...getRootProps()}>
         <input {...getInputProps()} />
@@ -68,8 +70,8 @@ const FileUploader = () => {
       {files.length > 0 && (
         <div className='comments'>
           <h3>Fichier sélectionné :</h3>
-          <p>{files[0].name} ({Math.round(files[0].size / 1024)} Ko)</p>
           {preview && <img src={preview} alt="Aperçu" style={{ maxWidth: '100%', maxHeight: '200px' }} />}
+          <p>{files[0].name} ({Math.round(files[0].size / 1024)} Ko)</p>
           <button onClick={uploadFile} style={{ marginTop: '10px' }}>
             Télécharger
           </button>

@@ -2,12 +2,13 @@
 @use "../../styles/shadows" as *;
 @use "../../styles/colors" as *;
 .faq{
-  
+  position: relative;
   main{
     height: 100%;
     overflow: visible;
     .btn-newfaq{
       position: fixed;
+      top: 96px;
       right: 25px;
       width: 3.4rem;
       height: 3.4rem;

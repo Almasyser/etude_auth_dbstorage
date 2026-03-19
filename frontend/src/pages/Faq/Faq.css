@@ -323,12 +323,16 @@ p:last-child {
   margin-bottom: 0;
 }
 
+.faq {
+  position: relative;
+}
 .faq main {
   height: 100%;
   overflow: visible;
 }
 .faq main .btn-newfaq {
   position: fixed;
+  top: 96px;
   right: 25px;
   width: 3.4rem;
   height: 3.4rem;

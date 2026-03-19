@@ -213,7 +213,7 @@
 
 .newuseraccount {
   position: absolute;
-  top: 12rem;
+  top: 8rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--blue-950);

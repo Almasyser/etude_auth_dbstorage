@@ -1,121 +1,71 @@
 @use "../../styles/typography" as *;
-
-#navbar {
-  display: none;
-}
-#navbar-mobile {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--blue-900);
-  position: sticky;
-  top: 0;
-  width: 100vw;
-  z-index: 6;
-  .nav-filter {
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: max-content;
-    width: 100vw;
-    background-color: var(--cyan-500);
-    opacity: 0.8;
+  .navContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
-  nav {
-    z-index: 6;
+  .navbar{
+    position: sticky;
+    width: 100wv;
+    height: 4rem;
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
+    justify-content: flex-end;
     align-items: center;
-    padding: 12px;
-    border-bottom: 1px solid var(--grey-800);
-    .logo {
-      cursor: pointer;
-      img {
-        height: 40px;
-      }
+    background: transparent;
+  }
+  .navItem{
+    color: rgb(79, 174, 174);
+    text-decoration: none;
+    padding-right: 1rem;
+    &.active{
+      color:aqua;
     }
-    .burger {
-      color: var(--cyan-400);
-      background-color: transparent;
-      border: none;
-      padding: 0;
-      margin: 0 1rem 0 0;
-      font-size: 1.8rem;
-      &:hover{
-        color: var(--cyan-200);
-      }
-      cursor: pointer;
+    &:hover{
+      color:rgb(70, 112, 112);
     }
   }
-  .items {
-    z-index: 6;
+  .burger{
+    display: none;
+  }
+
+@media screen and (max-width: 720px){
+  .navbar{
+    display: none;
+  }
+  .navbar-mobile{
     position: absolute;
-    top:4.5rem;
+    z-index: 11;
+    top: 64px;
     right: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 0.2rem;
-    padding: 1rem;
-    background: rgba(23, 37, 84,0.8);
-    .btn-disconnect{
-      color: var(--red-600);
-      font-weight: 100;
+    transition: all 1s ease-in-out;
+    background-color: rgba(23, 37, 84, 0.8);;
+    .navItem{
+      padding: 0.5rem 1.1rem 0.5rem 0.5rem;
     }
-    button {
-      background-color: transparent;
-      color: var(--cyan-300);
-      border: none;
-      font-size: 1rem;
-      font-weight: 400;
-      padding: 8px 14px;
-      gap: 8px;
-      &:hover{
-        color: var(--cyan-100);
-        cursor: pointer;
-      }
-    }
-  }
-}
 
-@media only screen and (min-width: 768px) {
-  #navbar-mobile {
-    display: none;
   }
-  #navbar {
+  .burger{
     position: sticky;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--blue-900);
-    padding: 12px 32px;
-    top: 0;
-    width: 100vw;
-    gap: clamp(1rem, 2rem, 2rem);
+    top: 1rem;
+    left: 80%;
     z-index: 5;
-    .logo {
-      cursor: pointer;
-      img {
-        height: 60px;
-      }
-    }
-    .items {
-      display: flex;
-      gap: clamp(1rem, 1.5rem, 1.5rem);
-      .btn-disconnect{
-        color: var(--red-600);
-      }
-      button {
-        height: 2rem;
-        color: var(--cyan-400);
-        border: none;
-        background: transparent;
-        font-size: 0.92rem;
-        font-weight: 600;
-        &:hover{
-          color: var(--cyan-200);
-        }
-      }
+    display: block;
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid rgb(79, 174, 174);
+    border-radius: 2rem;
+    color: rgb(79, 174, 174);
+    background: transparent;
+    &:hover{
+       color:rgb(70, 112, 112);
+       border-color: rgb(70,112,112);
+       cursor: pointer;
     }
   }
-}
+};
+  
+ 
