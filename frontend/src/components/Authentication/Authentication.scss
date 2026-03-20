@@ -44,15 +44,14 @@
     }
   }
   .cancel-button {
-    margin-top: 1rem;
+    margin-top: 0;
     height: 2rem;
     width: 100%;
     border-radius: 8px;
-    border: 1px solid var(-amber--600);
-    color: var(--amber-600);
+    border: none;
+    color: var(--amber-400);
     background: transparent;
     &:hover{
-      border: 1px solid var(-amber--200);
       color: var(--amber-200);
       cursor: pointer;
     }
