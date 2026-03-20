@@ -1,5 +1,5 @@
-@use "../../styles/colors" as *;
-@use "../../styles/shadows" as *;
+@use "../../styles/variables" as *;
+
 .manage {
   display: flex;
   flex-direction: column;
@@ -17,8 +17,8 @@
     height: 3.4rem;
     border-radius: 8px;
     border: none;
-    background-color: var(--green-700);
-    color: var(--cyan-50);
+    background-color: $green500;
+    color: $cyan50;
     opacity: 0.6;
     font-size: 1.6rem;
     font-weight: 500;
@@ -30,7 +30,7 @@
   header{
     display: flex;
     h1{
-      color: var(--cyan-100);
+      color: $cyan100;
     }
   }
 }
@@ -41,7 +41,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin: 1rem;
-  background: var(--blue-900);
+  background: $blue900;
   p{
     margin: 0;
     padding: 0;
@@ -61,19 +61,19 @@
   flex-direction: column;
   :nth-child(1){
     font-size: 1.6rem;
-    color: var(--cyan-50);
+    color: $cyan50;
     padding-top: 0.5rem;
   }
   :nth-child(2){
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--cyan-50);
+    color: $cyan50;
     padding-bottom: 0.5rem;
   }
   :nth-child(3){
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--cyan-100);
+    color: $cyan100;
     padding-bottom: 0.25rem;
   }
   :nth-child(4){
@@ -99,16 +99,16 @@
     cursor: pointer;
     :nth-child(1){
       font-size: 1.4rem;
-      color: var(--green-400);
+      color: $green400;
       &:hover{
-        color: var(--green-200);
+        color: $green200;
       }
     }
     :nth-child(2){
       font-size: 1.4rem;
-      color: var(--red-400);
+      color: $red400;
       &:hover{
-        color: var(--red-200);
+        color: $red200;
       }
     }
   }
@@ -120,11 +120,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
-  background-color: var(--blue-950);
+  background-color: $blue950;
   padding: 0 1rem;
   border-radius: 8px;
   p{
-    color: var(--cyan-100);
+    color: $cyan100;
     padding: 0.5rem 0 0.5rem 0;
   }
   .btn-alert{
@@ -135,25 +135,25 @@
     :nth-child(1){
       width: 10rem;
       height: 1.8rem;
-      color: var(--cyan-400);
+      color: $cyan400;
       background: transparent;
       border-radius: 8px;
-      border: 1px solid var(--cyan-400);
+      border: 1px solid $cyan400;
       &:hover{
         color: var(--cyan-50);
-        border-color: var(--cyan-100);
+        border-color: $cyan100;
         cursor: pointer;
       }
     }
     :nth-child(2){
       width: 10rem;
-      color: var(--green-500);
+      color: $green500;
       background: transparent;
       border-radius: 8px;
-      border: 1px solid var(--green-500);
+      border: 1px solid $green500;
       &:hover{
-        color: var(--green-300);
-        border-color: var(--green-400);
+        color: $green400;
+        border-color: $green400;
         cursor: pointer;
       }
     }
@@ -170,19 +170,19 @@
     flex-direction: column;
     :nth-child(1){
       font-size: 1rem;
-      color: var(--cyan-50);
+      color: $cyan50;
       padding-top: 0.5rem;
     }
     :nth-child(2){
       font-size: 0.9rem;
       font-weight: 500;
-      color: var(--cyan-50);
+      color: $cyan50;
       padding-bottom: 0.5rem;
     }
     :nth-child(3){
       font-size: 1rem;
       font-weight: 500;
-      color: var(--cyan-100);
+      color: $cyan100;
       padding-bottom: 0.25rem;
     }
     :nth-child(4){

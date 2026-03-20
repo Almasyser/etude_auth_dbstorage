@@ -1,4 +1,4 @@
-@use "../../styles/typography" as *;
+@use "../../styles/variables" as *;
 .authentication-container {
   // margin-top: -87px;
   display: flex;
@@ -23,7 +23,7 @@
       gap: 2rem;
       h1 {
         @include title("sm", $weight: 500);
-        color: var(--cyan-100);
+        color: $cyan100;
         max-width: 80%;
       }
     }
@@ -37,14 +37,14 @@
     background-position: center;
     background-image: linear-gradient(
       135deg,
-      var(--blue-700) 0%,
-      var(--blue-950) 100%
+      $blue700 0%,
+      $blue950 100%
     );
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 10vh;
-    color: var(--cyan-50);
+    color: $cyan50;
     img {
       max-width: 40%;
     }

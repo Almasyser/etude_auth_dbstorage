@@ -1,5 +1,5 @@
-@use "../../styles/typography" as *;
-@use "../../styles/shadows" as *;
+@use "../../styles/variables" as *;
+
 
 .home{
   width: 100%;
@@ -7,12 +7,12 @@
 
   h1{
     font-size: 2rem;
-    color: var(--cyan-200);
+    color: $cyan200;
     padding-top: 2rem;
     text-align: center;
   }
   ul, li{
-    color: var(--cyan-50);
+    color: $cyan50;
   }
   ul{
     margin-bottom: 1rem;

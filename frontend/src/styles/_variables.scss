@@ -1,0 +1,19 @@
+@use "./colors" as *;
+
+$cyan50: var(--cyan-50);
+$cyan100: var(--cyan-100);
+$cyan200: var(--cyan-200);
+$cyan400: var(--cyan-400);
+$cyan600: var(--cyan-600);
+
+$green200: var(--green-200);
+$green400: var(--green-400);
+$green500: var(--green-500);
+$green700: var(--green-700);
+
+$blue700: var(--blue-700);
+$blue900: var(--blue-900);
+$blue950: var(--blue-950);
+
+$red200: var(--red-200);
+$red400: var(--red-400);
