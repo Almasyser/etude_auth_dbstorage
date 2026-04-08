@@ -7,11 +7,11 @@ class upLoadManager extends AbstractManager {
   }
 
   insert(files) {
-    console.log("####",files);
-    
+    const {name, path} = files;
+    console.log("####",name, path);
     return this.database.query(
-      // `insert into ${this.table} (name, path) values (?, ?)`,
-      // [files.name, files.path]
+      `INSERT INTO ${this.table} (name, path) VALUES (?,?)`,
+      [files.name, files.path]
     );
   }
 }

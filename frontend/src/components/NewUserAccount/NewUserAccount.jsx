@@ -159,21 +159,6 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
           </div>
           <div className="input-line">
             <div className="input-field">
-              <label htmlFor="photo">Photo</label>
-              <div className="input">
-                <input
-                  name="photo"
-                  type="text"
-                  value={photo}
-                  id="photo"
-                  onChange={(e)=>setPhoto(e.target.value)}
-                  onFocus={()=>setPhoto("")}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="input-line">
-            <div className="input-field">
               <label htmlFor="avatar">Avatar</label>
               <div className="input">
                 <input
