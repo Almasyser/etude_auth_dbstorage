@@ -1,38 +1,33 @@
 @use "../../styles/colors" as *;
-.loadphoto{
-  width: 100%;
-  height: 8rem;
-  padding: 1rem;
-  color: var(--cyan-200);
-  font-size: 0.8rem;
-  :nth-child(1){
-    width: 100%;
-    height: 4rem;
-    border: 1px solid var(--blue-400);
-    border-radius: 8px;
+// .container{
+//     background: transparent;
+// }
+.box{
+    color: white;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    margin: 4rem 2rem 2rem 2rem;
+    cursor: pointer;
+}
+.comments{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    cursor:move;
-  }
-
-  .btn{
-    width: 6rem;
-    height: 2rem;
-    background: transparent;
-    border: 1px solid var(--cyan-300);
-    border-radius: 8px;
-    color: var(--cyan-300);
-    margin: 0.5rem auto;
-    &:hover{
-      border: 1px solid var(--cyan-100);
-      color: var(--cyan-100);
-      cursor: pointer;
+    h3{
+        color:azure;
+        font-style: italic;
+        padding: 0.5rem 0;
     }
-  }
-  img{
-    padding-left: 1rem;
-    // width: 64px;
-    // height: 64px;
-  }
+    p{
+        color:antiquewhite;
+        padding: 0.5rem 0;
+    }
+    img{
+        max-width: 320px;
+        transition: all 0.4s ease-in-out;
+        &:hover{
+            scale: 2;
+        }
+    }
 }

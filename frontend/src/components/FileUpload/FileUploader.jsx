@@ -3,11 +3,9 @@ import { useDropzone } from 'react-dropzone';
 import Navbar from "../Navbar/Navbar";
 import axios from 'axios';
 import "./fileuploader.css"
-
 const FileUploader = () => {
   const [files, setFiles] = useState([]);
   const [preview, setPreview] = useState(null);
-
   // Fonction pour gérer le drop des fichiers
   const onDrop = useCallback((acceptedFiles) => {
     setFiles(acceptedFiles);
@@ -20,7 +18,6 @@ const FileUploader = () => {
       setPreview(null);
     }
   }, []);
-   
   // Configuration de react-dropzone
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
@@ -41,9 +38,8 @@ const FileUploader = () => {
       name: files[0].name
     }
     // const formData = new FormData();
-
     try {
-      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/upload`, dataform, {
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/addfile`, dataform, {
         headers: {
              // 'Content-Type': 'multipart/form-data',application/json; charset=utf-8
           'Content-Type': 'application/json; charset=utf-8',
@@ -55,7 +51,6 @@ const FileUploader = () => {
       alert('Erreur lors du téléchargement.');
     }
   };
-
   return (
     <div className='container'>
       <Navbar />

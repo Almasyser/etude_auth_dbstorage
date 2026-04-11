@@ -211,33 +211,23 @@
   --yellow-950: #422006;
 }
 
-.box {
+.btnradio {
+  width: 100%;
+  height: 4rem;
   color: white;
-  border: 2px dashed #ccc;
-  padding: 20px;
-  text-align: center;
-  margin: 4rem 2rem 2rem 2rem;
+}
+.btnradio .label {
+  height: 8rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+.btnradio .label:hover {
+  border: 1px solid cyan;
   cursor: pointer;
 }
-
-.comments {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.comments h3 {
-  color: azure;
-  font-style: italic;
-  padding: 0.5rem 0;
-}
-.comments p {
-  color: antiquewhite;
-  padding: 0.5rem 0;
-}
-.comments img {
-  max-width: 320px;
-  transition: all 0.4s ease-in-out;
-}
-.comments img:hover {
-  scale: 2;
-}/*# sourceMappingURL=loadphoto.css.map */
+.btnradio .label img {
+  width: 48px;
+  height: 48px;
+  margin: 0.5rem 0 0 0.5rem;
+  padding: 0.4rem;
+}/*# sourceMappingURL=btnradio.css.map */

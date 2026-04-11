@@ -5,6 +5,7 @@ import { useState, useContext} from "react";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
 import LoadPhoto from "../LoadPhoto/LoadPhoto";
+import BtnRadio from "../btnRadio/BtnRadio";
 function NewUserAccount({ users, setUsers, setShowNewUser }) {
   console.log("URL ",import.meta.env.VITE_BACKEND_URL);
   const [firstnameInput, setFirstnameInput] = useState("Prenom")
@@ -15,7 +16,7 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
   const [passwordInput, setPasswordInput] = useState("Mot de passe")
   const [roleInput,setRoleInput] = useState("role")
   const [photo,setPhoto] = useState("photo")
-  const [avatarInput,setAvatarInput] = useState("avatar")
+  // const [avatarInput,setAvatarInput] = useState("avatar")
   // const [picture, setPicture] = useState();
   const { userToken } = useContext(AuthContext);
   const [message, setMessage] = useState(false); 
@@ -49,6 +50,8 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
         console.error(error);
       });
   };
+  console.log("*** ",users);
+  
   const handleCheckAdmin=(e)=>{
     setCheckAdmin(e.target.value);
     
@@ -157,7 +160,7 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
               </div>
             </div>
           </div>
-          <div className="input-line">
+          {/* <div className="input-line">
             <div className="input-field">
               <label htmlFor="avatar">Avatar</label>
               <div className="input">
@@ -171,7 +174,14 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
                 />
               </div>
             </div>
+          </div> */}
+          <div className="input-line">
+            <div className="input-field">
+              <label htmlFor="avatar">Avatar</label>
+              <BtnRadio />
+            </div>
           </div>
+         
           <div className="btnbox">
             <button type="submit" className={checkAdmin !== null? "btn" : "btn disabled"} >
               Valider le nouvel utilisateur

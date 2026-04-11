@@ -62,6 +62,23 @@ const addUser = (req, res) => {
       res.status(500).send("Error while creating user");
     });
 };
+const addUserPhoto = (req, res) => {
+  const {photo, id} = req.body;
+  models.user
+    .updatePhoto(photo, id)
+    .then(([result]) => {
+      res.send(newId);
+      if (result.affectedRows !== 0) {
+        res.status(204);
+        console.log("User photo created with sucess",newId);
+      } else {
+        res.status(404).send("User photo not created");
+      }
+    })
+    .catch(() => {
+      res.status(500).send("Error while creating user photo");
+    });
+};
 
 const modifyUser = (req, res) => {
   const { id } = req.params;
@@ -104,6 +121,7 @@ const destroyUser = (req, res) => {
 module.exports = {
   authenticationCheck,
   addUser,
+  addUserPhoto,
   modifyUser,
   destroyUser,
   browse,

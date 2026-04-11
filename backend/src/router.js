@@ -12,6 +12,7 @@ const faq = require("./controllers/faqControllers");
 const upload = require("./controllers/upLoadControlers");
 router.post("/user/login", user.authenticationCheck, verifyPassword);
 router.post("/addUser", hashPassword, user.addUser);
+router.post("/addUserPhoto", user.addUserPhoto);
 router.put(
   "/adminUser/:id",
   verifyToken,
@@ -39,6 +40,6 @@ router.get("/faq", verifyToken, faq.browse);
 router.post("/faq", verifyToken, faq.add);
 router.delete("/faq/:id", verifyToken, faq.destroy);
 
-router.post("/upload", upload.add);
+router.post("/addfile", upload.add);
 
 module.exports = router;

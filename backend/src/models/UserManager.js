@@ -39,6 +39,12 @@ class UserManager extends AbstractManager {
       [...values, id]
     );
   }
+  updatePhoto(value, id){
+    return this.database.query(
+      `update ${this.table} set picture where id=?`,
+      [value,id]
+    )
+  }
 }
 
 module.exports = UserManager;
