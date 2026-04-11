@@ -1,23 +1,37 @@
 
+
 import avatars from "../../assets/avatars";
 import "./btnradio.css";
-function BtnRadio() {
+function BtnRadio({setAvatarInput}) {
     const cles = Object.values(avatars);
-    console.log(cles);
     const handleOnChange=(e)=>{
-      // console.log(e);
-      console.log(e);
-      
+      const val = e.currentTarget.value;
+      console.log(cles[val]);
+      setAvatarInput(val);
+  
     }
     
   return (
     <div className="btnradio">
       {cles.map((el, index)=>{
-        return( 
-          <label className="label" key={index}>
-            <img src={el} alt="RR" htmlFor="radio"/>
-            <input type="radio" id="radio" name="radio" onChange={handleOnChange}/>
-          </label>         
+        return(
+          <div key={index}>
+            <label className="radioLabel">
+              <input 
+                className="radioInput"
+                type="radio" 
+                id="radio" 
+                name="radio" 
+                onChange={handleOnChange}
+                value={index}/>
+              <img 
+                src={el} 
+                alt="RR" 
+                htmlFor="radio"
+                className="radioImg"/>
+                
+            </label> 
+          </div>
         )
       })}
     </div>

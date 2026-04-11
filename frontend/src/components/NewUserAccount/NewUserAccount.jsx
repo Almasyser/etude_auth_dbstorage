@@ -16,7 +16,7 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
   const [passwordInput, setPasswordInput] = useState("Mot de passe")
   const [roleInput,setRoleInput] = useState("role")
   const [photo,setPhoto] = useState("photo")
-  // const [avatarInput,setAvatarInput] = useState("avatar")
+  const [avatarInput,setAvatarInput] = useState("avatar")
   // const [picture, setPicture] = useState();
   const { userToken } = useContext(AuthContext);
   const [message, setMessage] = useState(false); 
@@ -178,7 +178,7 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
           <div className="input-line">
             <div className="input-field">
               <label htmlFor="avatar">Avatar</label>
-              <BtnRadio />
+              <BtnRadio setAvatarInput={setAvatarInput}/>
             </div>
           </div>
          

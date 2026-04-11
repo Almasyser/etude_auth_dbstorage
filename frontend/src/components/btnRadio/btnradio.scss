@@ -1,22 +1,46 @@
 @use "../../styles/variables" as *;
+
+$radio-size: 16px;
+$radio-border: 2px solid #ccc;
+$radio-border-radius: 50%;
+$radio-checked-color: #fa0101;
+$radio-hover-color: #2563eb; // Bleu plus foncé au survol
+$radio-transition: all 0.2s ease;
 .btnradio{
     width: 100%;
     height: 4rem;
     color: white;
+    display: flex;
+    
+    .radioInput{
+        &:disabled {
 
-    .label{
-        height: 8rem;
-        border: 1px solid transparent;
-        border-radius: 8px;
-        &:hover{
-            border: 1px solid cyan;
-            cursor: pointer;
+            cursor: not-allowed;
         }
+    //   appearance: none; // Supprime le style natif
+    }
+    .radioImg{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        
+    }
+    .radioLabel {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 8px;
+        user-select: none; // Évite la sélection de texte accidentelle
         img{
             width: 48px;
             height: 48px;
-            margin: 0.5rem 0 0 0.5rem;
-            padding: 0.4rem;
+        }
+      // Style du label quand le radio est désactivé
+      .radioModern:disabled + & {
+        color: #aaa;
+        cursor: not-allowed;
         }
     }
 }
+
+
