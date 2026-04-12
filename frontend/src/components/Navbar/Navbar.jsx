@@ -3,12 +3,14 @@ import { NavLink, Outlet } from "react-router-dom";
 import { useContext, useState } from "react";
 import AuthContext from "../../contexts/AuthContext";
 import CheckAdmin from "../utils/CheckAdmin";
+import logo from "../../assets/logo_min.png";
 function Navbar() {
   const [ toggle, setToggle ] = useState(false);
   const { userInfo } = useContext(AuthContext);
   const isAdmin = CheckAdmin(userInfo?.is_admin);
   return (
-    <>
+    <section className="navContainer">
+      <img src={logo} alt="Logo" />
       <nav className={toggle? "navbar-mobile":"navbar"}>
         <NavLink to="/home" className={({ isActive })=>
           (isActive? "navItem active":"navItem")}>Accueil</NavLink>
@@ -25,7 +27,7 @@ function Navbar() {
       </nav>
       <Outlet />
      <button className="burger" onClick={()=>setToggle(!toggle)}>Menu</button>
-    </>
+    </section>
 
     )
 }

@@ -303,4 +303,25 @@
   color: var(--cyan-400);
   font-size: 0.8rem;
   padding-left: 1rem;
+}
+.newuseraccount .radioGroup {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.newuseraccount .radioGroup label {
+  border: 1px solid transparent;
+}
+.newuseraccount .radioGroup label:hover {
+  background-color: var(--cyan-900);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.newuseraccount .radioGroup .radioInput:disabled {
+  cursor: not-allowed;
+}
+.newuseraccount .radioGroup .radioImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }/*# sourceMappingURL=newuseraccount.css.map */

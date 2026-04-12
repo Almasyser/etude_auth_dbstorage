@@ -5,9 +5,10 @@ import { useState, useContext} from "react";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
 import LoadPhoto from "../LoadPhoto/LoadPhoto";
-import BtnRadio from "../btnRadio/BtnRadio";
+import avatars from "../../assets/avatars";
 function NewUserAccount({ users, setUsers, setShowNewUser }) {
-  console.log("URL ",import.meta.env.VITE_BACKEND_URL);
+  const avatarKeys = Object.values(avatars);
+
   const [firstnameInput, setFirstnameInput] = useState("Prenom")
   const [mailInput,setMailInput] = useState("Adresse mail")
   const [lastnameInput, setLastnameInput] = useState("Nom")
@@ -17,7 +18,7 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
   const [roleInput,setRoleInput] = useState("role")
   const [photo,setPhoto] = useState("photo")
   const [avatarInput,setAvatarInput] = useState("avatar")
-  // const [picture, setPicture] = useState();
+
   const { userToken } = useContext(AuthContext);
   const [message, setMessage] = useState(false); 
   const [showLoadPhoto, setShowLoadPhoto] = useState(false);
@@ -27,8 +28,7 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
     const form = event.target;
     const formData = new FormData(form);
     const dataFromForm = Object.fromEntries(formData.entries());
-    const dataComplet = {...dataFromForm, hashed_password:""};
-          // console.log("DFF ",dataComplet);
+    const dataComplet = {...dataFromForm, hashed_password:"", avatar:avatarInput };
     axios
     .post(`${import.meta.env.VITE_BACKEND_URL}/addUser`, dataComplet, {
       headers: {
@@ -50,11 +50,8 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
         console.error(error);
       });
   };
-  console.log("*** ",users);
-  
   const handleCheckAdmin=(e)=>{
     setCheckAdmin(e.target.value);
-    
   }
   const handleClick = ()=>{
     setShowNewUser(false);
@@ -160,27 +157,30 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
               </div>
             </div>
           </div>
-          {/* <div className="input-line">
-            <div className="input-field">
-              <label htmlFor="avatar">Avatar</label>
-              <div className="input">
-                <input
-                  name="avatar"
-                  type="text"
-                  value={avatarInput}
-                  id="avatar"
-                  onChange={(e)=>setAvatarInput(e.target.value)}
-                  onFocus={()=>setAvatarInput("")}
-                />
-              </div>
-            </div>
-          </div> */}
           <div className="input-line">
-            <div className="input-field">
-              <label htmlFor="avatar">Avatar</label>
-              <BtnRadio setAvatarInput={setAvatarInput}/>
+            <label htmlFor="avatar">Avatar</label>
+            <div className="radioGroup">
+              {avatarKeys.map((el, index)=>{
+              return(
+                <label key={index} >
+                  <input 
+                    className="radioInput"
+                    type="radio" 
+                    id="radio" 
+                    name="radio" 
+                    onChange={(e)=>setAvatarInput(avatarKeys[e.currentTarget.value])}
+                    value={index}/>
+                  <img 
+                    src={el} 
+                    alt="RR" 
+                    htmlFor="radio"
+                    className="radioImg"/>
+                </label>
+              )
+              })}
             </div>
           </div>
+
          
           <div className="btnbox">
             <button type="submit" className={checkAdmin !== null? "btn" : "btn disabled"} >

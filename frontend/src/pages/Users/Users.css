@@ -259,6 +259,10 @@
   margin: 0;
   padding: 0;
 }
+.carte img {
+  width: 40px;
+  height: 40px;
+}
 
 .photo {
   width: 128px;

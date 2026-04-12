@@ -35,7 +35,7 @@ function Users() {
       })
       .then((response) => {
         if (response.status === 204) {
-          console.log("faq effacée");
+          console.log("user effacé");
           setUsers(users.filter( item => item.id !== id))
         } else {
           console.error(response.status);

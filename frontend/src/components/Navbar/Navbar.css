@@ -326,7 +326,12 @@ p:last-child {
 .navContainer {
   position: relative;
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  height: 60px;
 }
 
 .navbar {

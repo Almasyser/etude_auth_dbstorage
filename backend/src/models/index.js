@@ -13,7 +13,10 @@ const pool = mysql.createPool({
 // console.log("LOG",DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME );
 
 // try a connection
-pool.getConnection().catch(() => {
+pool.getConnection()
+  .then(()=> console.log("BD connectee.")
+  )
+  .catch(() => {
   console.warn(
     "Warning:",
     "Failed to get a DB connection.",

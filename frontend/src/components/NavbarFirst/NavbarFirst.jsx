@@ -1,5 +1,6 @@
 import "./navbarfirst.css";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/logo_min.png";
 function NavbarFirst() {
   const navigate = useNavigate();
   return (
@@ -10,7 +11,7 @@ function NavbarFirst() {
           onClick={() => navigate("/")}
           aria-hidden="true"
         >
-          <img src="../src/assets/Logo.png" alt="Logo" />
+          <img src={logo} alt="Logo" />
         </div>
         <ul className="items">
           <li>
