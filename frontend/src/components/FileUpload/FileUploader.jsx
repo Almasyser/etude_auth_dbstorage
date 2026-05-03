@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import Navbar from "../Navbar/Navbar";
+import ShowPdf from '../ShowPdf/ShowPdf';
 import axios from 'axios';
 import "./fileuploader.css"
 const FileUploader = () => {
@@ -10,7 +11,7 @@ const FileUploader = () => {
   const onDrop = useCallback((acceptedFiles) => {
     setFiles(acceptedFiles);
     // Aperçu pour les images
-    if (acceptedFiles[0].type.startsWith('image/') ) {
+    if (acceptedFiles[0].type.startsWith('application/pdf') ) {
       const reader = new FileReader();
       reader.onload = () => setPreview(reader.result);
       reader.readAsDataURL(acceptedFiles[0]);
@@ -18,6 +19,7 @@ const FileUploader = () => {
       setPreview(null);
     }
   }, []);
+  
   // Configuration de react-dropzone
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
@@ -65,15 +67,17 @@ const FileUploader = () => {
       </div>
 
       {files.length > 0 && (
+        <>
         <form className='comments' onSubmit={uploadFile}>
           <h3>Fichier sélectionné :</h3>
-          {preview && <img src={preview} alt="Aperçu" style={{ maxWidth: '100%', maxHeight: '200px' }} />}
           <p>{files[0].name} ({Math.round(files[0].size / 1024)} Ko)</p>
-          <p>{preview}</p>
+          <p>{files[0].path}</p>
           <button type="submit" style={{ marginTop: '10px' }}>
             Télécharger
           </button>
         </form>
+          {preview && <ShowPdf filePdf={preview} />}
+        </>
       )}
     </div>
   );

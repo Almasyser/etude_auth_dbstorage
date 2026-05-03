@@ -30,7 +30,7 @@ function Users() {
   }
   const handleDeleteUser = (id)=>{
     axios
-      .delete(`${import.meta.env.VITE_BACKEND_URL}/adminUser/user/${id}`, {
+      .delete(`${import.meta.env.VITE_BACKEND_URL}/user/${id}`, {
         headers: { Authorization: `Bearer ${userToken}` },
       })
       .then((response) => {
