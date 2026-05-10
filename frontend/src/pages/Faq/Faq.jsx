@@ -6,6 +6,7 @@ import AuthContext from "../../contexts/AuthContext";
 import NewFaq from "../../components/NewFaq/NewFaq";
 import ConvertDateJMA from "../../components/utils/ConvertDateJMA";
 import "./Faq.css";
+import { FaPlus, FaTrashAlt } from 'react-icons/fa';
 export default function Faq() {
   const navigate = useNavigate();
   const { userToken, userInfo } = useContext(AuthContext);
@@ -61,14 +62,14 @@ export default function Faq() {
           {isDataLoaded ? (
             <main>
               <header>
-                <button className="btn-newfaq"><i className="fi fi-rr-add" onClick={()=> setShowNewFaq(!showNewFaq)}/></button>
+                <button className="btn-newfaq"><FaPlus onClick={()=> setShowNewFaq(!showNewFaq)}/></button>
                 <h1>FAQ : Réponses aux questions fréquentes</h1>
               </header>
               <div className="content">
                 <ul className="faq-list">
                   {newFaq.map((el, index) => (
                     <li key={index}>
-                      {isAdmin? <i className="fi fi-rr-trash" onClick={()=>handleDelete(el.id)}/>:null }
+                      {isAdmin? <FaTrashAlt onClick={()=>handleDelete(el.id)}/>:null }
                         <span className="liste">
                           <p className="question">{el.id}&nbsp;{el.question}</p>
                           <p className="answer">{el.answer}</p>

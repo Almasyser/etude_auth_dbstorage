@@ -1,6 +1,7 @@
 import "./navbarfirst.css";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/logo_min.png";
+import { FaUser } from 'react-icons/fa'
 function NavbarFirst() {
   const navigate = useNavigate();
   return (
@@ -19,9 +20,9 @@ function NavbarFirst() {
               className="btn-auth"
               type="button"
               onClick={() => navigate("/auth")}
-            >
-            <i className="fi fi-rr-user" />
-              </button>
+              >
+              <FaUser/>
+            </button>
           </li>
         </ul>
       </nav>

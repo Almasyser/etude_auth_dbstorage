@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import "./UserAccount.css";
+import { FaUser } from 'react-icons/fa';
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -46,7 +47,8 @@ export default function UserAccount({ userInfo, setShowUserAccount }) {
     <div className="useraccount">
       <div className="header">
         <h1>Détails du compte</h1>
-        <i className="fi fi-rr-users" onClick={handleRetour}>&nbsp;Retour</i>
+        <FaUser />
+        <i onClick={handleRetour}>&nbsp;Retour</i>
       </div>
       <div className="account">
         <form onSubmit={handleSubmit}>

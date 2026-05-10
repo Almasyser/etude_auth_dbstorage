@@ -6,6 +6,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import NewUserAccount from "../../components/NewUserAccount/NewUserAccount";
 import UserAccount from "../../components/UserAccount/UserAccount";
 import "./Users.css";
+import { FaUserPlus, FaUser, FaTrash } from 'react-icons/fa';
 function Users() {
   const navigate= useNavigate();
   const AuthValue = useContext(AuthContext);
@@ -53,7 +54,7 @@ function Users() {
       <Navbar />
       {users && (
         <div className="manage">
-          <button className="newuser"><i className="fi fi-rr-user-add" onClick={()=> setShowNewUser(!showNewUser)}/></button>
+          <button className="newuser"><FaUserPlus onClick={()=> setShowNewUser(!showNewUser)}/></button>
           <header>
             <h1>Gestion des Utilisateurs</h1>
           </header>
@@ -69,8 +70,8 @@ function Users() {
               </span>
               <span className="droite">
                 <div className="boutons">
-                  <i className="fi fi-rr-user" onClick={()=> handleDetailUser(index)}></i>
-                  {isAdmin && <i className="fi fi-rr-trash" onClick={()=>handleDeleteUser(el.id)}></i>}
+                  <FaUser onClick={()=> handleDetailUser(index)}/>
+                  {isAdmin && <FaTrash onClick={()=>handleDeleteUser(el.id)}/>}
                 </div>
               </span>
             </section>

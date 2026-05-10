@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import axios from "axios";
 import "./Authentication.css";
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../../contexts/AuthContext";
 
@@ -80,13 +81,7 @@ export default function Authentication() {
                 type="button"
                 className="hide-or-show-button"
               >
-                <i
-                  id="pw-icon-show-hide"
-                  className={
-                    passwordShown ? "fi fi-rr-eye-crossed" : "fi fi-rr-eye"
-                  }
-                  alt="button to show or hide password"
-                />
+              { passwordShown ? <FaEyeSlash/> : <FaEye/>}
               </button>
             </div>
           </div>

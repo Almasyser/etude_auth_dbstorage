@@ -13,11 +13,11 @@ const upload = require("./controllers/upLoadControlers");
 
 router.post  ("/user/login", user.authenticationCheck, verifyPassword);
 router.post  ("/addUser", hashPassword, user.addUser);
-router.post  ("/addUserPhoto", user.addUserPhoto);
-router.get   ("/users", user.browse);
-router.get   ("/user/:id", user.read);
+router.post  ("/addUserPhoto", verifyToken, user.addUserPhoto);
+router.get   ("/users", verifyToken, user.browse);
+router.get   ("/user/:id", verifyToken, user.read);
 router.put   ("/user/:id", verifyToken, hashPassword, checkId, user.modifyUser);
-router.delete("/user/:id", verifyToken, user.destroyUser);// verifyAdminRole,
+router.delete("/user/:id", verifyToken, verifyAdminRole, user.destroyUser);// verifyAdminRole,
 
 router.get("/faq", verifyToken, faq.browse);
 router.post("/faq", verifyToken, faq.add);

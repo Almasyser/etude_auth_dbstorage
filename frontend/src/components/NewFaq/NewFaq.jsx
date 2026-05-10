@@ -4,6 +4,7 @@ import axios from 'axios';
 import ConvertDateJMA from "../utils/ConvertDateJMA";
 import FileUploader from "../FileUpload/FileUploader";
 import "./newfaq.css";
+import { FaUser } from 'react-icons/fa';
 function NewFaq({newFaq, setNewFaq, setShowNewFaq}) {
   const [sujet, setSujet] = useState('');
   const [texte, setTexte] = useState('');
@@ -56,7 +57,8 @@ function NewFaq({newFaq, setNewFaq, setShowNewFaq}) {
     <div className="newfaq">
       <div className="entete">
         <h1>Nouvelle question:</h1>
-        <i className="fi fi-rr-users" onClick={handleClick}>&nbsp;Retour</i>
+        <FaUser/>
+        <i onClick={handleClick}>&nbsp;Retour</i>
       </div>
       <form className="formnewfaq" onSubmit={handleSubmit}>
         <input type="text" name="question" className="sujet" onChange={(e)=> setSujet(e.target.value)} value={sujet} placeholder="Sujet"/>

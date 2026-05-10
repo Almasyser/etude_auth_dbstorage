@@ -1,6 +1,7 @@
 
 import PropTypes from "prop-types";
 import "./newuseraccount.css";
+import { FaUser } from 'react-icons/fa';
 import { useState, useContext} from "react";
 import axios from "axios";
 import AuthContext from "../../contexts/AuthContext";
@@ -60,7 +61,8 @@ function NewUserAccount({ users, setUsers, setShowNewUser }) {
     <section className="newuseraccount">
       <header className="entete">
         <h1>Inscription</h1>
-        <i className="fi fi-rr-users" onClick={handleClick}>&nbsp;Retour</i>
+        <FaUser/>
+        <i onClick={handleClick}>&nbsp;Retour</i>
       </header>
       <div className="content">
         <form onSubmit={handleSubmit}>
